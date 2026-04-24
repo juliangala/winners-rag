@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winners — Medicina (v4b compact)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --teal:#0B8F6F;--teal-hover:#077A5E;--teal-light:#DFF2EB;--teal-faint:#F0FAF6;
+  --ink:#0C0F0E;--ink-2:#3D4440;--ink-3:#7A8480;--ink-4:#B8C0BC;
+  --paper:#FAFAFA;--white:#FFFFFF;--border:#E8EDEB;--border-strong:#C8D4CF;
+  --r-sm:8px;--r-md:14px;--r-lg:20px;--r-xl:28px;
+}
+body{font-family:'Geist',system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+.btn-teal{display:inline-flex;align-items:center;gap:7px;background:var(--teal);color:#fff;font-size:13px;font-weight:500;padding:10px 22px;border-radius:999px;border:none;cursor:pointer;text-decoration:none;font-family:'Geist',system-ui,sans-serif;}
+.btn-teal:hover{background:var(--teal-hover);}
+/* LANG BAR */
+.lang-bar{position:fixed;top:0;left:0;right:0;z-index:200;height:52px;background:rgba(250,250,250,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 20px;}
+.logo{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:500;color:var(--ink);text-decoration:none;letter-spacing:-0.3px;}
+.logo-mark{height:28px;display:flex;align-items:center;justify-content:center;}
+.logo-mark img{height:28px;width:auto;}
+.logo-sub{font-size:10px;background:var(--teal-light);color:var(--teal);padding:2px 7px;border-radius:99px;font-weight:500;}
+.lang-btns{display:flex;gap:2px;align-items:center}
+.lang-btn{padding:5px 10px;font-size:12px;font-weight:500;font-family:'Geist',sans-serif;border:1px solid transparent;border-radius:var(--r-sm);background:var(--teal-light);color:var(--teal);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:5px;}
+.lang-btn:hover{background:#C8E8DE;color:var(--teal)}
+.lang-btn.active{background:var(--teal);color:#fff;border-color:var(--teal);}
+.lang-flag{font-size:13px}
+
+/* MAIN */
+main{padding-top:52px;min-height:100vh;}
+
+/* HERO */
+.hero{padding:36px 20px 0;max-width:680px;margin:0 auto;text-align:center;}
+.hero-kicker{display:inline-block;font-family:'Fraunces',Georgia,serif;font-size:clamp(26px,6vw,52px);font-weight:300;font-style:italic;color:var(--ink);line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px;}
+.hero-kicker em{color:var(--teal);}
+
+
+/* CHAT */
+.chat-wrap{max-width:520px;margin:0 auto;padding:0 20px;}
+.chat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-xl);overflow:hidden;box-shadow:0 2px 24px rgba(0,0,0,0.06),0 1px 4px rgba(0,0,0,0.04);}
+.chat-header{background:var(--teal);padding:14px 18px;display:flex;align-items:center;gap:11px;}
+.chat-av{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:500;color:#fff;flex-shrink:0;position:relative;}
+.chat-pulse{position:absolute;bottom:1px;right:1px;width:10px;height:10px;background:#4ADE80;border-radius:50%;border:2px solid var(--teal);}
+.chat-hinfo{flex:1}
+.chat-hname{font-size:14px;font-weight:500;color:#fff;letter-spacing:-0.1px}
+.chat-hstatus{font-size:11px;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:4px;}
+.chat-hstatus-dot{width:5px;height:5px;background:#4ADE80;border-radius:50%}
+
+.chat-body{padding:14px}
+.chat-bubble{background:var(--paper);border:1px solid var(--border);border-radius:3px 16px 16px 16px;padding:10px 14px;font-size:13px;line-height:1.55;color:var(--ink);margin-bottom:12px;max-width:92%;}
+.chat-quick{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0;transition:margin 0.2s;}.chat-quick.answered{margin-bottom:14px;}
+.chat-qbtn{display:flex;align-items:center;gap:6px;padding:8px 14px;border-radius:99px;border:1.5px solid var(--teal);background:var(--white);color:var(--teal);font-size:12.5px;font-weight:500;font-family:'Geist',sans-serif;cursor:pointer;transition:all 0.15s;}
+.chat-qbtn:hover{background:var(--teal-faint)}
+.chat-qbtn svg{width:13px;height:13px;flex-shrink:0}
+.chat-input-row{display:none;}.chat-input-row.visible{display:flex;}
+.chat-input-row:focus-within{border-color:var(--teal)}
+.chat-input{flex:1;border:none;background:transparent;font-size:13px;color:var(--ink);font-family:'Geist',sans-serif;outline:none;}
+.chat-input::placeholder{color:var(--ink-4)}
+.chat-send-btn{width:32px;height:32px;background:var(--teal);border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.15s,transform 0.1s;}
+.chat-send-btn:hover{background:var(--teal-hover);transform:scale(1.05)}
+.chat-send-btn svg{width:13px;height:13px}
+.chat-privacy{display:none;}.chat-privacy.visible{display:flex;}
+
+/* OUTCOMES */
+
+
+
+
+
+
+
+/* DIVIDER */
+.divider{border:none;border-top:1px solid var(--border);margin:0;}
+
+/* SECTIONS */
+.section{padding:56px 20px}
+.section.alt{background:var(--white)}
+.section-inner{max-width:600px;margin:0 auto}
+.section-label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:10px;}
+.section-title{font-family:'Fraunces',Georgia,serif;font-size:clamp(24px,4vw,32px);font-weight:300;font-style:italic;line-height:1.2;letter-spacing:-0.02em;color:var(--ink);margin-bottom:28px;}
+.section-title strong{font-weight:400;font-style:normal}
+
+/* PRIVATE CONTEXT */
+.context-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:480px){.context-grid{grid-template-columns:1fr}.context-full{grid-column:1!important}}
+.context-card{background:var(--paper);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px;}
+.context-card.accent{background:var(--teal-faint);border-color:rgba(11,143,111,0.2);}
+.context-icon{width:32px;height:32px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:16px;}
+.context-icon.green{background:var(--teal-light)}
+.context-card-title{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:6px;line-height:1.3;}
+.context-card-body{font-size:12px;color:var(--ink-3);line-height:1.55;}
+
+/* HOW */
+.how-step{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--border);}
+.how-step:last-child{border-bottom:none}
+.how-num{font-family:'Fraunces',serif;font-size:36px;font-weight:300;font-style:italic;color:var(--teal-light);line-height:1;width:44px;flex-shrink:0;padding-top:2px;}
+.how-title{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.how-body{font-size:13px;color:var(--ink-3);line-height:1.55}
+.how-tag{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;background:var(--teal-light);color:var(--teal);padding:3px 8px;border-radius:99px;}
+
+/* JULIAN */
+.julian-wrap{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;}
+@media(max-width:460px){.julian-wrap{grid-template-columns:1fr;text-align:center}.julian-av-wrap{margin:0 auto}.julian-quote{border-left:none;border-top:2px solid var(--teal);padding-left:0;padding-top:12px}}
+.julian-av-wrap{position:relative;width:fit-content}
+.julian-av{width:80px;height:80px;border-radius:50%;background:var(--teal-light);border:2px solid var(--teal);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:400;color:var(--teal);font-family:'Fraunces',serif;font-style:italic;}
+.julian-founder{position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:9px;font-weight:600;padding:3px 8px;border-radius:99px;white-space:nowrap;letter-spacing:0.05em;text-transform:uppercase;}
+.julian-name{font-size:18px;font-weight:500;color:var(--ink);margin-bottom:2px;letter-spacing:-0.2px}
+.julian-role{font-size:12px;color:var(--ink-3);margin-bottom:14px}
+.julian-quote{font-family:'Fraunces',serif;font-size:16px;font-style:italic;font-weight:300;color:var(--ink);line-height:1.6;border-left:2px solid var(--teal);padding-left:14px;margin-bottom:16px;}
+.julian-creds{display:flex;flex-direction:column;gap:5px}
+.julian-cred{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-3);}
+.julian-cred-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0}
+
+/* PROOF */
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+.proof-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:22px 16px;text-align:center;}
+.proof-n{font-family:'Fraunces',serif;font-size:38px;font-weight:300;font-style:italic;color:var(--teal);line-height:1;margin-bottom:6px;}
+.proof-l{font-size:11px;color:var(--ink-3);line-height:1.4}
+
+/* TESTIMONIALS */
+.testi-stack{display:flex;flex-direction:column;gap:10px}
+.testi{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:18px;}
+.testi.feat{border-color:var(--teal)}
+.testi-top{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.testi-flag{font-size:20px}
+.testi-name{font-size:13px;font-weight:500;color:var(--ink)}
+.testi-from{font-size:11px;color:var(--ink-3)}
+.testi-q{font-family:'Fraunces',serif;font-size:14px;font-style:italic;font-weight:300;color:var(--ink-2);line-height:1.6;margin-bottom:12px;}
+.testi-result{display:flex;align-items:center;gap:7px;background:var(--teal-faint);border-radius:var(--r-sm);padding:8px 10px;font-size:12px;font-weight:500;color:var(--teal);}
+.testi-tick{width:16px;height:16px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+/* FAQ */
+.faq-list{max-width:560px;margin:0 auto}
+details.faq{border-bottom:1px solid var(--border);padding:16px 0;}
+details.faq:first-of-type{border-top:1px solid var(--border)}
+summary.faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;list-style:none;user-select:none;}
+summary.faq-q::-webkit-details-marker{display:none}
+.faq-plus{width:22px;height:22px;border-radius:50%;background:var(--border);display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--teal);flex-shrink:0;transition:transform 0.2s;}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-a{font-size:13px;color:var(--ink-3);line-height:1.65;padding-top:10px;}
+
+/* FINAL */
+.final{background:var(--teal-faint);padding:64px 20px;text-align:center;}
+.final-inner{max-width:480px;margin:0 auto}
+.final-title{font-family:'Fraunces',serif;font-size:28px;font-weight:300;font-style:italic;color:var(--ink);line-height:1.2;letter-spacing:-0.02em;margin-bottom:20px;}
+.final-sub{font-size:14px;color:var(--ink-3);margin-bottom:28px;font-weight:300;}
+.final-cta{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;font-size:14px;font-weight:500;font-family:'Geist',sans-serif;padding:13px 28px;border-radius:99px;border:none;cursor:pointer;text-decoration:none;transition:background 0.15s,transform 0.15s;margin-bottom:14px;}
+.final-cta:hover{background:var(--teal-hover);transform:translateY(-1px)}
+.final-meta{display:none;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;font-size:11px;color:rgba(255,255,255,0.35);}
+.final-meta span{display:flex;align-items:center;gap:4px}
+
+/* FOOTER */
+footer{padding:20px;text-align:center;border-top:1px solid var(--border);font-size:11px;color:var(--ink-4);}
+footer a{color:var(--ink-3);text-decoration:none}
+
+
+/* RANKING PREVIEW */
+
+.uni-logo{width:26px;height:26px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;letter-spacing:0.02em;}
+.uni-logo-nav{background:#003A70;color:#fff;font-size:7px;}
+.uni-logo-uic{background:#C8102E;color:#fff;}
+.uni-logo-ceu{background:#0057A8;color:#fff;}
+
+.ranking-preview{max-width:380px;margin:0 auto 16px;padding:0 20px;}
+.ranking-preview-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-4);text-align:center;margin-bottom:10px;font-weight:500;}
+.ranking-rows{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);}
+.ranking-row{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--border);gap:8px;}
+.ranking-row:last-child{border-bottom:none;}
+.ranking-row-left{display:flex;align-items:center;gap:10px;}
+
+.ranking-uni-name{font-size:12px;font-weight:500;color:var(--ink);line-height:1.3;}
+.ranking-uni-city{font-size:11px;color:var(--ink-4);}
+.badge-likely{background:#E0F5EE;color:#077A5E;font-size:10px;font-weight:600;padding:3px 9px;border-radius:99px;white-space:nowrap;}
+.badge-achievable{background:#FEF3C7;color:#92400E;font-size:10px;font-weight:600;padding:3px 9px;border-radius:99px;white-space:nowrap;}
+.badge-ambitious{background:#EEF2FF;color:#3730A3;font-size:10px;font-weight:600;padding:3px 9px;border-radius:99px;white-space:nowrap;}
+.ranking-preview-note{display:none;}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.hero>*{animation:fadeUp 0.45s ease both}
+.hero>*:nth-child(1){animation-delay:0.05s}
+.hero>*:nth-child(2){animation-delay:0.12s}
+.chat-wrap{animation:fadeUp 0.45s 0.18s ease both}
+.outcomes{animation:fadeUp 0.45s 0.26s ease both}
+</style>
+</head>
+<body>
+
+<div class="lang-bar">
+  <a href="#" class="logo">
+    <div class="logo-mark"><img src="data:image/png;base64,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" alt="Winners W" style="height:24px;width:auto;" /></div>
+    Winners
+  </a>
+  <div style="position:relative;" id="gradeDropdown">
+    <button class="logo-sub" id="gradeTrigger" onclick="toggleGradeDD()" style="cursor:pointer;display:flex;align-items:center;gap:4px;border:none;">
+      <span data-i18n="nav-tag"></span>
+      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" id="gradeChevron" style="transition:transform 0.2s;"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div id="gradeMenu" style="display:none;position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:6px;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,0.08);z-index:300;">
+      <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;" onmouseover="this.style.background='var(--teal-faint)'" onmouseout="this.style.background=''">
+        <div style="width:18px;height:18px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="9" height="9" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span data-i18n="nav-tag"></span>
+      </div>
+      <a href="https://www.winnersacademia.com" target="_blank" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:13px;text-decoration:none;color:var(--ink);" onmouseover="this.style.background='var(--teal-faint)'" onmouseout="this.style.background=''">
+        <div style="width:18px;"></div>
+        <span style="font-weight:700;">Academ<span style="color:var(--teal);">IA</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:13px;color:var(--ink-3);cursor:default;">
+        <div style="width:18px;"></div>
+        <span data-i18n="nav-odonto"></span>
+        <span style="font-size:11px;color:var(--ink-4);margin-left:auto;" data-i18n="nav-soon"></span>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <div style="position:relative;" id="langDropdown">
+      <button class="logo-sub" id="langTrigger" onclick="toggleLangDD()" style="cursor:pointer;display:flex;align-items:center;gap:4px;padding:4px 10px;border:none;">
+        <span id="langFlag">🇪🇸</span> <span id="langCode">ES</span>
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" id="langChevron" style="transition:transform 0.2s;"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div id="langMenu" style="display:none;position:absolute;top:calc(100% + 8px);right:0;background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:6px;min-width:120px;box-shadow:0 8px 24px rgba(0,0,0,0.08);z-index:300;">
+        <div onclick="selectLang('es','🇪🇸','ES')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:13px;cursor:pointer;" onmouseover="this.style.background='var(--teal-faint)'" onmouseout="this.style.background=''"
+><span style="font-size:14px;">🇪🇸</span><span>ES</span><span id="checkEs" style="margin-left:auto;color:var(--teal);font-size:11px;">✓</span></div>
+        <div onclick="selectLang('fr','🇫🇷','FR')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:13px;cursor:pointer;" onmouseover="this.style.background='var(--teal-faint)'" onmouseout="this.style.background=''"><span style="font-size:14px;">🇫🇷</span><span>FR</span><span id="checkFr" style="margin-left:auto;color:var(--teal);font-size:11px;display:none;">✓</span></div>
+        <div onclick="selectLang('en','🇬🇧','EN')" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:13px;cursor:pointer;" onmouseover="this.style.background='var(--teal-faint)'" onmouseout="this.style.background=''"><span style="font-size:14px;">🇬🇧</span><span>EN</span><span id="checkEn" style="margin-left:auto;color:var(--teal);font-size:11px;display:none;">✓</span></div>
+      </div>
+    </div>
+    <a href="#" class="btn-teal" data-i18n="nav-cta"></a>
+  </div>
+</div>
+
+<main>
+
+<section class="hero">
+  <div class="hero-kicker" data-i18n="hero-h1"></div>
+</section>
+
+<div class="ranking-preview">
+  <div class="ranking-preview-label" data-i18n="ranking-label"></div>
+  <div class="ranking-rows">
+    <div class="ranking-row">
+      <div class="ranking-row-left">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJylkLFLw0AYxV9bRdFKBx0cHDIUB2lB6uKodShIKaVWsOqSpEkrJG1IUkQcHVw7dFFxsYr/gW7iPyAIgjq56OygIIKU+K4pxKGd/MLd9+PdvcvdA8JNQzWdoXnArLl2IZOWNkqbEv6UrDrWcj6fxcD6ekRI9IekOGvwvr41XtYcFQiNkhdVy3bJS+TcrmsJbpKn1KpcJp+TEzYvSL4XuuLzm+CKz9+C7WJhBQhHyVLF54RgxWfxFkmt2ibZIMdNo6H27iNeEtVq62vsM93hoIAM0pCgoIEdGHCRZK8xs/6+VNeXQ50elbOFPdh0VFClN0G1wVM1dp26xs/gDlaQfZCpoy+k/D9EV4HhV8/7nANGToDOoef9nHlepw1EnoHbVuCvtxjnO/VmoMVPgdgBcHUTaMoFcM2Mp18s2Za7UoQjrOvAxyUwUQImmfXY1n/X/bx762g/AcV9IHsHHB0Ds9wf2/4F9IxzaxM+sS0AAAPZSURBVHjavZZriFVVFMd/a59z79w73bn3lppFRMkQmijRS60QDJQsZTKFiUCopBdCSZCFhFQERUT0oehBaS8DC41AsD4IUsmYElGELyhjoqSxctTm3HPO3Y/VhzvOODr5oMkF58OGxfrt/V//vdcR651iIoT/LwIQqzHYp1cR7/oB2tshhLEjGINmGX76VcQGobBvN4WdX0NHBfwYgiIDSYNmW4kYQEvtUKmg51XG/ESIQUvlFggNLcCxb0wbFEADhnMU/x0kMiiRnD1IjEHEjFpUjAwDogjxHklTxFowg9DTgwQNgTxtYJvNkbsUwec5eZoSFESVcKSfrK1MNqmTbPx4bNKANB0VZkZI0Mywl3cS1q7HLl9BSLMhabTRoHn/cvw7H2E7O2mmCdkjKzEbN1PYtAWzeSv+tbfJJl9JSAZOgsUjQN5BR5XSjFl4a1HnWnIgqHPE06ZTvH4mR+t1Cs+9RGlRN+oc9rtviKo1SnPmYa++lnzZUsp7d0OlMrp0gqDeo8GjadqC6/BGtNnEB0/oWkJpUTd2zy7s4tswt88nW7KA5KutFGoXYJ59AR9FiOopzCACJjpZZwGMYExEZd6teB/QZ56ksLMHv6CL0rqNlGffjP2lF13/PqZQRI8DxaNaRBU0ICeYAe8RIC6VcQNHcdU6Zt0GinPnE4Inf+NVzLtvYfoOQEcHlMonn2hIIe9QEfz5Nbx3CCAieGsJ1ToeJTv0B1G5nfY31xLPnY/d9Am+ax6FVY8SFi6Ez74gnTMX30iQQWWGQKIB2kpI735c3+8Upl9Ds+sO7JHD2P5D5LcspHDdLPS3X8lffwWiGKxjYPVKeGgZ0b7dNLvvovDwY8RTphId7h95h52q5nd3q065VMPMaeonX6LJ6ifUqapV1WzHds16vhxaJ88/pdmkiZps+Vy9qjb/+lOznm2af/+t2sGcgZdfVH/FxaozpmmYeplm9y3VkT3yHqlUKW5cTxYc8b0PEs+YhQK+dz/uvTUUP/6QuF4jf3wF6QPLiRd3E91wEwK4vXuwH6yh7dMNSLWGBj/cYqeq/p47Ke7YjlYGx4QRwtG/8dUqTLwIFUEO9mEO9xN1VIde5ZAM4MZNgAkTEOvQvgMUBhKk2gFBW85tNGjeOPtfXBcUU6sROQe9P7ecUiyitTp4PzRrTK1OW9qAn35subJYRGu14ZxRX4YTw3vUGGgrD/vy+ALaWmsUQRwPXgkdFXJq0LFiKKfNUT0H8+gMIx4xvMwYc4/VFGmBQp4RkqTVk7H+OWkkaJ4h1nt1PduQQwchLpyR3mc15r1Dx13IP6wE6gyXaFLdAAAAAElFTkSuQmCC" style="width:26px;height:26px;border-radius:6px;flex-shrink:0;" alt="UE" />
+        <div>
+          <div class="ranking-uni-name">Univ. Europea</div>
+          <div class="ranking-uni-city">Madrid</div>
+        </div>
+      </div>
+      <span class="badge-likely" data-i18n="badge-likely"></span>
+    </div>
+    <div class="ranking-row">
+      <div class="ranking-row-left">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJylkLFLw0AYxV9bRdFKBx0cHDIUB2lB6uKodShIKaVWsOqSpEkrJG1IUkQcHVw7dFFxsYr/gW7iPyAIgjq56OygIIKU+K4pxKGd/MLd9+PdvcvdA8JNQzWdoXnArLl2IZOWNkqbEv6UrDrWcj6fxcD6ekRI9IekOGvwvr41XtYcFQiNkhdVy3bJS+TcrmsJbpKn1KpcJp+TEzYvSL4XuuLzm+CKz9+C7WJhBQhHyVLF54RgxWfxFkmt2ibZIMdNo6H27iNeEtVq62vsM93hoIAM0pCgoIEdGHCRZK8xs/6+VNeXQ50elbOFPdh0VFClN0G1wVM1dp26xs/gDlaQfZCpoy+k/D9EV4HhV8/7nANGToDOoef9nHlepw1EnoHbVuCvtxjnO/VmoMVPgdgBcHUTaMoFcM2Mp18s2Za7UoQjrOvAxyUwUQImmfXY1n/X/bx762g/AcV9IHsHHB0Ds9wf2/4F9IxzaxM+sS0AAAN6SURBVHja1ZbNa15FFMZ/z8x9733z1Q/yVtPgIgQKoqZWsBZBUbdCULryL9BlK7hxoYi4UnBVXKiL4EoX6qr/gJvStK4qtCmWUkQTIr6aJk3y5t6Z42Ju+n41NaAEvDBwOXNmzpzzPM+Zkb7fNA7gc/t1FOB1AIGiQVX+x4E0+G8wmcP8dASzB/r3jn0Fsvr09zMBLIrJ3JifMswM9ezmlPxj7I4HnAUNkqHpjEKwFtJu496IwFYQIwpsmcd6UrEKjhZGKxcBcBgrHbhXqS+9bPfHC6oOvD4jXm6Jt340MOPdk5GVbfHNb/DlKcf8pYjLPMKIFTx7NPDxk461UpigIfhwKXKlLXzWrU42mGLuxFimuogwlokRLwRM9NgdECrj7LS4tm6cWwwwojQth3w/BEOBgkFlqfa7bAv1gjImu9QFfjOIwoPPRObTWjMYhGkoUNNDLiOWEeogaXOjmUGsdwoyiDDqQWaE0giZS1Gc+gjTRwZHYszj45HPTkG749mJ8MwRceF2xRe34OszBnhKEyMOPv254m4lLpwUv245cAmjj24GrrRdH0Z9rJMg7kDeiJwYdwQzygirO7BeiqY3ZsfSYidY6UB7S0yNGpN5nT3wyzZsDLCum5EglOL5VuDEGHx120Gjxr7GBcBiv1IzB1WkH5Qe/yHBqkZ+7pDn1akMOgYhbeBdmrdIsu0Oq4P02kj+/BMZ1ip4tDBem4mMFuLWPWPxTweIpw4FnpgQpaVkL/0FnWCcOQKZFw3B9XW4tiZcpr4OkQ02rWAw3RQvHgMv49wsvH/duLNpfP60Y7GdON6UsXQ38MrxjDdnHBeXAw3B+VnH2z/BYhvcnoI1GPPwwx/GO1cdYHxyGuYOi8wZNzY85y8DI/WpSsfZx+Db5ch7V5OyFl7wzB02Lv9uKHtI6QzIJCiSJrwi2yGJ1QAK4fOEdIiRAEx4kRWJtk6wHfaBkTBaObTyAGYcy+HOZmLNI4XRygNF7hDG6g40JHKXOgJA4UTubO9A0UANuLgSeWkysnDaYeboxMh3y7BWwhudioXnRAmMCj5Yqrix7jneBORBcHOjZLWT+G0PuyasvpAaPpnL0NPcanstLQLqUb5qndX31YCQhkrnBGSitOTofK+3KM3dV7Gw4Z7mHMMtdQ8yYN3uYQOT3YLs9Xiyf/c4ObDn1v8m0N/5J4kCWyEl7QAAAABJRU5ErkJggg==" style="width:26px;height:26px;border-radius:6px;flex-shrink:0;" alt="UIC" />
+        <div>
+          <div class="ranking-uni-name">UIC Barcelona</div>
+          <div class="ranking-uni-city">Barcelona</div>
+        </div>
+      </div>
+      <span class="badge-achievable" data-i18n="badge-achievable"></span>
+    </div>
+    <div class="ranking-row">
+      <div class="ranking-row-left">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAErklEQVR42q2Wy29VVRTGf/ucfe6r9A0tVQtUpKWGGBTUaGJAJCQmGBLiwLnEMNIBAxNjolMd+A5OTDT+B8bXxMhApUCpRJ4FQdPXrQXvo72P897LwbktLbSlUVeyJyd772+tb33fWVvlzwwJq4UACv7rHh2HEWsJ1bgPaeSl1O1vawhtwuAe2SpEgcQxltbYjgNAHEaYKMSyLRAFSu5RUbA6kDRoae3dRPMDvVg6ATJRSDU/yez4OBIblKXuUZHvIysQLCLYWrN+xw5aejcjgF8qAZBua6ejfxCdzfH3xYvEQQRKrUC7oEPPW7UxG3bsoqV3M97cLDd/O0ctPw0ITT09dD3yaJJAFDM9Mrx6RdE8kFIgjdosRRwEdA48TOuWrfiVOSZO/IhbKmCn0gCU//wDr1Ri87PP0drXR21mhsLoZayUg5i7+2UZ3yP2PWLPJfY9osAnrNWwUyk6BrajFORPDVGdnkJEiNw6kVtHjKE2nSc/9AtioHNwEDuTJqjVMIGf3NlYxvfQoesuMYGyFJHv07l9kGx7B8Xr1yiMXkFZFqZWX8qsBYVrV2np20pn/wAtvZvInzmNpDOIMUuMpkPfW9oUESzbJtfVDQpmzg4T1msorZd1jcQx08On6NjWT1N3DyhFUK81hCGL5O26i3AUJgrJda4nt6ELvzJHZWqS2HNRtr28MuOYan4Kt1gg19WNnXLwy0UsJ3Xb3DBP3TyOIgp8sp3rSbe1cevCedxyCYnjFaULQhxFVMbG6H5sF6AIqnV01izQp1ANw4ogIgmQ5xG5CZ1hZY6oVkPU6mYUY3BLxcTIvkfk1lGWQkSSu02Mrk1Po3MZ7FQaSzuYKETCECUKE0eEbn2Vam7/VOezN8YQBz5iYiLXxS0UqE7n0VMnfyLd2ky6rYNUSxsKIdPWgYkjnNy6hOYoAstasUcATi6HiFCZmqQwehkTBHjFEnHoo5RCKwV+eRavWEoaLkJYr1OZHKe9f4DK1ARBuYydziy4QIwBkST7ep1USwvtD22jMj7GzNlhyr9fxck1gVJYWoMIGkDZNpZtJ6qLDbM3rnPzwnn6Dx0m29HJzZFh7Gz2tooWqSnyPHr37KOpeyM3vv+G2q0ZnHXNKKUWEgKw5g+KCGIMtqMJqhWmTv6MiLDzyFHsbBZLKdT8siyUZWFpjc42sfPIUUSE/OkhvFIJy7LuMOw80B2c61yOsRM/ULhyid5n9rDt0GGCWg1b60QYSmE7Dv7cHFsPvsCW/QcojF7mxndfozOZu0CWBxLBdlJUJsY5d/wj4iDgqdffpOeJJ6kXiwtVucUiG3c9ztNvvIWJY349/jGViTHsVCqR9R1hH2xvfnu5aWenUhRGr2Dbmi37D7Bp7z7CapXC1VEABl58ib3vvEdzz32MHP+QC59/hs5kYJlqANSnD/bIquNVKXa/dozdrx4DoDI1iSC03N8LwMgnHzD8/rsLe1ccbasCKQXGYKKYvucPsvPlV8h1dYFSVGf+4tKXX3Dj268S1dsaxPxLoEUReR6W45BpbwfAK5WIgwAnm13bK2iNryWcXA5E8MvlpLmNF5EY8/8CiTGJ0xvjQpIf21qP8w/2xHAP9b5+DgAAAABJRU5ErkJggg==" style="width:26px;height:26px;border-radius:6px;flex-shrink:0;" alt="UNAV" />
+        <div>
+          <div class="ranking-uni-name">Univ. de Navarra</div>
+          <div class="ranking-uni-city">Pamplona</div>
+        </div>
+      </div>
+      <span class="badge-ambitious" data-i18n="badge-ambitious"></span>
+    </div>
+  </div>
+  <div class="ranking-preview-note">
+    <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M8 1L2 4v4c0 3.31 2.55 6.41 6 7 3.45-.59 6-3.69 6-7V4L8 1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+    <span data-i18n="ranking-note"></span>
+  </div>
+</div>
+
+<div style="max-width:520px;margin:0 auto;padding:0 20px;">
+  <div style="background:#ffffff;border:1px solid #E0E0E0;border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.06);">
+    <div style="background:#0B8F6F;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+      <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(255,255,255,0.3);">
+        <img src="data:image/png;base64,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" alt="Julián" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:600;color:#ffffff;line-height:1.2;" data-i18n="chat-name">Julián</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.8);display:flex;align-items:center;gap:4px;">
+          <div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;flex-shrink:0;"></div>
+          <span data-i18n="chat-online"></span>
+        </div>
+      </div>
+    </div>
+    <div style="padding:16px;background:#ffffff;">
+      <div style="background:#ffffff;border:1px solid #E8E8E8;border-radius:12px;padding:14px 16px;font-size:13px;line-height:1.6;color:#0C0F0E;margin-bottom:16px;" data-i18n="chat-msg"></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;" id="chat-quick">
+        <button onclick="expandChat(this,'me')" style="display:flex;align-items:center;gap:6px;padding:9px 16px;border-radius:99px;border:1.5px solid #0B8F6F;background:#ffffff;color:#0B8F6F;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zm-5 6a5 5 0 1110 0H3z" fill="currentColor"/></svg>
+          <span data-i18n="chat-btn-me"></span>
+        </button>
+        <button onclick="expandChat(this,'child')" style="display:flex;align-items:center;gap:6px;padding:9px 16px;border-radius:99px;border:1.5px solid #0B8F6F;background:#ffffff;color:#0B8F6F;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M5.5 6a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm5 0a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1 14a4.5 4.5 0 019 0H1zm7 0a4.5 4.5 0 019 0h-9z" fill="currentColor"/></svg>
+          <span data-i18n="chat-btn-child"></span>
+        </button>
+      </div>
+      <div id="chat-input-row" style="display:none;align-items:center;gap:8px;background:#F4F4F4;border-radius:99px;padding:7px 7px 7px 14px;margin-top:12px;">
+        <input class="chat-input" type="text" data-i18n-placeholder="chat-placeholder" style="flex:1;border:none;background:transparent;font-size:13px;color:#0C0F0E;outline:none;font-family:inherit;" />
+        <button style="width:32px;height:32px;background:#0B8F6F;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M14.5 1.5L7 9M14.5 1.5L10 14l-3-5-5-3 12.5-4.5z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div id="chat-privacy" style="display:none;align-items:center;justify-content:center;gap:5px;font-size:11px;color:#B8C0BC;padding-top:12px;border-top:1px solid #EBEBEB;margin-top:12px;">
+        <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M8 1L2 4v4c0 3.31 2.55 6.41 6 7 3.45-.59 6-3.69 6-7V4L8 1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span data-i18n="chat-privacy"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:520px;margin:10px auto 0;padding:0 20px;text-align:center;">
+  <span style="font-size:12px;color:#7A8480;display:flex;align-items:center;justify-content:center;gap:6px;">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zm-5 6a5 5 0 1110 0H3z" fill="#0B8F6F"/></svg>
+    <strong style="color:#0C0F0E;" id="alumni-counter">312</strong>
+    <span data-i18n="counter-post"></span>
+  </span>
+</div>
+
+<hr class="divider">
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-title" data-i18n="how-title"></div>
+    <div class="how-step"><div class="how-num">1</div><div><div class="how-title" data-i18n="how-s1-title"></div><div class="how-body" data-i18n="how-s1-body"></div><div class="how-tag" data-i18n="how-s1-tag"></div></div></div>
+    <div class="how-step"><div class="how-num">2</div><div><div class="how-title" data-i18n="how-s2-title"></div><div class="how-body" data-i18n="how-s2-body"></div><div class="how-tag" data-i18n="how-s2-tag"></div></div></div>
+    <div class="how-step"><div class="how-num">3</div><div><div class="how-title" data-i18n="how-s3-title"></div><div class="how-body" data-i18n="how-s3-body"></div><div class="how-tag" data-i18n="how-s3-tag"></div></div></div>
+  </div>
+</section><hr class="divider">
+
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-title" data-i18n="julian-title"></div>
+    <div class="julian-wrap">
+      <div class="julian-av-wrap">
+        <div class="julian-av" style="padding:0;overflow:hidden;"><img src="data:image/png;base64,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" alt="Julián" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" /></div>
+        <div class="julian-founder" data-i18n="julian-founder"></div>
+      </div>
+      <div>
+        <div class="julian-name">Julián</div>
+        <div class="julian-role" data-i18n="julian-role"></div>
+        <div class="julian-quote" data-i18n="julian-quote"></div>
+        <div style="margin-top:20px;"><a href="#" class="btn-teal" data-i18n="julian-cta"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><hr class="divider">
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-title" data-i18n="testi-title"></div>
+    <div class="testi-stack">
+      <div class="testi">
+        <div class="testi-top"><span class="testi-flag">🇷🇺</span><div><div class="testi-name">David</div><div class="testi-from" data-i18n="testi-david-from"></div></div></div>
+        <div class="testi-q" data-i18n="testi-david-q"></div>
+        <div class="testi-result"><div class="testi-tick"><svg width="8" height="8" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>CEU San Pablo</div>
+      </div>
+      <div class="testi">
+        <div class="testi-top"><span class="testi-flag">🇧🇬</span><div><div class="testi-name">Veselina</div><div class="testi-from" data-i18n="testi-ves-from"></div></div></div>
+        <div class="testi-q" data-i18n="testi-ves-q"></div>
+        <div class="testi-result"><div class="testi-tick"><svg width="8" height="8" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span data-i18n="testi-ves-result"></span></div>
+      </div>
+      <div class="testi">
+        <div class="testi-top"><span class="testi-flag">🇮🇱</span><div><div class="testi-name">Sara</div><div class="testi-from" data-i18n="testi-sara-from"></div></div></div>
+        <div class="testi-q" data-i18n="testi-sara-q"></div>
+        <div class="testi-result"><div class="testi-tick"><svg width="8" height="8" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>UIC Barcelona</div>
+      </div>
+    </div>
+  </div>
+</section><hr class="divider">
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-title" data-i18n="faq-title"></div>
+    <div class="faq-list">
+      <details class="faq" open><summary class="faq-q"><span data-i18n="faq-q1"></span><div class="faq-plus">+</div></summary><div class="faq-a" data-i18n="faq-a1"></div></details>
+      <details class="faq"><summary class="faq-q"><span data-i18n="faq-q2"></span><div class="faq-plus">+</div></summary><div class="faq-a" data-i18n="faq-a2"></div></details>
+      <details class="faq"><summary class="faq-q"><span data-i18n="faq-q3"></span><div class="faq-plus">+</div></summary><div class="faq-a" data-i18n="faq-a3"></div></details>
+      <details class="faq"><summary class="faq-q"><span data-i18n="faq-q4"></span><div class="faq-plus">+</div></summary><div class="faq-a" data-i18n="faq-a4"></div></details>
+      <details class="faq"><summary class="faq-q"><span data-i18n="faq-q5"></span><div class="faq-plus">+</div></summary><div class="faq-a" data-i18n="faq-a5"></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="final-inner">
+    <div class="final-title" data-i18n="final-title"></div>
+    <div class="final-sub" data-i18n="final-sub"></div>
+    <div><a href="#" class="final-cta"><span data-i18n="final-cta"></span><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="final-meta">
+      <span>✓ <span data-i18n="final-m1"></span></span>
+      <span>✓ <span data-i18n="final-m2"></span></span>
+      <span>✓ <span data-i18n="final-m3"></span></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;font-size:11px;">
+    <a href="#" style="color:var(--ink-3);text-decoration:none;" data-i18n="footer-legal"></a>
+    <span style="color:var(--ink-4);">·</span>
+    <a href="#" style="color:var(--ink-3);text-decoration:none;" data-i18n="footer-privacy"></a>
+    <span style="color:var(--ink-4);">·</span>
+    <a href="#" style="color:var(--ink-3);text-decoration:none;" data-i18n="footer-cookies"></a>
+    <span style="color:var(--ink-4);">·</span>
+    <a href="#" style="color:var(--ink-3);text-decoration:none;" data-i18n="footer-terms"></a>
+  </div>
+  <div style="font-size:11px;color:var(--ink-4);">© 2026 Winners Education · <a href="https://www.winnerseducation.ai" style="color:var(--ink-3);text-decoration:none;">winnerseducation.ai</a></div>
+</footer>
+
+<script>
+const i18n={
+es:{'nav-tag':'Medicina','nav-odonto':'Odontología','nav-soon':'Pronto','nav-cta':'Descubre tus opciones','julian-cta':'Habla con Julián','counter-post':'alumnos asesorados hasta hoy','footer-legal':'Aviso legal','footer-privacy':'Política de privacidad','footer-cookies':'Política de cookies','footer-terms':'Condiciones de uso','ranking-label':'Ejemplo de resultado','badge-ambitious':'Ambiciosa','badge-achievable':'Alcanzable','badge-likely':'Probable','ranking-note':'Tu ranking estará personalizado a tu perfil','chat-scroll-hint':'Desliza para responder','hero-h1':'¿Entrar en medicina?<br><em>Descubre dónde tienes opciones reales.</em>','hero-sub':'Sea tu plan A o tu plan B — obtén un ranking personalizado de universidades privadas, ordenado por tus probabilidades de admisión.','chat-name':'Julián','chat-online':'Disponible ahora','chat-yrs':'años','chat-msg':'Hola, soy Julián.<br><br>Cuéntame tu situación y te digo en qué universidades privadas tienes más probabilidades de entrar — y por qué.<br><br>¿Buscas opciones para ti o para tu hijo/a?','chat-btn-me':'Para mí','chat-btn-child':'Para mi hijo/a','chat-placeholder':'Escribe tu mensaje…','chat-privacy':'Tu información es privada y segura. Nunca la compartimos.','outcome-ves':'Medicina en España','private-label':'Por qué universidades privadas','private-title':'No todas las rutas<br>son iguales.','private-c1-title':'Estudiantes españoles','private-c1-body':'La universidad pública depende de la nota de bachillerato y la EBAU — y no sabes el resultado hasta después del examen. La privada tiene sus propios criterios: puedes saber ahora dónde estás.','private-c2-title':'Estudiantes internacionales','private-c2-body':'Acceder a una universidad pública española siendo extranjero es muy difícil. Las privadas son la vía real — y España tiene una formación médica excelente.','private-note':'💡 Este ranking cubre exclusivamente universidades privadas de medicina en España, donde puedes evaluar tus probabilidades de admisión hoy, sin esperar a ningún examen.','how-label':'Cómo funciona','how-title':'Tus opciones<br><em>en menos de 2 minutos.</em>','how-s1-title':'Cuéntanos tu situación','how-s1-body':'Julián te hace unas preguntas básicas sobre tu perfil académico, origen y objetivos.','how-s1-tag':'Sin registro','how-s2-title':'Descubre tus opciones','how-s2-body':'Ves qué universidades son Probable, Alcanzable o Ambiciosa para ti — basado en criterio experto real.','how-s2-tag':'Gratis','how-s3-title':'Entiende el porqué','how-s3-body':'Regístrate para profundizar: por qué esas universidades, qué piden, y cuáles son tus próximos pasos.','how-s3-tag':'Con registro','julian-label':'El criterio detrás del ranking','julian-title':'<em>No es un algoritmo.</em><br>Es experiencia real.','julian-founder':'Experto','julian-role':'Experto en Medicina · Fundador de Winners','julian-quote':'"He asesorado a más de 300 alumnos de todo el mundo para entrar en medicina en España. Puedo decirte cuáles son las opciones más probables para ti — de forma gratuita."','julian-c1':'10+ años en admisiones de medicina','julian-c2':'Todas las universidades privadas cubiertas','julian-c3':'150+ alumnos admitidos','proof-label':'Trayectoria','proof-title':'Resultados que<br><em>hablan solos.</em>','proof-1':'Alumnos admitidos en universidades privadas de medicina','proof-2':'Universidades privadas en España cubiertas','proof-3':'Años de experiencia en admisiones','proof-4':'Gratuito. Sin compromiso.','testi-label':'Casos de éxito','testi-title':'De la confusión<br><em>a la admisión.</em>','testi-david-from':'Rusia · Estudiante','testi-david-q':'"No sabía en qué universidades tenía opciones reales. Winners me ayudó a centrarme en las correctas y a afrontar el proceso con un plan claro."','testi-ves-from':'Bulgaria · Madre','testi-ves-q':'"Estábamos agobiadas con tantas opciones. Con Winners todo se aclaró y en pocos días teníamos un plan concreto."','testi-ves-result':'Su hija estudia medicina en España','testi-sara-from':'Israel · Estudiante','testi-sara-q':'"Winners me ayudó a entender mis opciones y a priorizar lo que de verdad importaba."','faq-label':'Preguntas frecuentes','faq-title':'¿Tienes dudas?','faq-q1':'¿Es realmente gratis?','faq-a1':'Sí, completamente gratis. Recibes tu ranking sin pagar nada ni introducir datos de pago.','faq-q2':'¿Qué gano registrándome?','faq-a2':'El ranking inicial es gratuito y no requiere cuenta. Si te registras, puedes profundizar en el porqué de cada recomendación, seguir chateando con Julián para afinar tu perfil, y acceder al repositorio de información de Winners — con datos detallados de cada universidad privada de medicina en España.','faq-q3':'¿Cuánto tiempo tarda?','faq-a3':'El ranking inicial son 5 preguntas — menos de 2 minutos. Una vez registrado, puedes chatear todo el tiempo que necesites para aclarar tus dudas.','faq-q4':'¿En qué se basan los resultados?','faq-a4':'El ranking no bebe de datos genéricos. Se basa en la experiencia real de Julián asesorando a cientos de candidatos y familias durante años — conociendo de primera mano los criterios, los procesos y los perfiles que cada universidad valora.','faq-q5':'¿Por qué solo universidades privadas?','faq-a5':'Entrar en una pública depende de la nota de bachillerato y la EBAU — no puedes saber tu resultado hasta después del examen. Las privadas tienen sus propios criterios, lo que nos permite darte una evaluación real ahora mismo.','final-title':'Empieza ya.','final-sub':'','final-cta':'Descubre tus opciones','final-m1':'Gratis','final-m2':'Menos de 2 minutos','final-m3':'Sin compromiso'},
+fr:{'nav-tag':'Médecine','nav-odonto':'Odontologie','nav-soon':'Bientôt','nav-cta':'Découvre tes options','julian-cta':'Parler à Julián','counter-post':'étudiants conseillés à ce jour','footer-legal':'Mentions légales','footer-privacy':'Politique de confidentialité','footer-cookies':'Politique de cookies','footer-terms':'Conditions d\'utilisation','ranking-label':'Exemple de résultat','badge-ambitious':'Ambitieuse','badge-achievable':'Accessible','badge-likely':'Probable','ranking-note':'Votre classement sera personnalisé à votre profil','chat-scroll-hint':'Glissez pour répondre','hero-h1':'Médecine en Espagne ?<br><em>Découvrez où vous avez de vraies chances.</em>','hero-sub':'Que ce soit votre plan A ou plan B — obtenez un classement personnalisé des universités privées, ordonné par vos chances réelles d\'admission.','chat-name':'Julian','chat-online':'Disponible maintenant','chat-yrs':'ans','chat-msg':'Bonjour, je suis Julian.<br><br>Parlez-moi de votre situation et je vous dirai dans quelles universités privées vous avez le plus de chances — et pourquoi.<br><br>Vous cherchez des options pour vous ou pour votre fils/fille ?','chat-btn-me':'Pour moi','chat-btn-child':'Pour mon fils/ma fille','chat-placeholder':'Écrivez votre message…','chat-privacy':'Vos informations sont privées et sécurisées. Jamais partagées.','outcome-ves':'Médecine en Espagne','private-label':'Pourquoi les universités privées','private-title':'Toutes les voies<br>ne sont pas égales.','private-c1-title':'Étudiants espagnols','private-c1-body':'L\'université publique dépend de la note de bachillerato et de l\'EBAU — vous ne connaissez le résultat qu\'après l\'examen. Le privé a ses propres critères : vous pouvez savoir maintenant où vous en êtes.','private-c2-title':'Étudiants internationaux','private-c2-body':'Accéder à une université publique espagnole en tant qu\'étranger est très difficile. Les universités privées sont la voie réelle — et l\'Espagne offre une excellente formation médicale.','private-note':'💡 Ce classement couvre exclusivement les universités privées de médecine en Espagne, où vous pouvez évaluer vos chances d\'admission dès aujourd\'hui, sans attendre aucun examen.','how-label':'Comment ça marche','how-title':'Vos options<br><em>en moins de 2 minutes.</em>','how-s1-title':'Parlez-nous de votre situation','how-s1-body':'Julian vous pose quelques questions simples sur votre profil académique, votre origine et vos objectifs.','how-s1-tag':'Sans inscription','how-s2-title':'Recevez votre classement','how-s2-body':'Voyez quelles universités sont Probable, Accessible ou Ambitieuse pour vous — basé sur une expertise réelle.','how-s2-tag':'Gratuit','how-s3-title':'Comprenez le pourquoi','how-s3-body':'Inscrivez-vous pour aller plus loin : pourquoi ces universités, ce qu\'elles recherchent, et vos prochaines étapes.','how-s3-tag':'Avec inscription','julian-label':'L\'expertise derrière le classement','julian-title':'<em>Pas un algorithme.</em><br>Une vraie expérience.','julian-founder':'Expert','julian-role':'Expert en Médecine · Fondateur de Winners','julian-quote':'"J\'aide des étudiants depuis des années à comprendre où ils ont de vraies chances. Le classement que vous voyez ici reflète ce même jugement — adapté à votre profil."','julian-c1':'10+ ans en admissions de médecine','julian-c2':'Toutes les universités privées couvertes','julian-c3':'150+ étudiants admis','proof-label':'Bilan','proof-title':'Des résultats qui<br><em>parlent d\'eux-mêmes.</em>','proof-1':'Étudiants admis dans des universités privées de médecine','proof-2':'Universités privées en Espagne couvertes','proof-3':'Années d\'expertise en admissions','proof-4':'Gratuit. Sans engagement.','testi-label':'Témoignages','testi-title':'De la confusion<br><em>à l\'admission.</em>','testi-david-from':'Russie · Étudiant','testi-david-q':'"Je ne savais pas dans quelles universités j\'avais de vraies chances. Winners m\'a aidé à me concentrer sur les bonnes et à aborder le processus avec un plan clair."','testi-ves-from':'Bulgarie · Mère','testi-ves-q':'"Nous étions submergées par toutes les options. Winners a tout clarifié et en quelques jours nous avions un plan concret."','testi-ves-result':'Sa fille étudie la médecine en Espagne','testi-sara-from':'Israël · Étudiante','testi-sara-q':'"Winners m\'a aidée à comprendre mes options et à me concentrer sur ce qui comptait vraiment."','faq-label':'Questions fréquentes','faq-title':'Des questions ?','faq-q1':'Est-ce vraiment gratuit ?','faq-a1':'Oui, entièrement gratuit. Vous recevez votre classement sans rien payer ni saisir de données bancaires.','faq-q2':'Pourquoi dois-je m\'inscrire ?','faq-a2':'Le classement initial ne nécessite pas de compte. Nous vous demandons une inscription uniquement si vous souhaitez approfondir : pourquoi ces universités, ce qu\'elles valorisent, et quelles étapes suivre.','faq-q3':'Combien de temps cela prend-il ?','faq-a3':'Moins de 2 minutes pour voir votre classement. Vous pouvez ensuite approfondir autant que vous le souhaitez.','faq-q4':'Quelle est la fiabilité des résultats ?','faq-a4':'Le classement est basé sur une expertise réelle — pas un algorithme générique. Il combine la connaissance de chaque université avec l\'expérience de centaines de processus d\'admission.','faq-q5':'Pourquoi seulement les universités privées ?','faq-a5':'Intégrer une université publique dépend de la note de bachillerato et de l\'EBAU — vous ne connaissez le résultat qu\'après l\'examen. Les universités privées ont leurs propres critères, ce qui nous permet de vous donner une évaluation réelle dès maintenant.','final-title':'Commence maintenant.','final-sub':'','final-cta':'Découvre tes options','final-m1':'Gratuit','final-m2':'Moins de 2 minutes','final-m3':'Sans engagement'},
+en:{'nav-tag':'Medicine','nav-odonto':'Dentistry','nav-soon':'Coming soon','nav-cta':'Discover your options','julian-cta':'Talk to Julián','counter-post':'students advised to date','footer-legal':'Legal notice','footer-privacy':'Privacy policy','footer-cookies':'Cookie policy','footer-terms':'Terms of use','ranking-label':'Example result','badge-ambitious':'Ambitious','badge-achievable':'Achievable','badge-likely':'Likely','ranking-note':'Your ranking will be personalised to your profile','chat-scroll-hint':'Scroll to reply','hero-h1':'Medicine in Spain?<br><em>Find out where you have real options.</em>','hero-sub':'Whether it\'s your Plan A or Plan B — get a personalised ranking of private medical schools, ordered by your real chances of admission.','chat-name':'Julian','chat-online':'Available now','chat-yrs':'yrs','chat-msg':'Hi, I\'m Julian.<br><br>Tell me about your situation and I\'ll show you which private medical schools in Spain you have the best chances at — and why.<br><br>Are you looking for options for yourself, or for your son/daughter?','chat-btn-me':'For me','chat-btn-child':'For my son/daughter','chat-placeholder':'Type your message…','chat-privacy':'Your information is private and secure. Never shared.','outcome-ves':'Medicine in Spain','private-label':'Why private universities','private-title':'Not all routes<br>are equal.','private-c1-title':'Spanish students','private-c1-body':'Public university depends on your bachillerato grade and EBAU score — you won\'t know until after the exam. Private universities have their own criteria: you can know where you stand right now.','private-c2-title':'International students','private-c2-body':'Getting into a Spanish public university as a foreign student is very difficult. Private universities are the real route — and Spain offers excellent medical training.','private-note':'💡 This ranking covers only private medical universities in Spain, where you can assess your admission chances today — without waiting for any exam.','how-label':'How it works','how-title':'Your options<br><em>in under 2 minutes.</em>','how-s1-title':'Tell us your situation','how-s1-body':'Julian asks a few basic questions about your academic profile, background, and goals.','how-s1-tag':'No registration','how-s2-title':'Get your ranking','how-s2-body':'See which universities are Likely, Achievable, or Ambitious for you — based on real expert criteria, not a generic algorithm.','how-s2-tag':'Free','how-s3-title':'Understand the why','how-s3-body':'Register to go deeper: why those universities, what they look for, and what your next steps should be.','how-s3-tag':'With registration','julian-label':'The expertise behind the ranking','julian-title':'<em>Not an algorithm.</em><br>Real expertise.','julian-founder':'Expert','julian-role':'Medicine Expert · Founder of Winners','julian-quote':'"I\'ve spent years helping students understand where they genuinely have a shot. The ranking you see here reflects that same judgement — tailored to your profile."','julian-c1':'10+ years in medical school admissions','julian-c2':'Every private university covered','julian-c3':'150+ students admitted','proof-label':'Track record','proof-title':'Results that<br><em>speak for themselves.</em>','proof-1':'Students admitted to private medical schools in Spain','proof-2':'Private medical schools in Spain covered','proof-3':'Years of admissions expertise','proof-4':'Free. No commitment.','testi-label':'Student success stories','testi-title':'From confusion<br><em>to admission.</em>','testi-david-from':'Russia · Student','testi-david-q':'"I didn\'t know which universities I had a real chance at. Winners helped me focus on the right ones and tackle the process with a clear plan."','testi-ves-from':'Bulgaria · Parent','testi-ves-q':'"We were overwhelmed by all the options. Winners made everything clear and within days we had a concrete plan."','testi-ves-result':'Daughter studying medicine in Spain','testi-sara-from':'Israel · Student','testi-sara-q':'"Winners helped me understand my options and focus on what really mattered."','faq-label':'FAQ','faq-title':'Any questions?','faq-q1':'Is it really free?','faq-a1':'Yes, completely free. You get your probability ranking without paying anything or entering payment details.','faq-q2':'Why do I need to register?','faq-a2':'The initial ranking requires no account. We only ask for registration if you want to go deeper: why those universities, what they value, and what steps to take next.','faq-q3':'How long does it take?','faq-a3':'Under 2 minutes to see your ranking. You can then explore as deeply as you want.','faq-q4':'How reliable are the results?','faq-a4':'The ranking is based on real expert criteria — not a generic algorithm. It combines in-depth knowledge of each university\'s admissions process with insights from hundreds of real applications.','faq-q5':'Why only private universities?','faq-a5':'Getting into a Spanish public medical school depends on your bachillerato grade and EBAU score — and you won\'t know that result until after the exam. Private universities have their own admission criteria, which means we can give you a real assessment right now.','final-title':'Start now.','final-sub':'','final-cta':'Discover your options','final-m1':'Free','final-m2':'Under 2 minutes','final-m3':'No commitment'}
+};
+
+function expandChat(btn, choice) {
+  // Style the chosen button as selected
+  document.querySelectorAll('.chat-qbtn').forEach(b => {
+    b.style.opacity = '0.4';
+    b.style.pointerEvents = 'none';
+  });
+  btn.style.opacity = '1';
+  btn.style.background = 'var(--teal)';
+  btn.style.color = '#fff';
+  btn.style.borderColor = 'var(--teal)';
+
+  // Add spacing and show input
+  document.querySelector('.chat-quick').classList.add('answered');
+  document.querySelector('.chat-input-row').classList.add('visible');
+  document.querySelector('.chat-privacy').classList.add('visible');
+
+  // Focus the input and scroll to it smoothly
+  setTimeout(() => {
+    const input = document.querySelector('.chat-input');
+    input.focus();
+    input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 150);
+}
+
+function toggleGradeDD(){
+  const menu = document.getElementById('gradeMenu');
+  const chevron = document.getElementById('gradeChevron');
+  const open = menu.style.display === 'block';
+  menu.style.display = open ? 'none' : 'block';
+  chevron.style.transform = open ? '' : 'rotate(180deg)';
+  document.getElementById('langMenu').style.display = 'none';
+  document.getElementById('langChevron').style.transform = '';
+}
+document.addEventListener('click', function(e){
+  if(!e.target.closest('#gradeDropdown')){
+    const m = document.getElementById('gradeMenu');
+    if(m) m.style.display = 'none';
+    const c = document.getElementById('gradeChevron');
+    if(c) c.style.transform = '';
+  }
+});
+function toggleLangDD(){
+  const menu = document.getElementById('langMenu');
+  const chevron = document.getElementById('langChevron');
+  const open = menu.style.display === 'block';
+  menu.style.display = open ? 'none' : 'block';
+  chevron.style.transform = open ? '' : 'rotate(180deg)';
+}
+function selectLang(lang, flag, code){
+  setLang(lang);
+  document.getElementById('langFlag').textContent = flag;
+  document.getElementById('langCode').textContent = code;
+  document.getElementById('langMenu').style.display = 'none';
+  document.getElementById('langChevron').style.transform = '';
+  ['Es','Fr','En'].forEach(l => document.getElementById('check'+l).style.display = 'none');
+  document.getElementById('check'+code.charAt(0)+code.charAt(1).toLowerCase()).style.display = 'inline';
+}
+document.addEventListener('click', function(e){
+  if(!e.target.closest('#langDropdown')){
+    const m = document.getElementById('langMenu');
+    if(m) m.style.display = 'none';
+    const c = document.getElementById('langChevron');
+    if(c) c.style.transform = '';
+  }
+});
+function setLang(lang){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.getAttribute('onclick')===`setLang('${lang}')`));
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(i18n[lang][k]!==undefined)el.innerHTML=i18n[lang][k];});
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{const k=el.getAttribute('data-i18n-placeholder');if(i18n[lang][k]!==undefined)el.placeholder=i18n[lang][k];});
+  const titles={es:'Winners — Medicina en España',fr:'Winners — Médecine en Espagne',en:'Winners — Medicine in Spain'};
+  document.title=titles[lang];
+}
+setLang('es');
+let alumniCount = 312;
+const counterEl = document.getElementById('alumni-counter');
+setInterval(() => {
+  if(Math.random() > 0.75){ alumniCount++; if(counterEl) counterEl.textContent = alumniCount; }
+}, 4000);
+</script>
+</body>
+</html>
