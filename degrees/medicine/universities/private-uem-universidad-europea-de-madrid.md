@@ -7,27 +7,17 @@ subtype: private
 
 name: Universidad Europea de Madrid
 short_name: UEM
-official_website: NULL
 
 degree: Medicine
-country: spain
-currency: EUR
 
-last_updated: "2026-08-24"
+last_update: 2026-05-27
 
-entry_year: "2027"
+valid_for_intake: 2026-2027
 
 location:
   city: Villaviciosa de Odón
   region: Comunidad de Madrid
   country: Spain
-
-campus:
-  address: NULL
-  lat: NULL
-  lng: NULL
-  district: NULL
-  commute_from_centre: NULL
 
 strategic_tags:
   - academic_record_heavy
@@ -39,42 +29,6 @@ strategic_tags:
   - international_friendly
   - strong_clinical_exposure
   - no_academic_exam
-
-admission_type: academic_record
-# Inference: exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
-
-accepts_vocational: true
-accepts_graduates: NULL
-accepts_over_25: NULL
-accepts_international_curricula: true
-spanish_level: B2
-english_level: NULL
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 90
-    eliminatory: false
-  - factor: language_test
-    weight_pct: 10
-    eliminatory: false
-  - factor: competency_test
-    weight_pct: 0
-    eliminatory: true
-# Derive from evaluation_model. factor: exam|academic_record|interview|psychometric|competency_test|language_test
-# weight_pct: 0-100; 0 = present but non-scoring. eliminatory: true = can block regardless of score
-
-seats: 200
-minimum_grade: PENDING_CONFIRMATION
-admitted_grade_range: "8.56–8.95"
-
-teaching_hospital: NULL
-clinical_practice_start: NULL
-group_size: NULL
-teaching_language: Spanish
-double_degrees: []
-distinctive_trait: NULL
-applicants_per_seat: PENDING_CONFIRMATION
-rankings: []
 
 admission:
   intake_month: September
@@ -110,41 +64,6 @@ admission:
 
   exam_required: false # No Biology/Chemistry academic exam; English test and competencies test are required
   interview_required: false
-
-sittings:
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-
-exam_format:
-  question_count: NULL
-  subjects:
-    - name: NULL
-      weight_pct: NULL
-  penalty: NULL
-  duration_min: NULL
-  language: NULL
-
-deposit:
-  amount: 3970
-  deadline_days: 5
-  refundable: false
-  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -447,42 +366,6 @@ programs:
                 Spanish. This is eliminatory in addition to weighted: candidates who
                 fail to demonstrate B2 level are automatically eliminated regardless
                 of total score. Native Spanish speakers do not sit this test.
-
-pricing:
-  tuition_year1: NULL
-  tuition_year1_non_eu: NULL
-  annual_increase_pct: NULL
-  price_per_ects: NULL
-  non_tuition_fees:
-    - concept: "Tasa de examen de admisión"
-      amount: 150
-      frequency: once
-    - concept: "Reserva de plaza"
-      amount: 3200
-      frequency: once
-    - concept: "Apertura de expediente"
-      amount: 770
-      frequency: once
-
-scholarships:
-  - name: NULL
-    amount_or_pct: NULL
-    criteria: NULL
-    deadline: NULL
-    stackable: NULL
-
-sources:
-  tuition: NULL
-  seats: NULL
-  calendar: NULL
-  scholarships: NULL
-
-residence:
-  own_residence: true
-  location: "Villaviciosa de Odón"
-  price_min: NULL
-  price_max: NULL
-  first_year_place: NULL
 ---
 # Universidad Europea de Madrid
 

@@ -5,14 +5,11 @@ subtype: private
 
 name: "Grado en Medicina — UCAM (Universidad Católica San Antonio de Murcia)"
 short_name: UCAM
-official_website: "https://www.ucam.edu/estudios/grados/medicina-presencial"
 
 degree: Medicine
-country: spain
-currency: EUR
 
-last_updated: "2026-08-20"
-entry_year: "2027"
+last_update: "2026-05-27"
+valid_for_intake: "2026-2027"
 
 institution_type: universidad_privada
 religious_affiliation: Catholic
@@ -26,13 +23,6 @@ location:
   region: "Región de Murcia"
   country: Spain
 
-campus:
-  address: NULL
-  lat: NULL
-  lng: NULL
-  district: NULL
-  commute_from_centre: NULL
-
 strategic_tags:
   - core_option
   - medium_competitiveness
@@ -42,36 +32,6 @@ strategic_tags:
   - strong_clinical_exposure
   - academic_exam_required
   - no_academic_exam
-
-admission_type: academic_record  # No internal university exam; selection based on external PAU/EBAU score only
-accepts_vocational: NULL
-accepts_graduates: NULL         # UCAM has a traslado_de_expediente pathway — set to NULL pending confirmation
-accepts_over_25: NULL
-accepts_international_curricula: NULL
-spanish_level: NULL
-english_level: NULL
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 60
-    eliminatory: NULL
-  - factor: exam
-    weight_pct: 40
-    eliminatory: NULL
-  # Note: the 60/40 formula refers to the PAU external exam components (NMB 0.6 + CFG 0.4), not an internal exam
-
-seats: 90                       # from admissions_statistics.seats
-minimum_grade: 11.00            # from academic_record.minimum_requirement.minimum_grade
-admitted_grade_range: NULL
-
-teaching_hospital: "Hospital La Vega (Murcia)"  # from clinical_training.primary_hospital_murcia
-clinical_practice_start: 3                       # from clinical_training.clinical_start_year
-group_size: NULL
-teaching_language: es
-double_degrees: []
-distinctive_trait: NULL
-applicants_per_seat: NULL
-rankings: []
 
 admission:
   intake_month: September
@@ -95,29 +55,6 @@ admission:
 
   exam_required: false # Relies on external EBAU; no internal university exam
   interview_required: false
-
-sittings:
-  - date: NULL                  # UCAM uses external PAU/EBAU; no separate exam date from the university
-    registration_deadline: "2026-07-03"  # from rounds[0].application_deadline
-    results_date: "2026-07-08"           # from rounds[0].results_date
-    deposit_deadline: NULL
-    mode: NULL
-    location: NULL
-
-exam_format:
-  question_count: NULL
-  subjects:
-    - name: NULL
-      weight_pct: NULL
-  penalty: NULL
-  duration_min: NULL
-  language: NULL
-
-deposit:
-  amount: NULL                  # ANNUAL_UPDATE_REQUIRED
-  deadline_days: NULL
-  refundable: NULL
-  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -169,78 +106,18 @@ clinical_training:
   clinical_start_year: 3 # Clinical subject content (simulation-based) from Y3; formal PE hospital rotations in Y6
   pe_start_year: 6
 
-residence:
-  own_residence: NULL
-  location: NULL
-  price_min: NULL
-  price_max: NULL
-  first_year_place: NULL
-
 accreditation:
   aneca_verified: true
   wfme_accredited: PENDING_CONFIRMATION
 
 pricing:
-  tuition_year1: 14200          # was annual_teaching_fees_eu — ANNUAL_UPDATE_REQUIRED
-  tuition_year1_non_eu: 18900   # was annual_teaching_fees_non_eu — ANNUAL_UPDATE_REQUIRED
-  annual_increase_pct: NULL
-  price_per_ects: 236.67        # ANNUAL_UPDATE_REQUIRED
-  non_tuition_fees:
-    - concept: "Preinscripción"
-      amount: 275
-      frequency: once           # Non-refundable, not deductible from tuition
-    - concept: "Apertura de expediente"
-      amount: 450
-      frequency: once
-    - concept: "Seguro escolar"
-      amount: 96.12
-      frequency: annual
-  payment_options:
-    instalments_available: false
-    instalment_options: "Instalment plan NOT AVAILABLE for Medicine at Murcia/Cartagena campuses. Available at Madrid campus only. External bank financing: CaixaBank 10-month 0% interest plan (TAE 9.29%); Banco Sabadell, Banco Santander, Caja Rural, Cajamar, BBVA also available for self-arranged financing."
-
-scholarships:
-  - name: "Beca Mérito Académico — Tramo 1"
-    amount_or_pct: "10%"
-    criteria: "Nota de admisión ≥ 11.00 y < 11.50 (o equivalente en bachillerato extranjero)"
-    deadline: NULL
-    stackable: NULL
-  - name: "Beca Mérito Académico — Tramo 2"
-    amount_or_pct: "15%"
-    criteria: "Nota de admisión ≥ 11.50 y < 12.00"
-    deadline: NULL
-    stackable: NULL
-  - name: "Beca Mérito Académico — Tramo 3"
-    amount_or_pct: "20%"
-    criteria: "Nota de admisión ≥ 12.00 y < 12.50"
-    deadline: NULL
-    stackable: NULL
-  - name: "Beca Mérito Académico — Tramo 4"
-    amount_or_pct: "30%"
-    criteria: "Nota de admisión ≥ 12.50 y < 13.00"
-    deadline: NULL
-    stackable: NULL
-  - name: "Beca Mérito Académico — Tramo 5"
-    amount_or_pct: "50%"
-    criteria: "Nota de admisión ≥ 13.00"
-    deadline: NULL
-    stackable: NULL
-  - name: "Programa Deportistas de Alto Nivel"
-    amount_or_pct: "50%"
-    criteria: "Deportista de Alto Nivel (DAN) certificado. Aplica solo al primer año."
-    deadline: NULL
-    stackable: NULL
-  - name: "Bonificación Familia"
-    amount_or_pct: "25% segundo miembro; 30% tercer miembro y siguientes"
-    criteria: "Segundo o posterior miembro de la misma familia matriculado simultáneamente en UCAM en cualquier titulación presencial de grado"
-    deadline: NULL
-    stackable: NULL
-
-sources:
-  tuition: "https://www.ucam.edu/estudios/grados/medicina-presencial"
-  seats: NULL
-  calendar: NULL
-  scholarships: "https://www.ucam.edu/servicios/becas"
+  preadmission_fee: NULL # ANNUAL_UPDATE_REQUIRED
+  reservation_fee: NULL # ANNUAL_UPDATE_REQUIRED
+  annual_teaching_fees_eu: 14200 # ANNUAL_UPDATE_REQUIRED
+  annual_teaching_fees_non_eu: 18900 # ANNUAL_UPDATE_REQUIRED
+  price_per_ects: 236.67 # ANNUAL_UPDATE_REQUIRED
+  total_degree_eu: ANNUAL_UPDATE_REQUIRED
+  total_degree_non_eu: ANNUAL_UPDATE_REQUIRED
 
 mir_outcomes:
   pass_rate: "98%"
@@ -252,10 +129,6 @@ contact:
   website_murcia: "https://www.ucam.edu/estudios/grados/medicina-presencial"
   website_cartagena: "https://www.ucam.edu/cartagena/grados/medicina-presencial"
   admissions_phone: NULL # ANNUAL_UPDATE_REQUIRED
-  scholarships_office: "https://www.ucam.edu/servicios/becas"
-  sports_service_email: "deportes@ucam.edu"
-  sports_service_phone: "+34 968 27 88 70"
-  medicine_sports_tutor: "Lorenzo Dorado Jara — ldorado@ucam.edu"
 
 dean: NULL # ANNUAL_UPDATE_REQUIRED
 
@@ -729,93 +602,29 @@ For international students whose secondary education is equivalent to Spanish ba
 
 | Cost Item | Amount | Notes |
 |---|---|---|
-| Annual teaching fee (EU students) | 14,200.00 EUR | ANNUAL_UPDATE_REQUIRED |
-| Annual teaching fee (non-EU students) | 18,900.00 EUR | ANNUAL_UPDATE_REQUIRED |
+| Annual teaching fee (EU students) | 14,200 EUR | ANNUAL_UPDATE_REQUIRED |
+| Annual teaching fee (non-EU students) | 18,900 EUR | ANNUAL_UPDATE_REQUIRED |
 | Price per ECTS | 236.67 EUR | ANNUAL_UPDATE_REQUIRED |
-| Preinscripción General (pre-admission fee) | 275.00 EUR | Non-refundable; not deductible from tuition. ANNUAL_UPDATE_REQUIRED |
-| Apertura de expediente (file opening fee) | 450.00 EUR | Administrative fee charged at enrolment. ANNUAL_UPDATE_REQUIRED |
-| Seguro escolar (school insurance) | 96.12 EUR | Mandatory. ANNUAL_UPDATE_REQUIRED |
-| Reserva de plaza (seat deposit) | NULL | ANNUAL_UPDATE_REQUIRED |
-| Approx. total Year 1 (EU, excl. reserva) | ~15,021.12 EUR | 14,200 + 275 + 450 + 96.12. ANNUAL_UPDATE_REQUIRED |
-| Total degree cost (EU, 6 years) | ~85,200 EUR (estimated teaching fees only) | ANNUAL_UPDATE_REQUIRED — assumes flat annual fee; excludes administrative charges |
-| Total degree cost (non-EU, 6 years) | ~113,400 EUR (estimated teaching fees only) | ANNUAL_UPDATE_REQUIRED — assumes flat annual fee |
+| Pre-admission reservation fee | NULL | ANNUAL_UPDATE_REQUIRED |
+| Enrolment/administrative fee | NULL | ANNUAL_UPDATE_REQUIRED |
+| Total degree cost (EU, 6 years) | ~85,200 EUR (estimated) | ANNUAL_UPDATE_REQUIRED — assumes flat annual fee |
+| Total degree cost (non-EU, 6 years) | ~113,400 EUR (estimated) | ANNUAL_UPDATE_REQUIRED — assumes flat annual fee |
 
 **VAT:** Services classified as educational are exempt from IVA under Spanish tax law.
 
 **Price positioning:** At 14,200 EUR/year, UCAM is among the lower-cost private Medicine degrees in Spain. For reference, comparable programs at other private universities range from approximately 14,000 to 22,000 EUR/year. The non-EU surcharge (18,900 EUR/year) is significant and should be factored in by all non-EU applicants.
 
-### Payment Options
-
-> **Important:** The UCAM instalment plan (pago fraccionado) explicitly **excludes Medicine** at the Murcia and Cartagena campuses. Medicine students must pay in full at enrolment or use external bank financing.
-
-**Option A — UCAM Instalment Plan (Pago Fraccionado UCAM)** — *Not available for Medicine at Murcia/Cartagena*
-
-Available for most Grado programmes at Murcia/Cartagena (excluding medicine, dentistry, nursing, and in-person psychology) and for all degrees at the Madrid campus. Split into 3 instalments with an additional surcharge of 275.00 EUR over the total tuition:
-
-- **1st instalment:** within 15 days of enrolment — 100% of administrative fees + 40% of academic fees
-- **2nd instalment:** by 15 December — 40% of academic fees (+ proportional share of the 275 EUR surcharge)
-- **3rd instalment:** by 15 February — 20% of academic fees (+ proportional share of the 275 EUR surcharge)
-
-Degree certificate withheld if any instalment remains unpaid.
-
-**Option B — CaixaBank Payments & Consumer Financing**
-
-Available to all UCAM students, including Medicine. UCAM's Contact Centre initiates the process after enrolment.
-
-- Undergraduate degrees: 10 monthly instalments, 0% interest (TAE 9.29%; service fee charged in first instalment). Min: 200 EUR; Max: 30,000 EUR.
-- Postgraduate programmes: 10 months (same terms) or 12–48 months (TIN 7.50%, TAE 7.76%).
-- Example for 10-month undergraduate financing of 4,100 EUR: first instalment 574 EUR (410 EUR + 164 EUR service fee); 9 × 410 EUR; total cost 4,264 EUR.
-
-**Option C — Partner Bank Financing**
-
-UCAM has financing agreements with: Banco Sabadell, Banco Santander, Caja Rural, Cajamar, and BBVA. Students must contact the chosen bank independently and arrange the loan before their enrolment date, so that funds are available at the time of formalisation.
+**Payment structure details** (fractionation options, direct debit terms): PENDING_CONFIRMATION — contact Secretaría Central directly.
 
 ---
 
 ## Scholarships and Financial Aid
 
-UCAM does not offer merit-based scholarships exclusive to Medicine. Financial support takes the form of (a) national/regional government grants, (b) institutional discounts and bonifications, and (c) athlete programme bonifications. All amounts and deadlines are ANNUAL_UPDATE_REQUIRED.
+UCAM offers a general scholarship programme across all its degrees, but specific eligibility, amounts, and deadlines applicable to Medicine students are PENDING_CONFIRMATION.
 
-### Government Scholarships
+Spanish national scholarships (MEC/Ministerio de Educación) may be partially applicable depending on income thresholds, but private university fees often exceed covered amounts. Students are advised to verify directly.
 
-**MEC General and Mobility Grants** — The Spanish Ministry of Education (Ministerio de Educación y Formación Profesional) issues annual calls for general university grants (becas de carácter general) and mobility grants applicable at UCAM. Eligibility is income- and academic-performance-based. Private university fees significantly exceed the amounts typically covered, so MEC grants serve as a partial subsidy rather than full funding. Students should apply at becaseducacion.gob.es each year. ANNUAL_UPDATE_REQUIRED.
-
-**MEC Collaboration Scholarships** — Research and departmental collaboration grants from the Ministry, available to undergraduate students with strong academic records. UCAM also runs its own Departmental Collaboration Scholarship (solicited via the campus virtual or the UCAM Scholarships Office).
-
-**Becas Séneca** — Spanish Ministry inter-university mobility programme allowing students to spend part of their degree at a different Spanish university, with credits recognised automatically. Applicability to clinical-year Medicine students is PENDING_CONFIRMATION.
-
-**Murcia Regional Government** — The Comunidad Autónoma de la Región de Murcia publishes its own scholarship and education promotion grants. See: carm.es. ANNUAL_UPDATE_REQUIRED.
-
-**International and Other Grants** — Fulbright scholarships (for US-Spain academic exchange), European Parliament internship grants, Leonardo da Vinci / Argo programme (internships in European companies for graduates), and Erasmus+ are nominally available. Applicability to Medicine degree students specifically is PENDING_CONFIRMATION.
-
-### Institutional Discounts and Bonifications
-
-The following discounts are applied directly to the academic credit fee component of tuition. They are **not cumulative** — only one discount may be applied per student per academic year. Administrative fees (preinscripción, apertura de expediente, seguro escolar) are excluded from discounts. Discounts are not retroactive and must be requested within published deadlines.
-
-| Discount Type | Amount | Eligibility | Request Period |
-|---|---|---|---|
-| Same family unit (sibling/parent studying at UCAM simultaneously) | 5% (2 members); 10% for 3rd member; +5% per additional member | Two or more members of the same household enrolled simultaneously at UCAM; applied to most recently started enrolment | 1 March – 30 April each year |
-| Large family associated with FEFN — presencial 1st year | 10% on academic credits (max 50 beneficiaries, income-ranked) | 1st-year Grado presencial students whose family is registered with the Federación Española de Familias Numerosas before course start | 1 March – 30 April each year |
-| Large family associated with FEFN — semipresencial/distance | 15% on academic credits (max 50 beneficiaries, income-ranked) | Same as above for semipresencial/distance enrolments | 1 March – 30 April each year |
-| Disability (≥ 33%) | 20% on academic credits | Students who certify a recognised disability of ≥ 33% | At enrolment |
-| Terrorism victim (family unit) | 30% on Grado credits | Students from a family unit recognised as Víctimas del Terrorismo by the Ministerio del Interior | At enrolment |
-| Practice tutor discount | 15% on one official degree | UCAM practice tutors or their direct descendants, certified as tutor in the prior academic year; limited to one student, one enrolment | At enrolment |
-
-Reimbursements (for discounts confirmed after payment) are processed in the first fortnight of the month following approval.
-
-### High-Level Athlete Programme (Programa de Deportistas de Alto Nivel UCAM)
-
-UCAM offers tuition bonifications to high-level competitive athletes who join the university's Athlete Programme. Bonification amounts are determined case-by-case by the Sports Service Technical Area after reviewing the applicant's competitive record. There is no fixed percentage published.
-
-- **Application:** via the online form at ucamdeportes.com/servicios/oferta-deportiva/curriculum-deportivo. Applicants should include full sporting history and competition results.
-- **Renewal:** required each academic year via the same form.
-- **Medicine Faculty sports tutor:** Lorenzo Dorado Jara — ldorado@ucam.edu.
-- **Attendance exemption:** the Sports Service can process attendance exemptions for theoretical subjects for registered athlete students. Contact: deportes@ucam.edu.
-- **Tel (Sports Service):** +34 968 27 88 70.
-
-### Family Bonification ("Bonificación Familiar")
-
-Distinct from the FEFN large-family discount above: UCAM offers an additional family bonification for households with more than two children studying simultaneously at UCAM. Specifics available via Secretaría Central: secretaria@ucam.edu.
+No degree-specific merit scholarship for Medicine has been identified in public UCAM communications. ANNUAL_UPDATE_REQUIRED.
 
 ---
 
@@ -898,7 +707,6 @@ Graduates receive the título oficial de Grado en Medicina, which provides autom
 - The application deadline is in early July — earlier than most other private universities whose processes typically run through September. Missing this window forecloses UCAM for that intake year.
 - For traslado de expediente applicants: contact nmatiacci@ucam.edu before 3 July to book the mandatory interview. Late contact may result in exclusion.
 - The 90-seat total is divided between Murcia and Cartagena via a single unified list. Students who do not meet their campus preference score threshold may not be offered their preferred campus.
-- Medicine students at Murcia/Cartagena cannot use the UCAM instalment payment plan (pago fraccionado). Financing must be arranged via CaixaBank or a partner bank.
 - ANNUAL_UPDATE_REQUIRED applies to all fee figures, deadlines, and score thresholds.
 
 ---
@@ -957,9 +765,3 @@ Yes — applicants indicate a preference at application. However, allocation dep
 
 **What are the application and results dates for 2026-27?**
 Applications close 3 July 2026 (cupo general). First results list published 8 July 2026. All dates are ANNUAL_UPDATE_REQUIRED.
-
-**Can I pay Medicine tuition in instalments?**
-The UCAM pago fraccionado plan is not available for Medicine at Murcia or Cartagena campuses. Financing options include: CaixaBank (10 months interest-free, TAE 9.29%; Contact Centre initiates after enrolment) and partner banks (Sabadell, Santander, Caja Rural, Cajamar, BBVA — student arranges independently before enrolment date).
-
-**Are there any scholarships or discounts available?**
-UCAM does not offer Medicine-specific merit scholarships. Available support includes: MEC general grants (income/merit-based, partial subsidy only), institutional discounts (family unit: 5–10%; disability ≥33%: 20%; terrorism victims: 30%; FEFN large family: 10–15% on 1st-year presencial; practice tutor: 15%), and the High-Level Athlete Programme (case-by-case bonification — apply via ucamdeportes.com). Discounts apply only to academic credit fees, not administrative fees, and are not cumulative.

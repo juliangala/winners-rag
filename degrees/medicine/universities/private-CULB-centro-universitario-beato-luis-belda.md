@@ -2,12 +2,8 @@
 id: culb-medicine
 name: "Grado en Medicina — Centro Universitario Beato Luis Belda (adscrito a Universidad San Pablo-CEU)"
 short_name: CULB
-official_website: "https://beatoluisbelda.es"
-degree: Medicine
-country: spain
-currency: EUR
-entry_year: "2027"
-last_updated: "2026-08-24"
+valid_for_intake: "2026-2027"
+last_updated: "2026-05-27"
 source_urls:
   - "https://beatoluisbelda.es/grado-medicina-mallorca/"
   - "https://beatoluisbelda.es/admision/admision-grado-medicina/"
@@ -23,13 +19,6 @@ location:
   campus_address: "Carrer d'Antonia Martínez Fiol, 1, Nort, 07010 Palma"
   admissions_office: "Passeig de Mallorca, 14, 07012 Palma"
   island_location: true
-
-campus:
-  address: "Carrer d'Antonia Martínez Fiol, 1, Nort, 07010 Palma"
-  lat: NULL
-  lng: NULL
-  district: NULL
-  commute_from_centre: NULL
 
 institution_type: centro_universitario_adscrito
 parent_university: Universidad San Pablo-CEU
@@ -49,36 +38,6 @@ admissions_statistics:
   typical_admitted_grade: NULL
   cutoff_score_last_year: NULL
 
-admission_type: mixed
-# exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
-
-accepts_vocational: true
-accepts_graduates: true
-accepts_over_25: NULL
-accepts_international_curricula: NULL
-spanish_level: NULL
-english_level: NULL
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 60
-    eliminatory: false
-  - factor: internal_exam
-    weight_pct: 40
-    eliminatory: false
-
-seats: 55
-minimum_grade: NULL
-admitted_grade_range: NULL
-teaching_hospital: "Juaneda Hospitales (Mallorca)"
-clinical_practice_start: 3
-group_size: 55
-teaching_language: "Spanish"
-double_degrees: []
-distinctive_trait: NULL
-applicants_per_seat: NULL
-rankings: []
-
 admission:
   status_2026_27: CLOSED
   status_note: "Both convocatorias (February and April 2026) have concluded. Enrollment from June 2026; waitlist management July 2026."
@@ -91,37 +50,6 @@ admission:
   exam_required: true
   exam_modality: "presencial_or_online"
   interview_required: false
-
-sittings:
-  - date: NULL
-    registration_deadline: NULL
-    results_date: NULL
-    deposit_deadline: NULL
-    mode: presencial_or_online
-    location: NULL
-  - date: "2026-04-18"
-    registration_deadline: NULL
-    results_date: NULL
-    deposit_deadline: NULL
-    mode: presencial_or_online
-    location: NULL
-
-exam_format:
-  question_count: NULL
-  subjects:
-    - name: "Biology and Chemistry"
-      weight_pct: NULL
-    - name: "English"
-      weight_pct: NULL
-  penalty: NULL
-  duration_min: NULL
-  language: "Spanish"
-
-deposit:
-  amount: 2900
-  deadline_days: 5
-  refundable: false
-  conditions: "Non-refundable under all circumstances, including failure to pass EBAU"
 
 programs:
   - id: culb-medicine-palma
@@ -206,13 +134,6 @@ clinical_training:
   anatomy_room: true
   research_labs: true
 
-residence:
-  own_residence: false
-  location: "Palma de Mallorca"
-  price_min: 600
-  price_max: 1400
-  first_year_place: false
-
 accreditation:
   aneca_verified: PENDING_CONFIRMATION
   aneca_note: "As of curriculum publication, the degree was still awaiting final administrative authorization ('una vez obtenidas las preceptivas autorizaciones administrativas'). Verify before enrollment."
@@ -221,65 +142,51 @@ accreditation:
   eu_recognized: true
 
 pricing:
-  tuition_year1: 17955
-  tuition_year1_non_eu: NULL
-  annual_increase_pct: NULL
-  price_per_ects: NULL
+  currency: EUR
+  reservation_fee: 2900
+  reservation_refundable: false
+  enrollment_fee_y1: 1500
+  annual_teaching_fees_y1: 17955
+  total_first_year: 22355
+  fractionation: "Teaching fees fractionable in up to 9 monthly payments"
   estimated_annual_teaching_fee_subsequent_years: PENDING_CONFIRMATION
   estimated_total_6_years: PENDING_CONFIRMATION
-  non_tuition_fees:
-    - concept: "Reservation deposit (cuota de reserva)"
-      amount: 2900
-      frequency: "one-time"
-    - concept: "Enrollment fee (matrícula)"
-      amount: 1500
-      frequency: "annual"
-  payment_options:
-    fractionation: "Teaching fees fractionable in up to 9 monthly payments"
   notes: "Price table published for Y1 only (60 ECTS). Subsequent years not published as of intake 2026-27."
 
 scholarships:
   - name: "Becas CEU Merit"
-    amount_or_pct: "Partial to full (100% for Bachillerato average ≥ 9.0)"
-    criteria: "Merit-based; Bachillerato average ≥ 8.0; renewable subject to academic performance"
-    deadline: NULL
-    stackable: false
+    type: merit
+    coverage: "Partial to full discount on teaching fees (enseñanzas)"
+    full_coverage_requirement: "Bachillerato average ≥ 9.0"
+    minimum_grade_to_apply: 8.0
+    renewable: true
+    notes: "Does not cover reservation, enrollment fee, or other administrative charges"
   - name: "Becas CEU Merit — Discapacidad"
-    amount_or_pct: "100% or 65% of teaching fees"
-    criteria: "Disability; complemented by AENE support service"
-    deadline: NULL
-    stackable: NULL
+    type: disability
+    coverage: "100% or 65% of teaching fees"
+    notes: "Complemented by AENE support service"
   - name: "Ayudas Benéfico-Docentes"
-    amount_or_pct: "Up to 7,500 EUR/year"
-    criteria: "Need-based; unemployment, income reduction, single-parent households, large families (familias numerosas)"
-    deadline: ANNUAL_UPDATE_REQUIRED
-    stackable: NULL
+    type: need_based
+    maximum_amount_eur: 7500
+    application_deadline: ANNUAL_UPDATE_REQUIRED
+    notes: "Need-based; includes families experiencing unemployment, income reduction, or single-parent households. Specific provision for large families (familias numerosas)."
   - name: "Becas CEU Merit — Deportistas"
-    amount_or_pct: "30%–100% of teaching fees"
-    criteria: "Sports excellence; elite athletes and promising young athletes"
-    deadline: NULL
-    stackable: NULL
+    type: sports
+    modalities: ["CEU Merit 100 (100% fee exemption)", "CEU Merit 65 (65% discount)", "Beca CEU Apoyo Deportistas (30% discount)"]
+    target: "Elite athletes and promising young athletes"
   - name: "Préstamo Total Carrera — Banco Santander"
-    amount_or_pct: "Up to 80,000 EUR (loan)"
-    criteria: "Banco Santander loan; up to 6-year grace period; repayment deferred until after graduation"
-    deadline: NULL
-    stackable: NULL
+    type: loan
+    maximum_amount_eur: 80000
+    grace_period_years: 6
+    notes: "Repayment deferred until after graduation"
   - name: "Préstamo Matrícula — Banco Santander"
-    amount_or_pct: "Up to 12,000 EUR/year (loan)"
-    criteria: "Banco Santander loan; repayable in up to 10 months"
-    deadline: NULL
-    stackable: NULL
+    type: loan
+    maximum_amount_eur_per_year: 12000
+    repayment_months: 10
   - name: "Seguro de Continuidad de Estudios"
-    amount_or_pct: "Tuition coverage (free)"
-    criteria: "All enrolled students; covers tuition in case of death of financially responsible parent or guardian"
-    deadline: NULL
-    stackable: NULL
-
-sources:
-  tuition: "https://beatoluisbelda.es/admision/precios/"
-  seats: NULL
-  calendar: NULL
-  scholarships: "https://beatoluisbelda.es/admision/becas-y-ayudas/"
+    type: insurance
+    cost: free
+    notes: "Covers tuition in case of death of the financially responsible parent or guardian"
 
 international:
   erasmus_plus: true

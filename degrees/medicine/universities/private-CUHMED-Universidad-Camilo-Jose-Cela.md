@@ -6,7 +6,6 @@ subtype: private
 
 name: "Grado en Medicina — Centro Universitario HM Hospitales de Ciencias de la Salud de la UCJC (CUHMED)"
 short_name: CUHMED
-official_website: "https://cuhmed.es/grados/medicina/"
 
 institution_type: centro_universitario_hospitalario
 parent_university: "Universidad Camilo José Cela (UCJC) — SEK Education Group"
@@ -15,24 +14,15 @@ year_founded_medicine: 2023
 inaugural_cohort: false
 
 degree: Medicine
-country: spain
-currency: EUR
 
-last_updated: "2026-08-24"
+last_update: "2026-05-27"
 
-entry_year: "2027"
+valid_for_intake: "2026-2027"
 
 location:
   city: Madrid
   region: Comunidad de Madrid
   country: Spain
-
-campus:
-  address: NULL
-  lat: NULL
-  lng: NULL
-  district: NULL
-  commute_from_centre: NULL
 
 strategic_tags:
   - core_option
@@ -42,40 +32,6 @@ strategic_tags:
   - strong_clinical_exposure
   - high_cost
   - early_application_advantage
-
-admission_type: mixed
-# exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed
-
-accepts_vocational: NULL
-accepts_graduates: NULL
-accepts_over_25: NULL
-accepts_international_curricula: PENDING_CONFIRMATION
-spanish_level: B2
-english_level: NULL
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 60
-    eliminatory: false
-  - factor: academic_exam
-    weight_pct: 30
-    eliminatory: false
-  - factor: psychometric_test
-    weight_pct: 10
-    eliminatory: false
-
-seats: PENDING_CONFIRMATION
-minimum_grade: NULL
-admitted_grade_range: NULL
-
-teaching_hospital: "HM Montepríncipe (Boadilla del Monte, Madrid)"
-clinical_practice_start: NULL
-group_size: NULL
-teaching_language: Spanish
-double_degrees: []
-distinctive_trait: NULL
-applicants_per_seat: NULL
-rankings: []
 
 admission:
   intake_month: September
@@ -99,31 +55,6 @@ admission:
 
   exam_required: true
   interview_required: false
-
-sittings:
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-
-exam_format:
-  question_count: NULL
-  subjects:
-    - name: Biology
-      weight_pct: NULL
-    - name: Chemistry
-      weight_pct: NULL
-  penalty: PENDING_CONFIRMATION
-  duration_min: 120
-  language: Spanish
-
-deposit:
-  amount: NULL
-  deadline_days: NULL
-  refundable: NULL
-  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -584,48 +515,21 @@ clinical_training:
   primary_hospital: "HM Montepríncipe (Boadilla del Monte, Madrid)"
   hospital_network: "Grupo HM Hospitales"
 
-residence:
-  own_residence: NULL
-  location: NULL
-  price_min: NULL
-  price_max: NULL
-  first_year_place: NULL
-
 accreditation:
   aneca_verified: true
   wfme_accredited: PENDING_CONFIRMATION
 
 pricing: # ANNUAL_UPDATE_REQUIRED
-  tuition_year1: "19,920.00"
-  tuition_year1_non_eu: NULL
-  annual_increase_pct: NULL
-  price_per_ects: "332.00"
-  non_tuition_fees:
-    - concept: "Proceso de admisión (no reembolsable)"
-      amount: "150.00"
-      frequency: once
-    - concept: "Apertura de expediente (nuevos estudiantes)"
-      amount: "300.00"
-      frequency: once
-    - concept: "Matrícula"
-      amount: "3,000.00"
-      frequency: annual
-  payment_options:
-    - description: "10 cuotas mensuales de 1,992.00 EUR"
-    - description: "Descuento por pago anticipado: 2% sobre el componente de docencia si se abona en su totalidad por adelantado"
-
-scholarships:
-  - name: NULL
-    amount_or_pct: NULL
-    criteria: NULL
-    deadline: NULL
-    stackable: NULL
-
-sources:
-  tuition: NULL
-  seats: NULL
-  calendar: NULL
-  scholarships: NULL
+  process_fee: 150
+  process_fee_refundable: false
+  enrollment_fee_new_students: 300
+  enrollment_fee_y1: 3000
+  monthly_fee: 1992
+  monthly_fee_installments: 10
+  annual_teaching_fees_y1: 19920
+  price_per_ects: 332
+  total_first_year: 23220
+  early_payment_discount: "2% reduction on docencia component if total paid upfront"
 
 contact:
   admissions_email: admisionmedicina@ucjc.edu

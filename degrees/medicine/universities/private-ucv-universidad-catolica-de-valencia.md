@@ -6,27 +6,17 @@ subtype: private
 
 name: Universidad Católica de Valencia San Vicente Mártir
 short_name: UCV
-official_website: NULL
 
 degree: Medicine
-country: spain
-currency: EUR
 
-last_updated: "2026-08-24"
+last_update: 2026-05-27
 
-entry_year: "2027"
+valid_for_intake: 2026-2027
 
 location:
   city: Valencia
   region: Comunidad Valenciana
   country: Spain
-
-campus:
-  address: NULL
-  lat: NULL
-  lng: NULL
-  district: NULL
-  commute_from_centre: NULL
 
 strategic_tags:
   - core_option
@@ -36,45 +26,6 @@ strategic_tags:
   - academic_exam_required
   - onsite_exam_required
   - high_cost
-
-admission_type: mixed
-# Inference: exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
-
-accepts_vocational: NULL
-accepts_graduates: true
-accepts_over_25: NULL
-accepts_international_curricula: PENDING_CONFIRMATION
-spanish_level: PENDING_CONFIRMATION
-english_level: NULL
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 25
-    eliminatory: true
-  - factor: exam
-    weight_pct: 40
-    eliminatory: true
-  - factor: psychometric
-    weight_pct: 10
-    eliminatory: false
-  - factor: interview
-    weight_pct: 25
-    eliminatory: true
-# Derive from evaluation_model. factor: exam|academic_record|interview|psychometric|competency_test|language_test
-# weight_pct: 0-100; 0 = present but non-scoring. eliminatory: true = can block regardless of score
-
-seats: 180
-minimum_grade: 7.0
-admitted_grade_range: PENDING_CONFIRMATION
-
-teaching_hospital: NULL
-clinical_practice_start: NULL
-group_size: NULL
-teaching_language: Spanish
-double_degrees: []
-distinctive_trait: NULL
-applicants_per_seat: PENDING_CONFIRMATION
-rankings: []
 
 admission:
   intake_month: September
@@ -98,33 +49,6 @@ admission:
 
   exam_required: true
   interview_required: true
-
-sittings:
-  - date: "2026-06-13"
-    registration_deadline: "2026-05-15"
-    results_date: PENDING_CONFIRMATION
-    deposit_deadline: PENDING_CONFIRMATION
-    mode: NULL
-    location: NULL
-
-exam_format:
-  question_count: 100
-  subjects:
-    - name: Biology
-      weight_pct: 60
-    - name: Chemistry
-      weight_pct: 30
-    - name: Physics
-      weight_pct: 10
-  penalty: NULL
-  duration_min: NULL
-  language: NULL
-
-deposit:
-  amount: NULL
-  deadline_days: NULL
-  refundable: NULL
-  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -353,36 +277,6 @@ programs:
               interview_format: oral
               delivery_mode: onsite
               notes: "Personal interview, late June. No academic subject exam for this pathway."
-
-pricing:
-  tuition_year1: 14440
-  tuition_year1_non_eu: NULL
-  annual_increase_pct: NULL
-  price_per_ects: NULL
-  non_tuition_fees:
-    - concept: "Tasa de examen de admisión"
-      amount: 50
-      frequency: once
-
-scholarships:
-  - name: NULL
-    amount_or_pct: NULL
-    criteria: NULL
-    deadline: NULL
-    stackable: NULL
-
-sources:
-  tuition: NULL
-  seats: NULL
-  calendar: NULL
-  scholarships: NULL
-
-residence:
-  own_residence: NULL
-  location: NULL
-  price_min: NULL
-  price_max: NULL
-  first_year_place: NULL
 ---
 
 # Universidad Católica de Valencia San Vicente Mártir (UCV)

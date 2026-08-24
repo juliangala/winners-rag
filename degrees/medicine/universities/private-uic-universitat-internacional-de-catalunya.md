@@ -6,27 +6,17 @@ subtype: private
 
 name: Universitat Internacional de Catalunya
 short_name: UIC
-official_website: "https://www.uic.es"
 
 degree: Medicine
-country: spain
-currency: EUR
 
-last_updated: "2026-08-24"
+last_update: 2026-05-27
 
-entry_year: "2027"
+valid_for_intake: 2026-2027
 
 location:
   city: Sant Cugat del Vallès
   region: Cataluña
   country: Spain
-
-campus:
-  address: "Josep Trueta, s/n, Edifici Hospital Universitari General de Catalunya, 08195 Sant Cugat del Vallès"
-  lat: NULL
-  lng: NULL
-  district: "Sant Cugat del Vallès"
-  commute_from_centre: "~29 min by FGC (S1/S2/S5) from Plaça Catalunya; trains every 10 min"
 
 strategic_tags:
   - core_option
@@ -38,57 +28,6 @@ strategic_tags:
   - high_cost
   - international_friendly
   - research_oriented
-
-admission_type: mixed
-# Inference:
-# - exam_required: false → academic_record
-# - exam_required: true AND academic_record is weighted → mixed
-# - exam_required: true AND academic_record NOT weighted → exam
-
-accepts_vocational: true
-accepts_graduates: true
-accepts_over_25: NULL
-accepts_international_curricula: true
-spanish_level: NULL
-english_level: NULL
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 50
-    eliminatory: false
-  - factor: exam
-    weight_pct: 25
-    eliminatory: false
-  - factor: psychometric
-    weight_pct: 25
-    eliminatory: false
-  - factor: interview
-    weight_pct: 0
-    eliminatory: false
-# FAQ confirmed: "50% nota de expediente + 50% pruebas de admisión".
-# The 50% pruebas splits internally into knowledge test (25%) + emotional aptitude test (25%),
-# with the written structured interview acting as a qualitative decimal modifier (weight_pct: 0).
-# factor values: exam | academic_record | interview | psychometric | competency_test | language_test
-# weight_pct: 0-100; 0 = present but non-scoring
-# eliminatory: true if the factor can block regardless of total score
-
-seats: 100
-minimum_grade: NULL
-admitted_grade_range: NULL
-
-teaching_hospital: "Hospital Universitari General de Catalunya (Sant Cugat del Vallès)"
-clinical_practice_start: 3
-group_size: PENDING_CONFIRMATION # Official sources confirm "grupos reducidos"; no exact figure (e.g. 25) published
-teaching_language: es+ca # Spanish and Catalan primary; some subjects in English (brochure: "castellano, catalán y algunas asignaturas en inglés")
-double_degrees: [] # No double degree with Medicine offered as of 2026
-distinctive_trait: "Campus is physically housed within the Hospital Universitari General de Catalunya building, providing on-site clinical contact from Year 1; WFME-accredited (first private Spanish Medicine degree to achieve this), enabling graduate licensure in the USA and globally; 99% MIR pass rate; >2,200 clinical practice hours; 1,000 m² advanced simulation centre."
-applicants_per_seat: 5.5 # ~550 candidates / 100 seats; confirmed in official FAQ
-rankings:
-  - body: "CYD"
-    position: 9
-    year: 2025
-    source_url: "https://www.rankingcyd.org/m_info/universidad-internacional-de-catalunya"
-    notes: "9th out of 38 Spanish universities in the Medicine field (CYD Ranking 2025). UIC's own announcement: https://www.uic.es/en/noticia/uic-barcelona-among-15-best-spanish-universities-and-excels-dentistry-nursing-and-medicine"
 
 admission:
   intake_month: September
@@ -106,40 +45,12 @@ admission:
     rounds:
       - round: 1
         application_deadline: PENDING_CONFIRMATION
-        exam_date: 2026-05-09 # ANNUAL_UPDATE_REQUIRED — confirmed in official FAQ (faqs-medicina-2026-esp.pdf)
+        exam_date: 2026-05-09 # ANNUAL_UPDATE_REQUIRED
         results_date: PENDING_CONFIRMATION # Approx. 15 business days after exam
-        deposit_deadline: PENDING_CONFIRMATION # 15 natural days from admission letter
+        deposit_deadline: PENDING_CONFIRMATION
 
   exam_required: true
   interview_required: true
-
-sittings:
-  - date: 2026-05-09
-    registration_deadline: PENDING_CONFIRMATION
-    results_date: PENDING_CONFIRMATION # ~15 business days after exam
-    deposit_deadline: PENDING_CONFIRMATION # 15 natural days from admission letter
-    mode: hybrid # Onsite (Catalonia residents) or online (outside Catalonia), same date
-    location: "Campus Sant Cugat del Vallès (onsite) / online (non-Catalonia residents)"
-
-exam_format:
-  question_count: NULL # Not published; multiple-choice (tipo test) confirmed
-  subjects:
-    - name: Biology
-      weight_pct: NULL # Weight within the 25% knowledge-test component not broken down per subject
-    - name: Chemistry
-      weight_pct: NULL
-    - name: Mathematics
-      weight_pct: NULL
-  penalty: NULL # No published penalty / negative marking information
-  duration_min: 240 # Official FAQ: "entre cuatro y cinco horas" (4–5 hours); floor is 240 min
-  duration_max_min: 300
-  language: es # Spanish primary; Catalan also possible for in-person session
-
-deposit:
-  amount: 3720 # 20% of Year 1 tuition (20% × €18,600). Source: official FAQ faqs-medicina-2026-esp.pdf
-  deadline_days: 15 # 15 días naturales from admission letter
-  refundable: false
-  conditions: "Non-refundable except if student fails bachillerato or EBAU/PAU. Source: official FAQ."
 
 academic_record:
   minimum_requirement:
@@ -195,8 +106,8 @@ programs:
       - research_oriented
 
     teaching_languages:
-      - Spanish
       - Catalan
+      - Spanish
       - English (select subjects)
 
     regional_language_possible: true
@@ -343,60 +254,6 @@ programs:
               maximum_bonus: NULL
               categories: []
               notes: NULL
-
-pricing:
-  tuition_year1: "18,600.00" # €310/ECTS × 60 ECTS; confirmed for 2025-26; ANNUAL_UPDATE_REQUIRED
-  tuition_year1_non_eu: NULL
-  annual_increase_pct: NULL
-  price_per_ects: "310.00"
-  non_tuition_fees:
-    - concept: "Tasa de examen de admisión"
-      amount: "115.00" # Source: Tasas UIC 2025-2026 PDF (https://www.uic.es/sites/default/files/2025-02/tasas_uic_2025-2026.pdf), line "Pruebas de admisión: 115 €"
-      frequency: once
-    - concept: "Reserva de plaza"
-      amount: "3,720.00" # 20% of Year 1 tuition (20% × €18,600). Source: official FAQ.
-      frequency: once
-
-scholarships:
-  - name: "Becas de Excelencia Académica de Medicina (BEA) — Fundación Nemesio Díez"
-    amount_or_pct: "100% Year 1 tuition; up to 80% Years 2–6"
-    criteria: |
-      Academic: Must have obtained 'matrícula de honor' average in Bachillerato.
-      Economic: Family income considered (limited funds available); family must pay taxes in Spain or Andorra.
-      Commitment: Must enroll in minimum 60 ECTS per year; must participate in Fundación Nemesio Díez annual event and at least 2 volunteering activities per year.
-      Renewal: Must pass all enrolled credits with average ≥8.5 to maintain full percentage; below 8.5 but passing all subjects → reduced percentage at Commission discretion.
-    deadline: PENDING_CONFIRMATION # Not published in official sources reviewed
-    stackable: PENDING_CONFIRMATION # Not specified; economic criteria suggest funds are limited
-  - name: "Becas de Excelencia Internacional"
-    amount_or_pct: NULL # Page references this scholarship but details not captured
-    criteria: NULL
-    deadline: NULL
-    stackable: NULL
-  - name: "Becas MEC (Ministerio de Educación y Ciencias) — public"
-    amount_or_pct: NULL
-    criteria: "Annual national income-threshold and academic performance criteria; ANNUAL_UPDATE_REQUIRED"
-    deadline: NULL
-    stackable: PENDING_CONFIRMATION
-  - name: "AGAUR (Agència de Gestió d'Ajuts Universitaris i de Recerca) — public"
-    amount_or_pct: NULL
-    criteria: "Annual Catalan regional grants; income and academic criteria; ANNUAL_UPDATE_REQUIRED"
-    deadline: NULL
-    stackable: PENDING_CONFIRMATION
-
-sources:
-  tuition: "https://www.uic.es/sites/default/files/2025-02/tasas_uic_2025-2026.pdf"
-  seats: "https://www.uic.es/en/estudis-uic/medicine-and-health-sciences/bachelors-degree-medicine"
-  calendar: "https://www.uic.es/es/admisiones/admisiones/proceso-de-admision-para-grados"
-  scholarships: "https://www.uic.es/es/admisiones/becas-y-ayudas/becas-para-grados-que-ofrece-uic-barcelona"
-  faq_2026: "https://www.uic.es/sites/default/files/faqs-medicina-2026-esp.pdf"
-  brochure: "https://www.uic.es/sites/default/files/folleto-medicina-esp.pdf"
-
-residence:
-  own_residence: NULL
-  location: NULL
-  price_min: NULL
-  price_max: NULL
-  first_year_place: NULL
 ---
 
 # Universitat Internacional de Catalunya (UIC Barcelona)
@@ -417,14 +274,11 @@ With approximately 550 candidates competing for 100 seats, the programme sits at
 - Exam covers biology, chemistry, and mathematics at Year 1 bachillerato level — accessible to thorough students
 - No English certificate required for admission; some subjects delivered in English
 - IB, CFGS, and university transfer pathways accepted
-- Tuition: €18,600 per year (2025-2026 confirmed; ANNUAL_UPDATE_REQUIRED); deposit = 20% of Year 1 = €3,720
-- Admission exam fee: €115
-- Beca Nemesio: 100% of Year 1, up to 80% of subsequent years for top academic performers (requires 'matrícula de honor' in Bachillerato)
-- 99% MIR pass rate; ranked 9th among 38 Spanish universities in Medicine (CYD 2025)
+- Tuition: €18,600 per year (2026-2027); subject to annual revision
+- Beca Nemesio: 100% of Year 1, up to 80% of subsequent years for top academic performers
+- 99% MIR pass rate
 - More than 2,200 hours of external clinical practice; patient contact from Year 1
 - Afternoon schedule (14:00–20:00) for theoretical-practical classes — unusual in the sector
-- Campus is physically located inside the Hospital Universitari General de Catalunya building
-- ~29 min by FGC from Plaça Catalunya (Barcelona centre); trains every 10 min
 
 ## Key Facts
 
@@ -432,29 +286,23 @@ With approximately 550 candidates competing for 100 seats, the programme sits at
 |---|---|
 | Official name | Universitat Internacional de Catalunya |
 | Short name | UIC Barcelona |
-| Location | Campus Sant Cugat del Vallès (inside Hospital Universitari General de Catalunya), Cataluña, Spain |
+| Location | Campus Sant Cugat del Vallès, Cataluña, Spain |
 | Degree | Grau en Medicina (official) |
 | Duration | 6 years (12 semesters) |
 | Total ECTS | 360 |
 | Seats | 100 |
-| Tuition Year 1 | €18,600 (€310/ECTS × 60 ECTS; 2025-26 confirmed) — ANNUAL_UPDATE_REQUIRED |
-| Admission exam fee | €115 |
-| Deposit (reserva de plaza) | €3,720 (20% of Year 1; 15 natural days to pay) |
-| Teaching languages | Spanish, Catalan (primary); some subjects in English |
-| Schedule | Theoretical-practical: afternoon (14:00–20:00); clinical practice: morning |
+| Tuition Year 1 | €18,600 (2026-2027) — ANNUAL_UPDATE_REQUIRED |
+| Teaching languages | Catalan, Spanish, English (select subjects) |
+| Schedule | Theoretical-practical: afternoon (14:00–20:00); clinical practice: variable |
 | WFME accreditation | Yes — first private Spanish Medicine degree to obtain it |
-| MIR pass rate | 99% (average 98.4% passing MIR cut-off over last 5 years) |
+| MIR pass rate | 99% |
 | Clinical practice hours | 2,200+ external hours |
 | International exam option | Yes — online for students residing outside Catalonia |
 | English required for admission | No |
-| Teaching hospital | Hospital Universitari General de Catalunya (campus on-site) |
-| Clinical rotations start | Year 3 (formal supervised rotations); practical components from Year 1 |
-| CYD Ranking 2025 (Medicine) | 9th / 38 Spanish universities |
-| Commute from Barcelona centre | ~29 min by FGC (trains every 10 min from Plaça Catalunya) |
 
 ## Program Options
 
-There is a single Medicine programme at UIC Barcelona, delivered on Campus Sant Cugat del Vallès. There is no double degree or bilingual track for Medicine; no double degree programme pairing Medicine with another field is offered. The programme is taught primarily in Catalan and Spanish, with a subset of subjects delivered in English — making the overall teaching environment trilingual in practice.
+There is a single Medicine programme at UIC Barcelona, delivered on Campus Sant Cugat del Vallès. There is no bilingual track or separate international programme. The programme is taught primarily in Catalan and Spanish, with a subset of subjects delivered in English — making the overall teaching environment trilingual in practice.
 
 Within the 100 available seats, 15 are explicitly reserved for students entering via the Via universitaria (candidates who have already started or completed another university degree). There is no separate programme for these students; they follow the same curriculum upon admission.
 
@@ -482,11 +330,11 @@ The programme is structured around integrated, competency-based learning. The cu
 
 Theoretical-practical classes run in the afternoon (approximately 14:00–20:00). Clinical practice sessions are separate and typically scheduled in the morning. This split-day structure is unusual among Spanish private medicine programmes and allows students to engage in hospital rotations in the morning from Year 3.
 
-Core pedagogical principles include: disciplinary integration across subjects, interdisciplinarity, early patient contact from Year 1, and the internalisation of research as a tool for professional and social development. The programme uses a 1,000 m² advanced simulation centre (Centro Integral de Simulación Avanzada) equipped with: ambulatory area, home-care area, surgical area, specialised and hospitalisation area (16 beds), training rooms, debriefing rooms, and video-recording facilities. ECOE (structured clinical objective examination) methodology and clinical mentorship are used throughout the practical phases. The teaching faculty combines active clinical practitioners with academics, with 290 faculty members listed across medical departments. In clinical practice, the tutor-to-student ratio is 1:1.
+Core pedagogical principles include: disciplinary integration across subjects, interdisciplinarity, early patient contact from Year 1, and the internalisation of research as a tool for professional and social development. The programme uses advanced simulation facilities, ECOE (structured clinical objective examination) methodology, and clinical mentorship throughout the practical phases. The teaching faculty combines active clinical practitioners with academics, with 290 faculty members listed across medical departments.
 
 ## Clinical Training
 
-Clinical training begins in Year 1 through structured practical components in small groups in laboratories and the simulation centre, and intensifies progressively through the degree. External clinical practice totals more than 2,200 hours. Formal supervised clinical rotations (prácticas clínicas tuteladas) begin in Year 3.
+Clinical training begins in Year 1 through structured contact activities, and intensifies progressively through the degree. External clinical practice totals more than 2,200 hours.
 
 From Years 3 to 5, clinical training is organised through credit-bearing subject rotations at approved partner centres:
 
@@ -512,28 +360,17 @@ The programme is also evaluated and accredited through AQU Catalunya, the Catala
 
 WFME recognition makes UIC a strategically relevant choice for students who anticipate international careers or are seeking to maximise optionality beyond Spain and Europe.
 
-## Rankings
-
-| Ranking | Field | Position | Year | Source |
-|---|---|---|---|---|
-| CYD | Medicine | 9th / 38 Spanish universities | 2025 | https://www.rankingcyd.org/m_info/universidad-internacional-de-catalunya |
-| CYD | Overall (institutional) | ~13th / 81 Spanish universities | 2025 | https://www.rankingcyd.org/m_info/universidad-internacional-de-catalunya |
-
-UIC also ranks among the top 5 private Spanish universities for studying Medicine per ConSalud magazine ranking, and is present in the Times Higher Education World University Rankings in the clinical and health sciences subject area.
-
 ## Admission Model
 
 The UIC Medicine admission ranking is constructed from three scored components and one qualitative modifier:
 
-**Academic record (50%):** The grade from the student's last fully completed academic year. For students currently in Year 2 of bachillerato, the Year 2 grade will be applied once the academic year ends. There is no stated minimum grade for admission — all candidates who complete the application and pay the exam fee (€115) are admitted to the exam.
+**Academic record (50%):** The grade from the student's last fully completed academic year. For students currently in Year 2 of bachillerato, the Year 2 grade will be applied once the academic year ends. There is no stated minimum grade for admission — all candidates who complete the application and pay the exam fee are admitted to the exam.
 
 **Knowledge test — Test específic de coneixements (25%):** Multiple-choice exam covering biology, chemistry, and mathematics at Year 1 bachillerato level. This is explicitly confirmed at this scope by the university. Students from non-science bachillerato tracks (social, humanistic, artistic) may still apply and sit the exam, but must have independently prepared the Year 1 science content.
 
 **Emotional aptitude test — Test d'aptituds emocionals (25%):** Multiple-choice test evaluating professional profile characteristics, including aspects of the candidate's personal history and aptitudes. Completed on the same day as the knowledge test.
 
 **Written structured interview — Entrevista escrita estructurada (qualitative modifier):** All candidates complete this on exam day. It carries no fixed percentage but can shift the final ranking score up, down, or not at all by decimal points. It functions as a tiebreaker-style modifier rather than a scored admission gate.
-
-The exam session runs approximately 09:00–13:00 (4–5 hours total) and includes all three components in sequence.
 
 The overall model type is weighted for the first three components, with the interview as a qualitative overlay. Students who underperform on the knowledge or aptitude tests cannot fully compensate through the interview; the academic record and exam components together determine 100% of the quantifiable ranking.
 
@@ -545,10 +382,10 @@ Admission pathways: Bachillerato nacional, Bachillerato internacional (IB), CFGS
 2. Receive access credentials for the admissions portal.
 3. Upload required documentation through the portal.
 4. Await validation of documents by the admissions team.
-5. Receive payment instructions for the exam fee (€115); complete payment.
+5. Receive payment instructions for the exam fee; complete payment.
 6. Sit the admission exam on the fixed date (9 May 2026 for 2026-2027 intake) — onsite at Campus Sant Cugat del Vallès for Catalonia residents; online for students residing outside Catalonia.
 7. Receive result (Admès, En espera, or No admès) approximately 15 business days after the exam, via the admissions portal.
-8. If admitted: download admission letter from the portal, pay the reservation fee (€3,720 — 20% of Year 1 tuition) within 15 natural days, and complete enrolment.
+8. If admitted: download admission letter from the portal, pay the reservation fee (equivalent to one monthly tuition instalment), and complete enrolment.
 9. The waiting list closes definitively approximately two weeks after the start of classes (late September–early October). — ANNUAL_UPDATE_REQUIRED
 
 Contact: Servei d'Informació i Admissions — 935 042 000 — Anaïs Rey (arey@uic.es)
@@ -563,7 +400,7 @@ All dates are ANNUAL_UPDATE_REQUIRED.
 | Application and document submission deadline | PENDING_CONFIRMATION |
 | Exam date | 9 May 2026 |
 | Results notification | Approx. 15 business days post-exam (late May–early June 2026) |
-| Reservation payment deadline | 15 natural days from admission letter |
+| Reservation payment deadline | PENDING_CONFIRMATION |
 | Waiting list closes | Approx. 2 weeks after start of classes (late September–early October 2026) |
 | Academic year starts | September 2026 |
 
@@ -590,28 +427,17 @@ Students should not assume that strong academic records alone are sufficient giv
 
 | Cost item | Amount | Notes |
 |---|---|---|
-| Tuition — Year 1 (2025-26 confirmed) | €18,600 | 310€/ECTS × 60 ECTS — ANNUAL_UPDATE_REQUIRED |
+| Tuition — Year 1 (2026-2027) | €18,600 | 310€/ECTS × 60 ECTS — ANNUAL_UPDATE_REQUIRED |
 | Tuition — Years 2–6 | PENDING_CONFIRMATION | Subject to annual revision; 310€/ECTS rate applied to each year's ECTS |
 | Approximate total (6 years) | ~€111,600 | Based on current rate; actual total will vary with annual revisions |
-| Admission exam fee | €115 | Payable before exam date; source: Tasas UIC 2025-2026 PDF |
-| Reservation fee (reserva de plaza) | €3,720 | 20% of Year 1 tuition; payable within 15 natural days of admission letter |
+| Reservation fee | Equivalent to one monthly instalment | Paid upon admission; non-refundable except if student fails bachillerato/EBAU/PAU |
+| Exam fee | PENDING_CONFIRMATION | Payable before exam date |
 
 **Payment financing:** UIC Barcelona has agreements with three banking partners offering student loan products: Banco Santander, CaixaBank, and BBVA. Specific loan terms (interest rates, repayment periods) depend on the individual bank product and the student's profile. No UIC-internal instalment plan structure is published; financing is managed through external banking products.
 
 ## Scholarships and Financial Aid
 
-**Becas de Excelencia Académica de Medicina (BEA) — Fundación Nemesio Díez:** UIC's flagship scholarship for Medicine, run in partnership with Fundación Nemesio Díez. Covers 100% of Year 1 tuition and up to 80% of tuition for Years 2–6.
-
-Eligibility requirements:
-- Academic: Must have achieved a 'matrícula de honor' average in Bachillerato
-- Economic: Family income is considered (limited funds available); family unit must pay taxes in Spain or Andorra
-- Commitment: Must enroll in minimum 60 ECTS per year; must participate in Fundación Nemesio Díez annual event and at least 2 volunteering activities per year
-
-Renewal: Must pass all enrolled credits with an average of 8.5/10 to maintain the full scholarship percentage. Students who pass all subjects but average below 8.5 may maintain a reduced scholarship percentage (at Scholarship Commission discretion).
-
-This is the most financially significant scholarship available and materially changes the cost profile for qualifying candidates.
-
-**Becas de Excelencia Internacional:** Referenced on the scholarships page for international-profile students; details not published at time of last review.
+**Beca Nemesio / Beca d'Excel·lència Acadèmica de Medicina (BEA):** UIC's flagship scholarship for Medicine. Covers 100% of Year 1 tuition and up to 80% of tuition for Years 2–6 for the highest-performing admitted students. Selection criteria are not fully published but are based on academic merit. This is the most financially significant scholarship available and materially changes the cost profile for candidates who qualify.
 
 **Public scholarships:** Students can access MEC (Ministerio de Educación y Ciencia) scholarships through the national public aid system, and AGAUR (Agència de Gestió d'Ajuts Universitaris i de Recerca) grants through the Catalan government system. Eligibility depends on income thresholds and academic performance criteria set annually. — ANNUAL_UPDATE_REQUIRED
 
@@ -619,19 +445,19 @@ This is the most financially significant scholarship available and materially ch
 
 ## Accommodation and Cost of Living
 
-Sant Cugat del Vallès is a well-resourced suburban town in the Barcelona metropolitan area, approximately 20 km northwest of Barcelona centre. It is connected to central Barcelona by FGC (Ferrocarrils de la Generalitat de Catalunya) train lines S1, S2, and S5, with journey times of approximately 29 minutes from Sant Cugat Centre to Plaça Catalunya. Trains run every 10 minutes during peak hours.
+Sant Cugat del Vallès is a well-resourced suburban town in the Barcelona metropolitan area, approximately 20 km northwest of Barcelona centre. It is connected to central Barcelona by FGC (Ferrocarrils de la Generalitat de Catalunya) train lines, with journey times of approximately 20–30 minutes.
 
-The UIC campus is self-contained — physically located inside the Hospital Universitari General de Catalunya building — and campus-adjacent accommodation options exist. Living costs in Sant Cugat are lower than central Barcelona but higher than inland Spanish cities. Students typically have access to shared flats in the Sant Cugat/Rubí/Terrassa corridor or commute from Barcelona.
+The UIC campus is self-contained and campus-adjacent accommodation options exist. Living costs in Sant Cugat are lower than central Barcelona but higher than inland Spanish cities. Students typically have access to shared flats in the Sant Cugat/Rubí/Terrassa corridor or commute from Barcelona.
 
 Estimated monthly living costs (accommodation + food + transport + personal): approximately €900–€1,400 depending on housing type and lifestyle. — ANNUAL_UPDATE_REQUIRED
 
-The university has a dedicated student services team and a welcome programme (jornades de benvinguda) at the start of Year 1, with a student resources guide distributed to all incoming students. UIC also participates in the Barcelona Centre Universitari (BCU), the official welcome service for those arriving to study or research in Barcelona.
+The university has a dedicated student services team and a welcome programme (jornades de benvinguda) at the start of Year 1, with a student resources guide distributed to all incoming students.
 
 ## International Exchange and Mobility Programs
 
-UIC Barcelona offers international mobility within the Medicine programme through Erasmus+ and bilateral agreements. Brochure data (2025): 11 agreements in North America (including University of California Berkeley, University of Kansas Medical Center, ITESM Mexico), 15 in Europe (including Università Campus Bio-Medico di Roma, Università degli Studi di Pavia, University of Cologne, Université Catholique de Louvain), 12 in Latin America (including Universidad de Buenos Aires, Universidad de los Andes Chile). Approximately 11% of students enrolled in formal degrees are international, from 24 different countries.
+UIC Barcelona offers international mobility within the Medicine programme through Erasmus+ and bilateral agreements. A specific set of mobility criteria applies to Medicine students (not the university-wide criteria) — students should consult the programme-specific outgoing mobility requirements document.
 
-A specific set of mobility criteria applies to Medicine students (not the university-wide criteria) — students should consult the programme-specific outgoing mobility requirements document.
+The university explicitly states that mobility in Medicine is governed by programme-specific criteria covering destinations, academic year eligibility, GPA requirements, and language certificates. Students can access a searchable database of bilateral agreements via the university website.
 
 Additionally, UIC offers participation in Berkeley Summer Sessions (University of California, Berkeley) as an extracurricular activity, providing exposure to a top-tier international academic environment outside the formal programme.
 
@@ -641,11 +467,9 @@ WFME accreditation further expands the effective mobility footprint: UIC graduat
 
 ## MIR Preparation and Professional Outcomes
 
-UIC Barcelona reports a 99% MIR (Médico Interno Residente) pass rate for its Medicine graduates — one of the highest figures publicly reported among private Spanish Medicine programmes. More precisely, the FAQ states that 98.4% on average have surpassed the MIR cut-off over the last five years, positioning UIC in first place among Spanish universities by this metric.
+UIC Barcelona reports a 99% MIR (Médico Interno Residente) pass rate for its Medicine graduates — one of the highest figures publicly reported among private Spanish Medicine programmes. This figure represents the proportion of UIC graduates who pass the national MIR entrance examination, which is the standard pathway to medical specialisation in Spain.
 
-The university also holds the highest student academic performance (rendimiento académico) of any Spanish university, with 99% of students passing all enrolled credits (Ministerio de Educación y Formación Profesional data).
-
-The university attributes these results to early integration of clinical exposure, ECOE examination methodology throughout the degree, and the integration of research skills. The MIR rate is the primary measurable proxy for programme quality in the Spanish Medicine sector.
+The university attributes this result to early integration of clinical exposure, ECOE examination methodology throughout the degree, and the integration of research skills. The MIR rate is the primary measurable proxy for programme quality in the Spanish Medicine sector.
 
 Published specialisation outcomes (which specialties UIC graduates match to, and at what ranking positions) are not publicly available. — PENDING_CONFIRMATION
 
@@ -661,7 +485,7 @@ Students for whom WFME accreditation is strategically important — particularly
 
 Students who appreciate a research-integrated environment, a structured progression into clinical practice from Year 1, and access to a broad network of metropolitan Barcelona clinical partners.
 
-Students targeting the Beca Nemesio who have the academic profile to qualify (matrícula de honor average in Bachillerato): the scholarship significantly changes the cost-benefit calculation for high-performing candidates.
+Students targeting the Beca Nemesio who have the academic profile to qualify: the scholarship significantly changes the cost-benefit calculation for high-performing candidates.
 
 ### Less Suitable For
 
@@ -685,22 +509,20 @@ Students on a very tight budget who cannot access either the Beca Nemesio or ban
 
 **Single exam date per cycle.** There is no second call or supplementary exam session. If a candidate cannot sit the exam on the designated date due to illness, conflict, or logistical failure, they lose the entire admission cycle. There is no confirmed policy on missed exam substitution.
 
-**Beca Nemesio competition.** The scholarship is highly attractive but requires a 'matrícula de honor' average in Bachillerato and is subject to available funds. Economic criteria also apply. Applicants should not build their financial plan around receiving it without confirmed selection criteria and offer.
+**Beca Nemesio competition.** The scholarship is highly attractive but covers only a subset of admitted students. The percentage of students who receive the Beca Nemesio is not published. Applicants should not build their financial plan around receiving it without confirmed selection criteria and offer.
 
-**Reservation non-refundability.** The reservation fee (€3,720 — 20% of Year 1 tuition) is only refundable if the student fails bachillerato or EBAU/PAU. Students who change their mind after paying the reservation, or who are offered a preferred alternative, will lose the reservation payment.
+**Reservation non-refundability.** The reservation fee (one monthly instalment) is only refundable if the student fails bachillerato or EBAU/PAU. Students who change their mind after paying the reservation, or who are offered a preferred alternative, will lose the reservation payment.
 
 ## Important Notes
 
 - The 2026-2027 admission exam date is 9 May 2026. — ANNUAL_UPDATE_REQUIRED
 - Students residing in Catalonia sit the exam onsite at Campus Sant Cugat del Vallès; students outside Catalonia may sit online.
 - 15 of the 100 seats are reserved for the Via universitaria pathway (students who have started or completed another university degree).
-- No minimum academic grade is required to access the exam — all applicants who complete documentation and pay the exam fee (€115) are admitted to the test.
+- No minimum academic grade is required to access the exam — all applicants who complete documentation and pay the exam fee are admitted to the test.
 - The written structured interview has no fixed score weight but can shift the final ranking by decimal points.
 - No English certificate is required for admission. Some subjects are taught in English; Spanish and Catalan are the primary instructional languages.
 - The waiting list for admitted students closes approximately two weeks after the start of classes (late September–early October). — ANNUAL_UPDATE_REQUIRED
-- Reservation fee (€3,720) is non-refundable except in case of failure to pass bachillerato or EBAU/PAU.
-- The campus address is: Josep Trueta, s/n, Edificio Hospital Universitari General de Catalunya, 08195 Sant Cugat del Vallès.
-- Commute from Barcelona city centre (Plaça Catalunya): ~29 min by FGC; trains every 10 min.
+- Reservation fee is non-refundable except in case of failure to pass bachillerato or EBAU/PAU.
 
 ## Key Insight
 
@@ -712,9 +534,9 @@ At the tactical level, UIC's exam is among the most accessible in scope within t
 
 UIC Barcelona is a strong and strategically differentiated private Medicine programme for students who value clinical breadth, research integration, and — most importantly — WFME-enabled global professional optionality. It is not the cheapest option, and the Catalan teaching environment and afternoon schedule add friction for certain profiles. But among private Spanish Medicine programmes, it offers the most internationally portable qualification currently available.
 
-The admission path is straightforward in structure but genuinely competitive. A well-prepared candidate with a solid academic record (above 7.5/10) and targeted preparation in Year 1 biology, chemistry, and mathematics has a realistic pathway in. The Beca Nemesio can make the financial profile transformative for high-performing applicants who have achieved 'matrícula de honor' average in Bachillerato.
+The admission path is straightforward in structure but genuinely competitive. A well-prepared candidate with a solid academic record (above 7.5/10) and targeted preparation in Year 1 biology, chemistry, and mathematics has a realistic pathway in. The Beca Nemesio can make the financial profile transformative for high-performing applicants.
 
-The primary risks are: tuition inflation over 6 years, the absence of published cut-off data for positioning, and the non-refundability of the reservation fee (€3,720) for students who may be navigating multiple admission options simultaneously.
+The primary risks are: tuition inflation over 6 years, the absence of published cut-off data for positioning, and the non-refundability of the reservation fee for students who may be navigating multiple admission options simultaneously.
 
 ## Frequently Asked Questions
 
@@ -734,13 +556,13 @@ No. UIC explicitly confirms that no English certificate is required for the admi
 Yes. Students from any bachillerato track can apply and sit the exam. However, the knowledge test covers biology, chemistry, and mathematics at Year 1 bachillerato level. Students from non-science tracks who have not studied these subjects must prepare them independently.
 
 **What is the Beca Nemesio?**
-It is UIC's flagship academic excellence scholarship for Medicine (full name: Becas de Excelencia Académica de Medicina (BEA) — Fundación Nemesio Díez): 100% of Year 1 tuition and up to 80% of Years 2–6 for the top-performing admitted students. Eligibility requires a 'matrícula de honor' average in Bachillerato; family income is also considered. It materially changes the cost profile but is awarded to a limited number of students.
+It is UIC's flagship academic excellence scholarship for Medicine: 100% of Year 1 tuition and up to 80% of Years 2–6 for the top-performing admitted students. It materially changes the cost profile but is awarded to a limited number of students. Selection criteria are not fully published.
 
 **Does UIC have WFME accreditation?**
 Yes. UIC Barcelona's Medicine degree is the first private Medicine degree in Spain to obtain WFME (World Federation for Medical Education) accreditation. As of 2024, this is a prerequisite for clinical training, postgraduate access, and medical licensing in the United States and other WFME-recognising countries.
 
 **What is the MIR pass rate?**
-UIC reports a 99% MIR pass rate for its Medicine graduates (average 98.4% surpassing the MIR cut-off over the last five years). UIC claims first position among all Spanish universities by this metric.
+UIC reports a 99% MIR pass rate for its Medicine graduates. This is the highest publicly stated figure among private Spanish Medicine programmes and represents graduates who pass the national MIR residency selection examination.
 
 **When does the written structured interview take place?**
 It is completed by all candidates on the same day as the admission exam (9 May 2026 for the 2026-2027 intake), as part of the same exam session. It is a written format, not an oral interview.
@@ -749,10 +571,4 @@ It is completed by all candidates on the same day as the admission exam (9 May 2
 UIC does not publish cut-off scores. Based on the structure of the ranking (50% academic record, 25% knowledge test, 25% emotional aptitude test, qualitative interview modifier) and the ~5.5:1 applicant ratio, a combined score above 7.0–7.5 is likely needed to enter the top 100 — but this is an inference, not a published threshold.
 
 **Is the reservation fee refundable?**
-Only if the student does not pass bachillerato or EBAU/PAU (Spanish university entrance examination). It is not refunded if the student simply chooses not to enrol or accepts a place at another university. The reservation fee is €3,720 (20% of Year 1 tuition).
-
-**How do I get from Barcelona to the campus?**
-Take the FGC (Ferrocarrils de la Generalitat de Catalunya) train from Plaça Catalunya (Barcelona centre) — journey time approximately 29 minutes to Sant Cugat Centre. Trains run every 10 minutes during peak hours. The campus is located inside the Hospital Universitari General de Catalunya building (Josep Trueta, s/n, 08195 Sant Cugat del Vallès).
-
-**What is the admission exam fee?**
-€115. This is payable after document validation, before the exam date. Source: Tasas UIC 2025-2026 official fee schedule.
+Only if the student does not pass bachillerato or EBAU/PAU (Spanish university entrance examination). It is not refunded if the student simply chooses not to enrol or accepts a place at another university.

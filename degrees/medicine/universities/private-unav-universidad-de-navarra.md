@@ -4,27 +4,19 @@ id: unav-medicine
 type: university
 subtype: private
 
-degree: Medicine
-country: spain
-currency: EUR
-
 name: Universidad de Navarra
 short_name: UNAV
-entry_year: "2027"
-last_updated: "2026-08-24"
-official_website: "https://www.unav.edu/web/facultad-de-medicina"
+
+degree: Medicine
+
+last_update: 2026-05-27
+
+valid_for_intake: 2026-2027
 
 location:
   city: Pamplona
   region: Navarra
   country: Spain
-
-campus:
-  address: "C/ Irunlarrea, 1, 31008 Pamplona"
-  lat: NULL
-  lng: NULL
-  district: "Ermitagaña / Campus Universitario (southwestern Pamplona, postcode 31008)"
-  commute_from_centre: "~15 min by city bus (lines 6, 9, 23) from Casco Viejo; approx. 2.5 km / ~25 min on foot"
 
 strategic_tags:
   - reach_option
@@ -41,161 +33,39 @@ strategic_tags:
   - high_cost
   - academic_exam_required
 
-admission_type: mixed
-# 70% faculty entrance exam + 30% nota media 1º Bachillerato (national pathway).
-
-accepts_vocational: NULL
-accepts_graduates: NULL
-accepts_over_25: NULL
-accepts_international_curricula: true
-spanish_level: B2
-english_level: PENDING_CONFIRMATION
-
-selection_factors:
-  - factor: academic_record
-    weight_pct: 30
-    eliminatory: true
-  - factor: exam
-    weight_pct: 70
-    eliminatory: NULL
-  - factor: interview
-    weight_pct: 0
-    eliminatory: false
-# Weights confirmed from official admissions page (national pathway):
-# 70% faculty entrance exam + 30% nota media 1º Bachillerato.
-# Academic record is eliminatory: minimum ≥7.0/10 required to apply.
-# Interview is 0% in the standard pathway (not scored); mandatory only for IB pathway.
-# Source: https://www.unav.edu/web/grado-en-medicina/admision/perfil-de-ingreso
-
-seats: 200
-minimum_grade: 7.0
-# Minimum grade of 7.0/10 in 1º Bachillerato (or equivalent) required for all pathways.
-admitted_grade_range: NULL
-
-teaching_hospital: "Clínica Universidad de Navarra (Pamplona and Madrid campuses)"
-clinical_practice_start: 3
-# Full rotational year at CUN (Pamplona or Madrid campus) begins Year 3.
-group_size: NULL
-teaching_language: es
-# Primary language is Spanish. International Program (optional track) adds English-medium subjects
-# and international rotations. Faculty entrance exam also available in English for international students.
-# Bilingual competency applies to students on the International Program track only.
-double_degrees: []
-distinctive_trait: "Spain's oldest private medical faculty (est. 1954), structurally integrated
-  on a single biomedical campus with the Clínica Universidad de Navarra — Spain's top-ranked private
-  hospital for reputation (MRS #1, seven consecutive years) — and CIMA translational research centre;
-  holds active WFME international accreditation enabling graduate training in the USA, Canada,
-  Australia and New Zealand. Entrance exam is fully published (syllabus + model paper) with disclosed
-  weighting: 70% exam (Biology/Chemistry/Physics/Reading comprehension), 30% academic record."
-applicants_per_seat: PENDING_CONFIRMATION
-rankings:
-  - body: "QS World University Rankings"
-    position: 151
-    scope: institution
-    year: 2026
-    source_url: "https://www.unav.edu/web/facultad-de-medicina"
-  - body: "Ranking CYD"
-    position: 1
-    scope: spain_overall
-    year: 2026
-    source_url: "https://www.unav.edu/noticias/-/contents/27/05/2026/la-universidad-primera-universidad-de-espana-segun-el-ranking-cyd/content/lovPblW1fC70/197939745"
-  - body: "Ranking CYD — Medicine"
-    position: 1
-    scope: spain_medicine
-    year: 2021
-    notes: "Highest-performing faculty for Medicine in Spain across six CYD dimensions"
-    source_url: "https://www.unav.edu/web/facultad-de-medicina/conoce-la-facultad/ranking-facultad-medicina"
-
 admission:
   intake_month: September
 
-  applications_open_date: "2026-10-01"
-  # Source: https://www.unav.edu/admision-y-ayudas/grado/plazos-de-admision
-  # "El 1 de octubre de 2026 se abre el plazo de admisión para el curso 2027/2028."
+  applications_open_date: ANNUAL_UPDATE_REQUIRED
 
   rolling_admissions:
     enabled: true
-    estimated_end_date: ANNUAL_UPDATE_REQUIRED
-    # Medicine fills significantly faster than other degrees. For 2026-27 the degree was
-    # already closed by August 2026. Apply November–March for 2027-28 to maximise chances.
+    estimated_end_date: ANNUAL_UPDATE_REQUIRED # Typically June–July. Early application strongly recommended.
 
   admission_rounds:
     enabled: false
     count: NULL
     rounds: []
-    # UNAV uses rolling admissions with priority deadlines, not formal rounds.
-    # For Medicine 2027-28: December deadline (international students only) and
-    # March deadline (all students). See sittings below.
 
   exam_required: true
-  interview_required: false
-  # Interview is NOT required or scored in the standard (national or ISAT) pathway.
-  # It IS mandatory for the IB Diploma pathway.
-
-sittings:
-  - date: 2026-12-12
-    registration_deadline: 2026-12-09
-    results_date: 2027-01-21
-    deposit_deadline: 2027-02-23
-    mode: online
-    location: "Remote — international students studying outside Spain only"
-    notes: "December round is restricted to international students for the Medicine degree.
-      Format: ISAT + online faculty exam in English."
-  - date: 2027-03-13
-    registration_deadline: 2027-03-09
-    results_date: 2027-04-15
-    deposit_deadline: 2027-05-31
-    mode: in_person
-    location: "Pamplona, Campus Universitario"
-    notes: "March round open to all students. Minimum 1º Bachillerato grade ≥7.0/10 required.
-      National students sit in person in Pamplona; international (ISAT) students sit online.
-      Exam scheduled in the afternoon for Medicine."
-
-exam_format:
-  question_count: 150
-  subjects:
-    - name: "Biology"
-      weight_pct: 30
-      question_count: 50
-      syllabus_url: "https://www.unav.edu/documents/29044/30001346/biologia_temario-admision_MedUNAV.pdf"
-    - name: "Chemistry"
-      weight_pct: 30
-      question_count: 50
-      syllabus_url: "https://www.unav.edu/documents/29044/30001346/quimica_temario-admision_MedUNAV.pdf"
-    - name: "Physics"
-      weight_pct: 25
-      question_count: 50
-      syllabus_url: "https://www.unav.edu/documents/29044/30001346/fisica_temario-admision_MedUNAV.pdf"
-    - name: "Reading comprehension (scientific article + 30 questions)"
-      weight_pct: 15
-      question_count: 30
-      model_url: "https://www.unav.edu/documents/4588799/0/modelo-comprension-lectora.pdf"
-  penalty: false
-  duration_min: 180
-  language: "Spanish (English for international online track)"
-  notes: "6 additional reserve questions included. 5 answer options per question.
-    No negative marking. No calculator permitted. Model exam published at
-    https://www.unav.edu/documents/4588799/0/modelo-examen-castellano_2.pdf"
-
-deposit:
-  amount: "5,500.00"
-  deadline_days: NULL
-  refundable: false
-  conditions: "Non-refundable except for PAU failure in 1st convocatoria (Spanish Bachillerato
-    students) or international visa denial. Amount is deducted from final tuition at enrolment."
+  interview_required: PENDING_CONFIRMATION
 
 academic_record:
   minimum_requirement:
-    enabled: true
-    grade_source: "first_year_baccalaureate"
-    minimum_grade: 7.0
-    notes: "Grade ≥7.0/10 in 1º Bachillerato (or equivalent) is required to apply across
-      all admission pathways. Students below this threshold are not eligible."
+    enabled: false
+    grade_source: NULL
+    minimum_grade: NULL
 
   competitive_filter:
     enabled: true
     grade_source: full_baccalaureate
     approx_candidates_selected: PENDING_CONFIRMATION
+
+curriculum:
+  international_curriculums_accepted: true
+
+competitiveness:
+  level: high
 
 admissions_statistics:
   annual_applications: PENDING_CONFIRMATION
@@ -208,97 +78,6 @@ admissions_statistics:
       score: PENDING_CONFIRMATION
       score_type: PENDING_CONFIRMATION
       notes: PENDING_CONFIRMATION
-
-curriculum:
-  international_curriculums_accepted: true
-
-competitiveness:
-  level: high
-
-pricing:
-  tuition_year1: "20,400.00"
-  tuition_year1_non_eu: NULL
-  annual_increase_pct: NULL
-  price_per_ects: "340.00"
-  non_tuition_fees:
-    - concept: "Preinscripción"
-      amount: "100.00"
-      frequency: once
-    - concept: "Secretaría"
-      amount: "95.00"
-      frequency: annual
-  payment_options:
-    - method: "Pago único"
-      notes: "5% early payment discount (deadline: approximately 10 February — ANNUAL_UPDATE_REQUIRED)"
-    - method: "Pago fraccionado"
-      notes: "Via miUNAV portal"
-    - method: "Préstamos bancarios — Banco Sabadell, Santander, Bankinter, BBVA, CaixaBank, Caja Rural Navarra, Kutxabank, IMAGIN"
-      notes: "Special conditions for UNAV students"
-    - method: "US Federal Direct Loans"
-      notes: "Subsidized, Unsubsidized, PLUS Loans — for eligible US students"
-    - method: "Crédito Educativo Banco Pichincha"
-      notes: "For Ecuadorian students"
-
-scholarships:
-  - name: "Becas Prof. Jiménez Vargas"
-    amount_or_pct: NULL
-    criteria: "Excellent Bachillerato academic record and limited financial resources. Specific
-      to the Facultad de Medicina. Funded by alumni and faculty supporters. Application is
-      competitive and separate from the degree application."
-    deadline: NULL
-    stackable: NULL
-    source_url: "https://www.unav.edu/documents/10162/33066811/Programa-de-Becas-Medicina_Prof-Jimenez-Vargas.pdf"
-  - name: "Becas Alumni"
-    amount_or_pct: NULL
-    criteria: "Excellent Bachillerato academic record and documented financial need. Covers
-      tuition, accommodation, and other costs on a fully personalised basis following an
-      in-depth family financial assessment."
-    deadline: NULL
-    stackable: NULL
-    source_url: "https://www.unav.edu/documents/10162/36127911/Normativa-Beca-Alumni.pdf"
-  - name: "Programa de Ayudas Universidad de Navarra"
-    amount_or_pct: NULL
-    criteria: "Good academic record and proven financial need. Personalised grant
-      complementing family contribution to allow the student to study at UNAV."
-    deadline: NULL
-    stackable: NULL
-    source_url: "https://www.unav.edu/documents/10162/33066811/programa-ayudas-univesidad-navarra.pdf"
-  - name: "Matrícula de Honor"
-    amount_or_pct: "16%"
-    criteria: "16% reduction on first-year tuition for students with Matrícula de Honor in
-      2º Bachillerato. During the degree, each Matrícula de Honor grade earned generates an
-      automatic ~16% discount on equivalent credits in the following enrolment. Not combinable
-      with Familia Numerosa discount."
-    deadline: NULL
-    stackable: false
-  - name: "Descuento Familia Numerosa"
-    amount_or_pct: NULL
-    criteria: "Reductions calculated by number of family members simultaneously enrolled at
-      UNAV and their position in the family group."
-    deadline: NULL
-    stackable: NULL
-    source_url: "https://www.unav.edu/documents/10162/33299838/bases-descuento-familia-numerosa.pdf"
-  - name: "Descuento pago anticipado"
-    amount_or_pct: "5%"
-    criteria: "Full tuition payment before the disclosed early-payment deadline (approximately
-      10 February — ANNUAL_UPDATE_REQUIRED). Available to admitted first-year students only."
-    deadline: ANNUAL_UPDATE_REQUIRED
-    stackable: NULL
-    source_url: "https://www.unav.edu/documents/10162/33299838/descuento_por_pronto_pago.pdf"
-
-sources:
-  tuition: "https://www.unav.edu/admision-y-ayudas/grado/cuanto-cuesta-estudiar-en-la-universidad/precios-de-primer-curso"
-  seats: "https://www.unav.edu/web/grado-en-medicina/admision/perfil-de-ingreso"
-  # No dedicated seats-count page published. 200 seats figure referenced in general admissions info.
-  calendar: "https://www.unav.edu/admision-y-ayudas/grado/plazos-de-admision"
-  scholarships: "https://www.unav.edu/admision-y-ayudas/grado/becas-y-ayudas"
-
-residence:
-  own_residence: NULL
-  location: NULL
-  price_min: NULL
-  price_max: NULL
-  first_year_place: NULL
 
 international_profile:
   international_students_percentage: PENDING_CONFIRMATION
@@ -337,9 +116,6 @@ programs:
 
       english_required: true
       minimum_english_level: PENDING_CONFIRMATION
-      # English level required specifically for the International Program track.
-      # Requirements published at:
-      # https://www.unav.edu/documents/10162/34708156/acreditar-nivel-de-ingles-fac-medicina.pdf
 
     seats: 200
 
@@ -359,89 +135,112 @@ programs:
       enabled: false
 
     evaluation_model:
-      overall_model_type: "mixed"
-      # Three distinct admission pathways. Primary pathway (national/in-person):
-      # 70% faculty exam + 30% academic record (1º Bachillerato nota media).
+      overall_model_type: PENDING_CONFIRMATION
 
       admission_pathways:
-        - id: national_standard
-          label: "Standard — National / In-person (Pamplona)"
-          eligible_profiles:
-            - "Students in Spanish 2º Bachillerato — PAU 1st convocatoria (June) mandatory"
-            - "International students studying in Spain"
+        - eligible_profiles:
+            - Spanish students (2º Bachillerato + PAU 1st convocatoria mandatory)
+            - International students (no PAU required)
+            - Students with IB Diploma
+            - Mature students over 45 (specific access route)
 
           components:
             - component: academic_record
               enabled: true
               role: weighted
-              weight: 30
-              grade_source: first_year_baccalaureate
-              minimum_required_grade: 7.0
-              notes: "Nota media of official subjects from 1º Bachillerato (or equivalent).
-                Minimum ≥7.0/10 required to submit application. Grades certified by the student's
-                educational centre."
+              weight: PENDING_CONFIRMATION
+              grade_source: full_baccalaureate
+              minimum_required_grade: NULL
+              notes: "Grades from 1º Bachillerato (or equivalent) are required as part of the application documentation and are evaluated in the admissions process. Spanish students must pass the PAU in 1st convocatoria (June) — mandatory specifically for Medicine, Nursing and Psychology at UNAV."
 
             - component: academic_exam
               enabled: true
               role: weighted
-              weight: 70
+              weight: PENDING_CONFIRMATION
               exam_variant: onsite_internal_exam
-              delivery_mode: in_person
-              location: "Pamplona, Campus Universitario"
-              question_count: 150
-              duration_min: 180
-              penalty: false
-              language: "Spanish"
+              exam_format: PENDING_CONFIRMATION
+              delivery_mode: hybrid
+              online_conditions: "Online exam option available per UNAV general admissions policy. Both onsite and online instructions published at UNAV admissions portal."
 
               subjects:
-                - name: "Biology"
-                  weight_pct: 30
-                  question_count: 50
-                  syllabus_url: "https://www.unav.edu/documents/29044/30001346/biologia_temario-admision_MedUNAV.pdf"
-                - name: "Chemistry"
-                  weight_pct: 30
-                  question_count: 50
-                  syllabus_url: "https://www.unav.edu/documents/29044/30001346/quimica_temario-admision_MedUNAV.pdf"
-                - name: "Physics"
-                  weight_pct: 25
-                  question_count: 50
-                  syllabus_url: "https://www.unav.edu/documents/29044/30001346/fisica_temario-admision_MedUNAV.pdf"
-                - name: "Reading comprehension (scientific article)"
-                  weight_pct: 15
-                  question_count: 30
+                - PENDING_CONFIRMATION
+
+              syllabus_alignment:
+                biology:
+                  scope:
+                    - PENDING_CONFIRMATION
+                  notes: PENDING_CONFIRMATION
+
+                chemistry:
+                  scope:
+                    - PENDING_CONFIRMATION
+                  notes: PENDING_CONFIRMATION
+
+                physics:
+                  scope:
+                    - PENDING_CONFIRMATION
+                  notes: PENDING_CONFIRMATION
+
+                mathematics:
+                  scope:
+                    - PENDING_CONFIRMATION
+                  notes: PENDING_CONFIRMATION
+
+                other_subjects:
+                  - subject: PENDING_CONFIRMATION
+                    scope:
+                      - PENDING_CONFIRMATION
+                    notes: PENDING_CONFIRMATION
 
               exam_difficulty:
                 level: PENDING_CONFIRMATION
-                notes: "Published syllabi available for all three science subjects. Model exam
-                  (castellano) available. No negative marking. 5 options per question. No
-                  calculator. 6 reserve questions included."
+                rationale:
+                  - PENDING_CONFIRMATION
+                notes: "Exam duration approximately 3 hours. Both onsite and online formats confirmed available."
 
               best_attempt_counts: PENDING_CONFIRMATION
-              notes: "Model exam: https://www.unav.edu/documents/4588799/0/modelo-examen-castellano_2.pdf"
+              notes: "Proprietary faculty exam, approximately 3 hours. Subjects and weighting not publicly disclosed."
 
             - component: interview
-              enabled: false
-              role: NULL
-              weight: 0
-              notes: "No interview in standard national pathway."
+              enabled: PENDING_CONFIRMATION
+              role: qualitative_only
+              weight: PENDING_CONFIRMATION
+              interview_format: PENDING_CONFIRMATION
+              delivery_mode: PENDING_CONFIRMATION
+              notes: PENDING_CONFIRMATION
 
             - component: isat
               enabled: false
               role: NULL
               weight: NULL
-              notes: "ISAT not used in this pathway."
+              exam_format: NULL
+              delivery_mode: NULL
+              online_conditions: NULL
+              best_attempt_counts: NULL
+              notes: NULL
 
             - component: english_test
               enabled: false
               role: requirement_only
               weight: NULL
-              notes: "English test not required for standard national pathway. Required for
-                International Program track (post-admission requirement)."
+              test_format: certificate
+              delivery_mode: not_applicable
+              online_conditions: NULL
+              minimum_level: PENDING_CONFIRMATION
+              bonus_max: NULL
+              bonus_scale:
+                B2: NULL
+                C1: NULL
+                C2: NULL
+              notes: "English proficiency required given bilingual programme structure. Minimum level for admission not confirmed from available sources."
 
             - component: psychometric_test
               enabled: false
               role: NULL
               weight: NULL
+              test_format: NULL
+              delivery_mode: NULL
+              online_conditions: NULL
               notes: NULL
 
             - component: complementary_points
@@ -450,102 +249,6 @@ programs:
               maximum_bonus: NULL
               categories: []
               notes: NULL
-
-        - id: international_isat
-          label: "International — ISAT + Online Exam"
-          eligible_profiles:
-            - "Students studying OUTSIDE Spain (any nationality)"
-
-          components:
-            - component: academic_record
-              enabled: true
-              role: weighted
-              weight: 30
-              grade_source: first_year_baccalaureate
-              minimum_required_grade: 7.0
-              notes: "Nota media of official subjects from 1º Bachillerato (or equivalent). ≥7.0/10 required."
-
-            - component: isat
-              enabled: true
-              role: weighted
-              weight: 30
-              notes: "ISAT (International Scholarship and Aptitude Test, administered by ACER).
-                Valid sittings: January, July/August, or October/November. Student must share
-                results directly with UNAV. Results available approximately 2 weeks after exam close.
-                Info: https://isat.acer.org"
-
-            - component: academic_exam
-              enabled: true
-              role: weighted
-              weight: 40
-              exam_variant: online_internal_exam
-              delivery_mode: online
-              online_conditions: "Proctored via webcam, microphone, and screen monitoring
-                (Google Chrome required). Time: approximately 14:30 h peninsular Spanish time."
-              question_count: 150
-              duration_min: 180
-              penalty: false
-              language: "English"
-
-              subjects:
-                - name: "Biology"
-                  weight_pct: 35
-                  question_count: 50
-                - name: "Chemistry"
-                  weight_pct: 35
-                  question_count: 50
-                - name: "Physics"
-                  weight_pct: 30
-                  question_count: 50
-
-              notes: "Subject weightings differ from national pathway (Bio 35%, Chem 35%, Physics 30%;
-                no reading comprehension component). No negative marking. No calculator."
-
-            - component: interview
-              enabled: PENDING_CONFIRMATION
-              role: qualitative_only
-              weight: 0
-              notes: "Faculty may conduct an interview at its discretion ('si lo considera necesario').
-                Not standard for all candidates."
-
-            - component: spanish_test
-              enabled: true
-              role: requirement_only
-              notes: "Online Spanish language test required for candidates whose native language
-                is not Spanish."
-
-        - id: ib_diploma
-          label: "International Baccalaureate (IB) Diploma"
-          eligible_profiles:
-            - "Students completing the IB Diploma (any country)"
-
-          components:
-            - component: ib_score
-              enabled: true
-              role: eliminatory
-              minimum_total_predicted: 37
-              minimum_biology_hl: 6
-              minimum_chemistry_hl: 6
-              notes: "Predicted grades used at application; final grades must confirm requirements
-                by 10 July of the admission year. No faculty entrance exam required for IB candidates."
-
-            - component: interview
-              enabled: true
-              role: eliminatory
-              delivery_mode: online
-              format: "Personal video interview (Skype) with UNAV Admissions team"
-              notes: "Mandatory for all IB candidates. Evaluates fit with MedUNAV admission profile.
-                Must be completed after submission and verification of predicted grades."
-
-            - component: academic_exam
-              enabled: false
-              notes: "IB candidates do NOT sit the faculty entrance exam or ISAT."
-
-      # IMPORTANT — PAU RULE: For students from Spanish 2º Bachillerato, passing the PAU
-      # in the 1st convocatoria (June) is a binary pass/fail REQUIREMENT specific to Medicine,
-      # Nursing, and Psychology at UNAV. It is NOT a scored component of the admission formula.
-      # Failure in June is immediately disqualifying for that academic cycle. The 5,500 EUR
-      # first deposit is refunded only in this specific case.
 ---
 # Universidad de Navarra
 
@@ -553,7 +256,7 @@ programs:
 
 The Facultad de Medicina of the Universidad de Navarra (UNAV) is the oldest and most internationally recognised private medicine faculty in Spain, founded in 1954. It operates within a unique biomedical campus — the Campus Biomédico — that structurally integrates the faculty with the Clínica Universidad de Navarra (CUN) and the Centro de Investigación Médica Aplicada (CIMA), two world-class clinical and research institutions.
 
-UNAV holds WFME (World Federation for Medical Education) international quality accreditation, which is a decisive differentiator: graduates can access specialisation or clinical placements in the United States, Canada, Australia, and New Zealand — a requirement that became mandatory from 2024 onward. The university ranks #151 globally (QS 2026) and first in Spain overall (CYD 2026).
+UNAV holds WFME (World Federation for Medical Education) international quality accreditation, which is a decisive differentiator: graduates can access specialisation or clinical placements in the United States, Canada, Australia, and New Zealand — a requirement that became mandatory from 2024 onward. The university ranks #151 globally (QS 2026) and second in Spain overall (CYD 2025).
 
 The degree — 360 ECTS, 6 years, in-person, Pamplona — is taught in Spanish with a significant English component. It admits 200 students per year through a rolling, exam-based admissions process. Tuition is 340€ per ECTS, totalling 20,400€ per year in the first course.
 
@@ -565,11 +268,11 @@ For students with strong academic profiles, international career ambitions, or a
 - **Tuition 2026-27:** 340€/ECTS — 20,400€/year (first course) + 95€ secretaría fees
 - **Duration:** 6 years, 360 ECTS, fully in-person
 - **Languages:** Spanish + English (bilingual components)
-- **Admissions:** Rolling (opens 1 October 2026 for 2027-28). Published exam: 150 MCQs — Biology (30%), Chemistry (30%), Physics (25%), Reading comprehension (15%); no negative marking; ~3 hours. Weighting: 70% exam + 30% Bachillerato grade. PAU mandatory for Spanish students in 1st convocatoria.
+- **Admissions:** Rolling, proprietary faculty exam (~3h), PAU mandatory for Spanish students in 1st convocatoria
 - **Key differentiator:** WFME accreditation — enables specialisation in USA, Canada, Australia, New Zealand from 2024
 - **Clinical training:** Full rotational year at Clínica Universidad de Navarra from year 3; simulation centre from year 1
 - **Research:** Harvard-advised curriculum; integrated with CIMA
-- **Competitiveness:** High — minimum 7.0/10 in 1º Bachillerato required to apply
+- **Competitiveness:** High — strong academic profile required
 - **Scholarships:** Becas Prof. Jiménez Vargas (Medicine-specific) + Becas Alumni
 
 ## Key Facts
@@ -579,7 +282,6 @@ For students with strong academic profiles, international career ambitions, or a
 | University | Universidad de Navarra |
 | Short name | UNAV |
 | Campus | Pamplona (single campus for Medicine) |
-| Address | C/ Irunlarrea, 1, 31008 Pamplona |
 | Total ECTS | 360 |
 | Duration | 6 years |
 | Modality | In-person (presencial) |
@@ -589,13 +291,11 @@ For students with strong academic profiles, international career ambitions, or a
 | Secretaría fees | +95€/year `ANNUAL_UPDATE_REQUIRED` |
 | WFME accreditation | Yes (confirmed active) |
 | QS World Ranking | #151 (QS 2026) |
-| CYD Spain Ranking | #1 (2026) |
-| CYD Medicine Spain | #1 (2021) |
+| CYD Spain Ranking | #2 (2025) |
 | Employability rate | 99% (university-wide) |
 | Founded | 1954 |
-| Application opens (2027-28) | 1 October 2026 |
 | Application fee | 100€ (non-refundable) |
-| First deposit on admission | 5,500€ (non-refundable — deducted from final tuition) |
+| First deposit on admission | 500€, 3,000€, or 5,500€ (non-refundable — amount varies) |
 | International partners | 29 confirmed |
 
 ## Program Options
@@ -645,7 +345,7 @@ UNAV's teaching model is described as patient-centred. Its structural features a
 
 UNAV's clinical infrastructure is one of its most important strategic differentiators.
 
-**Clínica Universidad de Navarra (CUN):** A private university hospital operating across Pamplona and Madrid. The first hospital in Spain to receive Joint Commission International (JCI) accreditation. Over 50 medical departments and services, more than 2,800 dedicated professionals. Year 3 rotations take place entirely at CUN — students choose their preferred campus. Ranked Spain's top private hospital for reputation for seven consecutive years (Monitor de Reputación Sanitaria).
+**Clínica Universidad de Navarra (CUN):** A private university hospital operating across Pamplona and Madrid. The first hospital in Spain to receive Joint Commission International (JCI) accreditation. Over 50 medical departments and services, more than 2,800 dedicated professionals. Year 3 rotations take place entirely at CUN — students choose their preferred campus.
 
 **Broad hospital network:** Beyond CUN, students rotate through a diverse network of public and private hospitals across Spain, including large national reference centres, regional hospitals, and primary care facilities. Specific hospital names and rotation structures are subject to annual revision. `ANNUAL_UPDATE_REQUIRED`
 
@@ -663,102 +363,70 @@ UNAV's clinical infrastructure is one of its most important strategic differenti
 
 **29 international partner institutions:** Whether specific mobility agreements apply to the Medicine degree requires confirmation. `PENDING_CONFIRMATION` Medical student mobility is structurally complex (clinical credit validation, licensing constraints), and university-wide partnership numbers should not be assumed to apply directly to Medicine.
 
-**International Program in Medicine:** The primary structured vehicle for international academic experience at UNAV. It operates as an optional track — not an exchange programme — and includes international clinical rotations and increased English-medium instruction. No separate admissions process.
+**International Program in Medicine:** The primary structured vehicle for international academic experience within the degree. It operates as an optional track — not a separate programme — and includes international clinical rotations and increased English-medium instruction. No separate admissions process.
 
 **US Federal Financial Aid:** UNAV participates in the William D. Ford Federal Direct Loan Program (US Department of Education), accepting Subsidized Loans, Unsubsidized Loans, and PLUS Loans. This is relevant for US citizens and permanent residents.
 
 ## Admission Model
 
-UNAV operates a rolling, proprietary admissions model with a faculty-specific entrance exam. Applications open 1 October 2026 for entry in September 2027. There are no fixed admission rounds — applications are processed with priority deadlines, and offers are made as places are filled. **Early application is structurally advantageous and strategically critical.**
+UNAV operates a rolling, proprietary admissions model with a faculty-specific entrance exam. There are no fixed admission rounds — applications are processed continuously throughout the year, and offers are made as places are filled. **Early application is structurally advantageous and strategically critical.**
 
-Three admission pathways exist depending on the applicant's profile:
+The admissions process includes the following confirmed components:
 
-### Pathway 1 — Standard (National / In-person, Pamplona)
+**Academic record:** Grades from 1º Bachillerato (or equivalent final secondary year) are required documentation and are evaluated in the process. Exact weighting relative to the exam is not publicly disclosed. `PENDING_CONFIRMATION`
 
-For students in Spanish Bachillerato and for international students studying in Spain.
+**Faculty entrance exam:** A proprietary exam specific to the Facultad de Medicina, approximately 3 hours in duration. Both onsite and online formats are available. The specific subjects covered and their weighting within the overall model are not publicly disclosed. `PENDING_CONFIRMATION`
 
-**Final admission score = 70% faculty exam + 30% nota media 1º Bachillerato**
+**PAU (Prueba de Acceso a la Universidad):** For Spanish students from 2º Bachillerato, passing the PAU in the **1st convocatoria (June)** is mandatory — a stricter requirement than for most other UNAV degrees, specific to Medicine, Nursing, and Psychology. Failure in June disqualifies the student for that cycle. The PAU result functions as a binary pass/fail requirement, not as a scored component.
 
-**Faculty entrance exam (70%):** A proprietary exam, approximately 3 hours, in-person in Pamplona. 150 multiple-choice questions (5 options each, no negative marking):
-- Biology: 50 questions — weight 30% of exam
-- Chemistry: 50 questions — weight 30% of exam
-- Physics: 50 questions — weight 25% of exam
-- Reading comprehension (scientific article + 30 questions) — weight 15% of exam
+**International students:** Do not require the PAU. Apply using equivalent secondary credentials through the same process.
 
-Syllabi are published for all three science subjects. A model exam is available. No calculator permitted.
-
-**Academic record (30%):** Nota media of official subjects from 1º Bachillerato (or equivalent) as certified by the student's educational centre. Minimum grade of 7.0/10 required to be eligible to apply.
-
-**PAU (Prueba de Acceso a la Universidad):** For Spanish 2º Bachillerato students, passing the PAU in the **1st convocatoria (June)** is mandatory — a binary pass/fail requirement specific to Medicine, Nursing, and Psychology at UNAV. The PAU result is NOT a scored component of the admission formula. Failure in June disqualifies the student for that academic cycle.
-
-**Interview:** Not required in the standard pathway.
-
-### Pathway 2 — International (ISAT + Online Exam)
-
-For students studying outside Spain (any nationality).
-
-**Final admission score = 30% ISAT + 40% online faculty exam + 30% nota media 1º Bachillerato**
-
-The ISAT (International Scholarship and Aptitude Test, ACER) is taken externally (valid sittings: January, July/August, or October/November). The faculty online exam is 150 MCQs in English: Biology (50q, 35%), Chemistry (50q, 35%), Physics (50q, 30%); no reading comprehension component. A Spanish language test is required for non-native Spanish speakers. The faculty may also conduct an interview at its discretion.
-
-### Pathway 3 — IB Diploma
-
-For students completing the International Baccalaureate Diploma (any country).
-
-Minimum requirements: predicted score ≥ 37 points, Biology HL ≥ 6, Chemistry HL ≥ 6. No faculty entrance exam required. A mandatory personal video interview with the UNAV Admissions team is part of the process. Admission is conditional on achieving final IB grades by 10 July of the admission year.
+**Interview:** Not confirmed from available public sources. `PENDING_CONFIRMATION`
 
 ## Admission Process
 
-1. Register on the **miUNAV portal** (miportal.unav.edu)
+1. Register on the **miUNAV portal**
 2. Submit the application form with required documentation:
-   - Grades from 1º Bachillerato (or equivalent) — minimum 7.0/10 required
+   - Grades from 1º Bachillerato (or equivalent)
    - Passport-size photograph
    - DNI (front and back) or equivalent national ID
    - Proof of 100€ application fee payment (non-refundable) — via card or bank transfer
 3. Receive exam date, time, and location once the application is complete
-4. Sit the faculty entrance exam (~3 hours — in-person Pamplona or online depending on pathway)
+4. Sit the faculty entrance exam (~3 hours — onsite or online)
 5. Receive decision via miUNAV portal
-6. Pay first deposit (**5,500€** — non-refundable except for PAU failure in 1st convocatoria or international visa denial; deducted from final tuition at enrolment)
+6. Pay first deposit (500€, 3,000€, or 5,500€ — non-refundable except for PAU failure in 1st convocatoria or international visa denial)
 7. Pass the PAU in 1st convocatoria (June) — mandatory for Spanish Bachillerato students
 8. Formalise enrolment with full documentation and tuition payment
 
 Applying to multiple degrees requires a separate form per application after the second, with an additional 100€ fee for the third application onward.
 
-## Admission Timeline — 2027-28 Entry
+## Admission Timeline
 
-All dates are confirmed from the official admissions calendar. `ANNUAL_UPDATE_REQUIRED` for future cycles.
+All dates are subject to annual revision. `ANNUAL_UPDATE_REQUIRED`
 
-| Event | Date |
+| Event | Indicative timing |
 |---|---|
-| Applications open (2027-28 cycle) | 1 October 2026 |
-| December deadline (international students only) | 9 December 2026 |
-| December exam | 12 December 2026 |
-| December results | 21 January 2027 |
-| December deposit deadline | 23 February 2027 |
-| March deadline (all students — minimum grade ≥7) | 9 March 2027 |
-| March exam | 13 March 2027 |
-| March results | 15 April 2027 |
-| March deposit deadline | 31 May 2027 |
-| Rolling phase (remaining seats) | From 15 April 2027, exams every Thursday |
-| PAU — 1st convocatoria (Spanish students) | June 2027 |
-| Academic year starts | September 2027 |
+| Applications open | November–December (prior academic year) `ANNUAL_UPDATE_REQUIRED` |
+| Rolling process active | November through June–July `ANNUAL_UPDATE_REQUIRED` |
+| Exam dates assigned | On rolling basis after application is complete `ANNUAL_UPDATE_REQUIRED` |
+| Decisions communicated | On rolling basis via miUNAV `ANNUAL_UPDATE_REQUIRED` |
+| First deposit deadline | On rolling basis after admission `ANNUAL_UPDATE_REQUIRED` |
+| PAU — 1st convocatoria (Spanish students) | June `ANNUAL_UPDATE_REQUIRED` |
+| Academic year starts | September `ANNUAL_UPDATE_REQUIRED` |
 
-**Note:** The December round is restricted to international students for Medicine. Spanish national students apply in the March round (deadline 9 March 2027). Students who apply in November–December are processing their applications when the largest share of seats is still available.
+Students who apply in **November–January** are processing their applications when the largest share of seats is still available. Students applying after March–April face substantially greater difficulty. The rolling model creates a structural incentive for early action that is more pronounced at UNAV than at universities with fixed rounds.
 
 ## Admission Score Distribution
 
-The admission formula for the national pathway is publicly confirmed:
+UNAV does not publicly disclose the weighting of components in its Medicine admissions model. `PENDING_CONFIRMATION`
 
-| Component | Weight |
-|---|---|
-| Faculty entrance exam (Biology 30%, Chemistry 30%, Physics 25%, Reading 15%) | 70% |
-| Nota media 1º Bachillerato | 30% |
+Based on confirmed information:
+- Academic record (1º Bachillerato grades) is explicitly required and evaluated
+- The faculty entrance exam (~3 hours) is the central proprietary component
+- PAU performance operates as a binary pass/fail requirement for Spanish students — not a weighted scoring element
+- Interview component: `PENDING_CONFIRMATION`
 
-For the international (ISAT) pathway: ISAT 30% + Online faculty exam 40% + Academic record 30%.
-
-PAU performance operates as a binary pass/fail requirement for Spanish students — not a weighted scoring element.
-
-For preparation strategy, the faculty exam should be treated as the primary target. Published syllabi are available for Biology, Chemistry, and Physics. A model exam and model reading comprehension exercise are available on the faculty website.
+For preparation strategy, the faculty exam should be treated as the primary target. The absence of published scoring tables and historical cutoffs means comparative benchmarking is not possible with current available data. `PENDING_CONFIRMATION`
 
 ## Costs and Payment Structure
 
@@ -780,7 +448,7 @@ Medicina + International Program carries the same per-ECTS price (340€). `PEND
 
 | Method | Notes |
 |---|---|
-| Single full payment | 5% early payment discount (deadline: approximately 10 February — `ANNUAL_UPDATE_REQUIRED`) |
+| Single full payment | 5% early payment discount available (deadline: `ANNUAL_UPDATE_REQUIRED`) |
 | Fractionated payment | Terms via miUNAV portal |
 | Bank loans — Banco Sabadell, Santander, Bankinter, BBVA, CaixaBank, Caja Rural Navarra, Kutxabank, IMAGIN | Special conditions for UNAV students |
 | US Federal Direct Loans | Subsidized, Unsubsidized, PLUS Loans — for eligible US students |
@@ -791,7 +459,7 @@ Medicina + International Program carries the same per-ECTS price (340€). `PEND
 | Item | Amount |
 |---|---|
 | Application fee | 100€ (non-refundable) |
-| First enrolment deposit | 5,500€ non-refundable (refunded only for PAU failure in 1st convocatoria or visa denial; deducted from final tuition) |
+| First enrolment deposit | 500€ / 3,000€ / 5,500€ — non-refundable (except PAU failure or visa denial) `PENDING_CONFIRMATION` |
 | Accommodation — Pamplona | PENDING_CONFIRMATION |
 | Monthly living costs — Pamplona | PENDING_CONFIRMATION |
 
@@ -799,19 +467,19 @@ Medicina + International Program carries the same per-ECTS price (340€). `PEND
 
 UNAV operates one of the most developed private scholarship programmes in Spanish higher education, with several instruments specifically targeting Medicine students.
 
-**Becas Alumni:** The flagship programme, funded by alumni, companies, and institutions. Covers tuition, accommodation, and other costs on a fully personalised basis following an in-depth family financial assessment. Targeted at students with excellent Bachillerato academic records and documented financial need. Normativa: https://www.unav.edu/documents/10162/36127911/Normativa-Beca-Alumni.pdf
+**Becas Alumni:** The flagship programme, funded by alumni, companies, and institutions. Covers tuition, accommodation, and other costs on a fully personalised basis following an in-depth family financial assessment. Targeted at students with excellent Bachillerato academic records and documented financial need.
 
-**Becas Prof. Jiménez Vargas:** A scholarship programme **specific to the Facultad de Medicina**, named after a distinguished professor. Aimed at students who aspire to Medicine, have an excellent Bachillerato academic record, and limited financial resources. Funded by alumni and faculty supporters. Application is competitive and separate from the degree application. Programme document: https://www.unav.edu/documents/10162/33066811/Programa-de-Becas-Medicina_Prof-Jimenez-Vargas.pdf
+**Becas Prof. Jiménez Vargas:** A scholarship programme **specific to the Facultad de Medicina**, named after a distinguished professor. Aimed at students who aspire to Medicine, have an excellent Bachillerato academic record, and limited financial resources. Funded by alumni and faculty supporters. Application is competitive and separate from the degree application.
 
-**Programa de Ayudas Universidad de Navarra:** A university-wide personalised grant programme for students with a good academic record and proven financial need. Normativa: https://www.unav.edu/documents/10162/33066811/programa-ayudas-univesidad-navarra.pdf
+**Programa de Ayudas Universidad de Navarra:** A university-wide personalised grant programme for students with a good academic record and proven financial need.
 
-**Matrícula de Honor:** Students who obtained a Matrícula de Honor in 2º Bachillerato receive a 16% reduction on first-year tuition. During the degree, each Matrícula de Honor grade earned in a subject generates an automatic ~16% discount on the equivalent credits in the following enrolment. Not combinable with Familia Numerosa discounts.
+**Matrícula de Honor:** Students who obtained a Matrícula de Honor in 2º Bachillerato receive a 16% reduction on first-year tuition. During the degree, each Matrícula de Honor grade earned in a subject generates an automatic ~16% discount on the equivalent credits in the following enrolment. Not combinable with familia numerosa discounts.
 
-**Familia Numerosa discounts:** Reductions calculated by number of family members simultaneously enrolled at UNAV and their family position. Bases: https://www.unav.edu/documents/10162/33299838/bases-descuento-familia-numerosa.pdf
+**Familia Numerosa discounts:** Reductions calculated by number of family members simultaneously enrolled at UNAV and their family position.
 
-**Early payment discount:** 5% reduction on full tuition for students paying in full before the disclosed deadline (approximately 10 February — `ANNUAL_UPDATE_REQUIRED`). Available to admitted first-year students only.
+**Early payment discount:** 5% reduction on full tuition for students paying in full before the disclosed deadline. `ANNUAL_UPDATE_REQUIRED`
 
-**Estudio de Coste y Becas:** A personalised cost and scholarship assessment tool available to all applicants during the admissions process. By providing family income data, Bachillerato grades, and geographic origin, applicants receive a tailored cost estimate with scholarship eligibility information. Strongly recommended for any applicant concerned about affordability. Access via miportal.unav.edu.
+**Estudio de Coste y Becas:** A personalised cost and scholarship assessment tool available to all applicants during the admissions process. By providing family income data, Bachillerato grades, and geographic origin, applicants receive a tailored cost estimate with scholarship eligibility information. Strongly recommended for any applicant concerned about affordability.
 
 ## Accommodation and Cost of Living
 
@@ -846,43 +514,43 @@ The degree's clinical training architecture — simulation from year 1, full cli
 ## Strategic Fit
 
 ### Good Fit For
-- Students with a 1º Bachillerato grade ≥7.0/10 (eligibility threshold) and a strong academic profile overall
+- Students with a strong Bachillerato academic record (typically 8.5+ or equivalent) who are credible candidates for a competitive exam-based process
 - Students for whom WFME accreditation and international career options are a priority
-- Students who want to prepare for a published, transparent exam (Biology, Chemistry, Physics + Reading comprehension) with disclosed weighting
 - Students interested in research alongside clinical training, particularly via the Diploma en Investigación Biomédica
 - International students seeking a Spanish degree with global professional recognition
 - Students eligible for Becas Prof. Jiménez Vargas or Becas Alumni who need financial support
 - Students or families with the financial capacity for 20,400€/year, or access to bank financing
 - Students who value a structured, humanist, personalised educational environment
-- Students applying early in the cycle (October–March) to maximise rolling admissions advantages
+- Students applying early in the cycle (November–January) to maximise rolling admissions advantages
 - Students interested in surgical specialisation who would benefit from the Diploma Quirúrgico
 
 ### Less Suitable For
-- Students with a 1º Bachillerato grade below 7.0/10 (ineligible to apply)
+- Students with a weak or borderline academic record
 - Spanish Bachillerato students who have not passed or are uncertain about passing the PAU in 1st convocatoria
 - Students seeking the most financially accessible private medicine option in Spain
 - Students who need a guaranteed place by a specific date and cannot tolerate rolling admissions uncertainty
 - Students applying late in the cycle (after March–April)
+- Students who prefer a fixed-rounds admissions model with published historical score tables
 
 ## Risks and Considerations
 
-**Rolling admissions and late application risk:** UNAV fills its 200 seats progressively throughout the year. For 2026-27, Medicine was already closed by August 2026. Students applying after March–April face materially lower probability of securing a place, regardless of their academic profile. This is a structural feature, not a policy that can be navigated around.
+**Rolling admissions and late application risk:** UNAV fills its 200 seats progressively throughout the year. Students applying after March–April face materially lower probability of securing a place, regardless of their academic profile. This is a structural feature, not a policy that can be navigated around.
 
 **PAU 1st convocatoria rule:** For Spanish 2º Bachillerato students, failing the PAU in June is immediately disqualifying for that cycle — a stricter rule than at most other private universities, specific to Medicine, Nursing, and Psychology. This must be factored into planning from the outset. Students who fail in June cannot resit in September and still access UNAV Medicine that year.
 
-**Exam is published but still demanding:** UNAV now publishes the exam syllabi (Biology, Chemistry, Physics) and a model exam. The reading comprehension section (15%) involves a scientific article in Spanish. The exam is proprietary and scored — strong science preparation is required. The absence of past papers (beyond the model) means preparation must rely on syllabi and textbooks.
+**Non-transparent exam:** UNAV does not publish the Medicine faculty exam's subject breakdown, past papers, or weighting. Preparation is less structured than for universities with published syllabi. Students need direct contact with the faculty or access to specialist exam preparation.
 
-**Non-refundable financial exposure:** The 100€ application fee and the first deposit (5,500€) are non-refundable in most circumstances. Speculative applicants who are still awaiting other university results should be aware of the financial commitment.
+**Non-refundable financial exposure:** The 100€ application fee and the first deposit (500€–5,500€) are non-refundable in most circumstances. Speculative applicants who are still awaiting other university results should be aware of the financial commitment.
 
 **High cost with limited published benchmarking data:** At 20,400€/year, UNAV is among the most expensive private Medicine programmes in Spain. Scholarship competition is real. Students should complete the Estudio de Coste y Becas early to understand their realistic net annual cost.
 
+**Interview uncertainty:** Whether a personal interview is part of the formal evaluation is not confirmed from available public sources. `PENDING_CONFIRMATION` Students should prepare for a potential personal assessment component and clarify this directly with the faculty.
+
 ## Important Notes
 
-- Minimum 1º Bachillerato grade of 7.0/10 is required to apply — students below this are not eligible
 - PAU 1st convocatoria (June) is mandatory for Spanish Bachillerato students — failure disqualifies for that cycle
-- Applications open 1 October 2026 for the 2027-28 entry year — apply as early as possible
-- December round (exam 12 December 2026) is for international students only; March round (exam 13 March 2027) is for all students
-- Application fee: 100€ non-refundable. First deposit: 5,500€ non-refundable (PAU failure or visa denial are the only exceptions)
+- Apply as early as possible — November–January is the recommended window for rolling admissions
+- Application fee: 100€ non-refundable. First deposit: 500€–5,500€ non-refundable (PAU failure or visa denial are the only exceptions)
 - Complete the Estudio de Coste y Becas during the admissions process to get a personalised cost and scholarship estimate
 - WFME accreditation is active and confirmed — it enables international specialisation from 2024 onward
 - Diploma Quirúrgico and Diploma en Investigación Biomédica do not require separate admissions — they are pursued within the enrolled degree
@@ -893,62 +561,45 @@ The degree's clinical training architecture — simulation from year 1, full cli
 
 UNAV's most strategically important asset — particularly for international students — is its active WFME accreditation. From 2024, this accreditation is a prerequisite for pursuing specialist training or clinical placements in the USA, Canada, Australia, and New Zealand. Among private Spanish medicine faculties, few hold this accreditation, and UNAV was among the first. For students with international professional ambitions, this certification alone can justify the cost differential relative to other private options.
 
-The second structural differentiator is the Campus Biomédico model: the institutional integration of the faculty, the Clínica Universidad de Navarra (Spain's #1 ranked private hospital for reputation, seven consecutive years), and the CIMA creates a learning environment — with early clinical immersion, simulation from year 1, research access, and a full rotational year 3 — that most Spanish medical schools, public or private, cannot match in depth or coherence.
-
-A third, underappreciated differentiator: UNAV's admission exam is now fully transparent. The syllabi for Biology, Chemistry, and Physics are published, a model exam is available, and the weighting formula (70% exam / 30% Bachillerato) is publicly confirmed. This is more preparation-friendly than some competitors whose exam content remains undisclosed.
+The second structural differentiator is the Campus Biomédico model: the institutional integration of the faculty, the Clínica Universidad de Navarra, and the CIMA creates a learning environment — with early clinical immersion, simulation from year 1, research access, and a full rotational year 3 — that most Spanish medical schools, public or private, cannot match in depth or coherence.
 
 ## Final Takeaway
 
 UNAV is the benchmark private medicine programme in Spain. It combines WFME international accreditation, a Harvard-advised curriculum, world-class clinical infrastructure at CUN and CIMA, and a structured, personalised teaching model. Tuition at 20,400€/year is among the highest in the private sector, but Medicine-specific scholarships (Becas Prof. Jiménez Vargas, Becas Alumni) and the personalised Estudio de Coste y Becas tool provide real financial mitigation pathways for strong candidates.
 
-The main structural risks are: the rolling admissions model (which strongly rewards early applicants — applications open 1 October 2026), the PAU 1st convocatoria rule (which creates a single point of failure for Spanish students), and the 7.0/10 eligibility threshold in 1º Bachillerato. For a candidate who meets the eligibility requirements, applies early, manages these risks, and has the financial means or scholarship access, UNAV represents the strongest private Medicine credential available in Spain.
+The main structural risks are: the rolling admissions model (which strongly rewards early applicants), the PAU 1st convocatoria rule (which creates a single point of failure for Spanish students), and limited published exam data (which complicates targeted preparation). For a candidate with a strong academic record who applies early, manages these risks, and has the financial means or scholarship access, UNAV represents the strongest private Medicine credential available in Spain.
 
 ## Frequently Asked Questions
 
 **Is the WFME accreditation confirmed and currently active?**
 Yes. UNAV is one of the first Spanish medicine faculties to hold the WFME International Quality Seal. It is confirmed active. This accreditation enables graduates to pursue specialist training or clinical placements in the USA, Canada, Australia, and New Zealand — a requirement mandatory from 2024.
 
-**What are the minimum requirements to apply?**
-A grade of ≥7.0/10 in 1º Bachillerato (or equivalent) is required for all admission pathways. Students below this threshold cannot apply. There is no minimum PAU score required — PAU is a binary pass/fail requirement for Spanish Bachillerato students.
-
 **Do international students need to take the PAU?**
-No. International students do not need to sit the PAU. They apply using their equivalent secondary credentials through the ISAT + online exam pathway or the IB pathway (if applicable).
+No. International students do not need to sit the PAU. They apply using their equivalent secondary credentials and still need to pass the faculty entrance exam and meet language requirements.
 
-**When do applications open for 2027-28?**
-Applications open on 1 October 2026. The first deadline for international students is 9 December 2026 (exam 12 December). The main March deadline (for all students) is 9 March 2027 (exam 13 March). Applying as early as possible is strongly recommended.
+**Can I apply at any time of year?**
+UNAV uses rolling admissions — applications are processed continuously from approximately November through June–July. Applying in November–January is strongly recommended. The later you apply, the fewer remaining seats are available.
 
 **What does the faculty entrance exam cover?**
-The exam is proprietary to the Facultad de Medicina, approximately 3 hours, 150 multiple-choice questions (5 options, no negative marking):
-- Biology: 50 questions, 30% weight — published syllabus available
-- Chemistry: 50 questions, 30% weight — published syllabus available
-- Physics: 50 questions, 25% weight — published syllabus available
-- Reading comprehension (scientific article): 30 questions, 15% weight
-
-A model exam is published on the faculty website. No calculator is permitted.
-
-**How is the final admission score calculated?**
-For the national (in-person) pathway: 70% faculty entrance exam + 30% nota media 1º Bachillerato. For the international (ISAT) pathway: 30% ISAT + 40% online faculty exam + 30% academic record. For IB students: based on IB predicted grades (≥37 total, ≥6 Biology HL, ≥6 Chemistry HL) plus a mandatory interview.
+The exam is proprietary and specific to the Facultad de Medicina. It lasts approximately 3 hours and can be taken onsite or online. Specific subjects and weighting are not publicly published. `PENDING_CONFIRMATION` Contact the faculty directly for current exam guidance.
 
 **Is there an interview?**
-For the standard national and ISAT pathways: no mandatory interview (the faculty may interview ISAT candidates at its discretion). For the IB pathway: yes, a personal video interview is mandatory.
+`PENDING_CONFIRMATION` — not confirmed from available public sources. Contact the Facultad de Medicina directly to clarify whether a personal interview is part of the current admissions process.
 
 **What does 340€/ECTS cost in practice?**
 For the first year of Medicine: 60 ECTS × 340€ = 20,400€, plus 95€ in secretaría fees. Total first-year cost: approximately 20,495€ (2026-27). `ANNUAL_UPDATE_REQUIRED` Subsequent year costs are published in a separate PDF on the UNAV website.
 
-**What is the deposit and is it refundable?**
-The first deposit is 5,500€, paid on admission. It is non-refundable except in two cases: (1) Spanish Bachillerato students who fail the PAU in the 1st convocatoria (June), and (2) international students whose visa application is denied. The amount is deducted from the final tuition at enrolment.
-
 **Is the International Program in Medicine a separate degree or separate admission?**
-No on both counts. It is an optional track within the standard Medicine degree. No separate admissions process. Students indicate their interest when applying. Tuition per ECTS is identical. English level requirements apply for this track.
+No on both counts. It is an optional track within the standard Medicine degree. No separate admissions process. Students indicate their interest when applying. Tuition per ECTS is identical.
 
 **What is the Beca Prof. Jiménez Vargas?**
-A scholarship specific to the Facultad de Medicina, aimed at students with an excellent Bachillerato academic record and documented financial need. Funded by faculty alumni and supporters. Application is competitive and separate from the degree application. Document: https://www.unav.edu/documents/10162/33066811/Programa-de-Becas-Medicina_Prof-Jimenez-Vargas.pdf
+A scholarship specific to the Facultad de Medicina, aimed at students with an excellent Bachillerato academic record and documented financial need. Funded by faculty alumni and supporters. Application is competitive and separate from the degree application.
 
 **Does UNAV accept US federal financial aid?**
 Yes. UNAV participates in the William D. Ford Federal Direct Loan Program (US Department of Education), accepting Subsidized Loans, Unsubsidized Loans, and PLUS Loans for eligible US students.
 
 **If I fail the PAU, can I still enrol at UNAV for Medicine that year?**
-No. For Medicine specifically, UNAV requires Spanish Bachillerato students to pass the PAU in the 1st convocatoria (June). Failure in June disqualifies the applicant for that academic cycle. The 5,500€ first enrolment deposit is refunded in this specific case.
+No. For Medicine specifically, UNAV requires Spanish Bachillerato students to pass the PAU in the 1st convocatoria (June). Failure in June disqualifies the applicant for that academic cycle. The first enrolment deposit is refunded in this specific case.
 
 **What is the Estudio de Coste y Becas?**
-A personalised cost and scholarship assessment tool available to all applicants during the admissions process. By providing family income data, Bachillerato grades, and geographic origin, you receive a tailored estimate of your net annual cost and scholarship eligibility. It is free, confidential, and strongly recommended before committing to the application. Access via miportal.unav.edu.
+A personalised cost and scholarship assessment tool available to all applicants during the admissions process. By providing family income data, Bachillerato grades, and geographic origin, you receive a tailored estimate of your net annual cost and scholarship eligibility. It is free, confidential, and strongly recommended before committing to the application.
