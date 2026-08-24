@@ -6,6 +6,7 @@ subtype: private
 
 name: "Grado en Medicina — Universidad San Jorge (USJ)"
 short_name: USJ
+official_website: "https://www.usj.es/estudios/grados/medicina"
 
 institution_type: universidad_privada
 parent_university: "Grupo San Valero (Agustinos)"
@@ -14,15 +15,24 @@ year_founded_medicine: 2025
 inaugural_cohort: false
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: "2026-05-27"
+last_updated: "2026-08-24"
 
-valid_for_intake: "2026-2027"
+entry_year: "2027"
 
 location:
   city: "Villanueva de Gállego"
   region: "Zaragoza, Aragón"
   country: Spain
+
+campus:
+  address: NULL
+  lat: NULL
+  lng: NULL
+  district: NULL
+  commute_from_centre: NULL
 
 strategic_tags:
   - safety_option
@@ -33,6 +43,39 @@ strategic_tags:
   - religious_institution
   - strong_simulation
   - mixed_clinical_network
+
+admission_type: academic_record
+# Inference: exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
+
+accepts_vocational: NULL
+accepts_graduates: NULL
+accepts_over_25: NULL
+accepts_international_curricula: PENDING_CONFIRMATION
+spanish_level: PENDING_CONFIRMATION
+english_level: PENDING_CONFIRMATION
+
+selection_factors:
+  - factor: academic_record
+    weight_pct: 100
+    eliminatory: false
+  - factor: language_test
+    weight_pct: 0
+    eliminatory: true
+# Derive from evaluation_model. factor: exam|academic_record|interview|psychometric|competency_test|language_test
+# weight_pct: 0-100; 0 = present but non-scoring. eliminatory: true = can block regardless of score
+
+seats: 100
+minimum_grade: NULL
+admitted_grade_range: "5.000"
+
+teaching_hospital: "Hospital Quirónsalud Zaragoza"
+clinical_practice_start: 4
+group_size: NULL
+teaching_language: Spanish
+double_degrees: []
+distinctive_trait: NULL
+applicants_per_seat: NULL
+rankings: []
 
 admission:
   intake_month: September
@@ -51,6 +94,29 @@ admission:
 
   exam_required: false
   interview_required: false
+
+sittings:
+  - date: NULL
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: NULL
+    location: NULL
+
+exam_format:
+  question_count: NULL
+  subjects:
+    - name: NULL
+      weight_pct: NULL
+  penalty: NULL
+  duration_min: NULL
+  language: NULL
+
+deposit:
+  amount: 3500
+  deadline_days: NULL
+  refundable: NULL
+  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -445,19 +511,42 @@ clinical_training:
     - "Laboratorios"
     - "Mesa Anatómica Digital (Anatomage)"
 
+residence:
+  own_residence: NULL
+  location: NULL
+  price_min: NULL
+  price_max: NULL
+  first_year_place: NULL
+
 accreditation:
   aneca_verified: true
   wfme_accredited: PENDING_CONFIRMATION
 
 pricing:
-  preadmission_fee: 195
-  preadmission_fee_refundable: false
-  reservation_fee: 3500
-  reservation_fee_notes: "Reserva de plaza fee; likely credited toward first-year tuition. Confirm with USJ admissions."
-  annual_teaching_fees_y1: 18000
+  tuition_year1: 18000
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
   price_per_ects: 300
-  total_first_year: ANNUAL_UPDATE_REQUIRED
-  notes: "Annual fee 18,000 EUR (300 EUR/ECTS × 60 ECTS). Second and subsequent enrolments of a failed subject carry a 20% surcharge. Total first-year cost including fees ANNUAL_UPDATE_REQUIRED."
+  non_tuition_fees:
+    - concept: "Preinscripción"
+      amount: 195
+      frequency: once
+    - concept: "Reserva de plaza"
+      amount: 3500
+      frequency: once
+
+scholarships:
+  - name: NULL
+    amount_or_pct: NULL
+    criteria: NULL
+    deadline: NULL
+    stackable: NULL
+
+sources:
+  tuition: NULL
+  seats: NULL
+  calendar: NULL
+  scholarships: NULL
 
 contact:
   admissions_phone: "+34 976 077 584"

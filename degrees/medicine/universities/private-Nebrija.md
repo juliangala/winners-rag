@@ -6,17 +6,27 @@ subtype: private
 
 name: Facultad de Medicina y Ciencias de la Salud — Universidad Nebrija
 short_name: Nebrija
+official_website: NULL
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: 2026-05-27
+last_updated: "2026-08-24"
 
-valid_for_intake: 2026-2027
+entry_year: "2027"
 
 location:
   city: La Berzosa
   region: Comunidad de Madrid
   country: Spain
+
+campus:
+  address: NULL
+  lat: NULL
+  lng: NULL
+  district: NULL
+  commute_from_centre: NULL
 
 strategic_tags:
   - safety_option
@@ -26,6 +36,39 @@ strategic_tags:
   - strong_clinical_exposure
   - high_cost
   - english_advantage
+
+admission_type: mixed
+# exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
+
+accepts_vocational: PENDING_CONFIRMATION
+accepts_graduates: PENDING_CONFIRMATION
+accepts_over_25: NULL
+accepts_international_curricula: PENDING_CONFIRMATION
+spanish_level: PENDING_CONFIRMATION
+english_level: PENDING_CONFIRMATION
+
+selection_factors:
+  - factor: academic_record
+    weight_pct: PENDING_CONFIRMATION
+    eliminatory: false
+  - factor: psychometric_test
+    weight_pct: PENDING_CONFIRMATION
+    eliminatory: false
+  - factor: english_test
+    weight_pct: PENDING_CONFIRMATION
+    eliminatory: false
+
+seats: 90
+minimum_grade: PENDING_CONFIRMATION
+admitted_grade_range: NULL
+teaching_hospital: "Hospital Universitario Los Madroños; Hospital General Universitario Gregorio Marañón"
+clinical_practice_start: 2
+group_size: NULL
+teaching_language: "Spanish"
+double_degrees: []
+distinctive_trait: NULL
+applicants_per_seat: NULL
+rankings: []
 
 admission:
   intake_month: September
@@ -49,6 +92,31 @@ admission:
 
   exam_required: true
   interview_required: false
+
+sittings:
+  - date: NULL
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Campus de Ciencias de la Vida en La Berzosa or Campus Princesa (assigned by university)"
+
+exam_format:
+  question_count: NULL
+  subjects:
+    - name: "Psychometric / aptitude test"
+      weight_pct: PENDING_CONFIRMATION
+    - name: "English level test"
+      weight_pct: PENDING_CONFIRMATION
+  penalty: NULL
+  duration_min: NULL
+  language: NULL
+
+deposit:
+  amount: 3000
+  deadline_days: 10
+  refundable: true
+  conditions: "Refundable only if bachillerato/EvAU not passed in June call, or documented serious medical conditions preventing enrolment; deductible from Year 1 annual tuition"
 
 academic_record:
   minimum_requirement:
@@ -224,6 +292,37 @@ programs:
               maximum_bonus: null
               categories: []
               notes: Not applicable.
+
+pricing:
+  tuition_year1: 19060
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
+  price_per_ects: NULL
+  non_tuition_fees:
+    - concept: NULL
+      amount: NULL
+      frequency: NULL
+  notes: "Annual tuition 19,060 EUR (ANNUAL_UPDATE_REQUIRED). Estimated 6-year total ~114,360 EUR. Nebrija 2% single-payment discount explicitly does not apply to Ciencias de la Salud programs."
+
+scholarships:
+  - name: "Becas de Excelencia para el Grado en Medicina"
+    amount_or_pct: "50%–80% of monthly fees"
+    criteria: "Nota media Y2 Bachillerato ≥ 9.0 AND EvAU (June) ≥ 12.6 pts; family income thresholds apply; residents in Spain; max 5 per intake year"
+    deadline: "2026-07-01" # ANNUAL_UPDATE_REQUIRED
+    stackable: NULL
+
+sources:
+  tuition: NULL
+  seats: NULL
+  calendar: NULL
+  scholarships: NULL
+
+residence:
+  own_residence: PENDING_CONFIRMATION
+  location: NULL
+  price_min: NULL
+  price_max: NULL
+  first_year_place: NULL
 ---
 
 # Universidad Nebrija — Grado en Medicina

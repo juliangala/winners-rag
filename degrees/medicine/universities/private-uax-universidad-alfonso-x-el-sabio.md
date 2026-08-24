@@ -6,17 +6,27 @@ subtype: private
 
 name: Universidad Alfonso X el Sabio
 short_name: UAX
+official_website: https://www.uax.com
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: 2026-05-27
+last_updated: "2026-08-24"
 
-valid_for_intake: 2026-2027
+entry_year: "2027"
 
 location:
   city: Madrid
   region: Comunidad de Madrid
   country: Spain
+
+campus:
+  address: NULL
+  lat: NULL
+  lng: NULL
+  district: "Villanueva de la Cañada, Madrid"
+  commute_from_centre: "~45 min by Cercanías C-10 from Madrid Atocha; ~30 min by car"
 
 strategic_tags:
   - core_option
@@ -28,6 +38,54 @@ strategic_tags:
   - academic_exam_required
   - strong_clinical_exposure
   - medium_competitiveness
+
+admission_type: exam
+# Inference:
+# - exam_required: false → academic_record
+# - exam_required: true AND academic_record is weighted → mixed
+# - exam_required: true AND academic_record NOT weighted → exam
+
+accepts_vocational: true
+accepts_graduates: NULL
+accepts_over_25: true
+accepts_international_curricula: true
+spanish_level: B2
+english_level: NULL
+
+selection_factors:
+  - factor: exam
+    weight_pct: NULL
+    eliminatory: NULL
+  - factor: interview
+    weight_pct: NULL
+    eliminatory: NULL
+# Derive from programs[].evaluation_model if weights are clear.
+# factor values: exam | academic_record | interview | psychometric | competency_test | language_test
+# weight_pct: 0-100; 0 = present but non-scoring
+# eliminatory: true if the factor can block regardless of total score
+
+seats: PENDING_CONFIRMATION
+minimum_grade: PENDING_CONFIRMATION
+admitted_grade_range: NULL
+
+teaching_hospital: PENDING_CONFIRMATION  # No single primary hospital officially designated; partner network includes Hospital Univ. Severo Ochoa (Leganés), H. San Francisco de Asís, H. Univ. del Tajo, Fundación Giménez Díaz, Hospital de la Cruz Roja
+clinical_practice_start: 4  # Clínica Práctica I (6 ECTS) in Year 4; Year 3 includes Procedimientos Médico-Quirúrgicos Generales (18 ECTS) conducted in simulation
+group_size: NULL
+teaching_language: es
+double_degrees: []
+distinctive_trait: "Spain's first medical faculty to formally integrate Digital Medicine as a Year 3 subject (telemedicine, wearables, predictive medicine); rolling year-round admission with no fixed exam date; on-campus Virtual Simulation Hospital >2,000 m² (claimed largest in Europe); 96% MIR pass rate published"
+applicants_per_seat: NULL
+rankings:
+  - body: "ConSalud"
+    category: "Most innovative private university for Medicine in Spain"
+    position: 1
+    year: PENDING_CONFIRMATION
+    source_url: "https://www.consalud.es/formacion/las-universidades-privadas-mas-innovadoras-de-espana-para-estudiar-medicina.html"
+  - body: "ConSalud"
+    category: "Best private universities for Medicine in Spain (among top 5)"
+    position: PENDING_CONFIRMATION
+    year: PENDING_CONFIRMATION
+    source_url: "https://www.consalud.es/formacion/estas-son-las-cinco-mejores-universidades-privadas-de-espana-para-estudiar-medicina.html"
 
 admission:
   intake_month: September
@@ -45,6 +103,33 @@ admission:
 
   exam_required: true
   interview_required: true
+
+sittings:
+  - date: NULL
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: NULL
+    location: NULL
+
+exam_format:
+  question_count: 50
+  subjects:
+    - name: Biology
+      weight_pct: 60
+      questions: 30
+    - name: Chemistry
+      weight_pct: 40
+      questions: 20
+  penalty: NULL  # Not stated on any official UAX Medicine page; PENDING_CONFIRMATION
+  duration_min: NULL  # Not published
+  language: es
+
+deposit:
+  amount: "3,000.00"
+  deadline_days: NULL
+  refundable: NULL
+  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -369,6 +454,63 @@ programs:
               interview_format: PENDING_CONFIRMATION
               delivery_mode: PENDING_CONFIRMATION
               notes: "Personal interview. Same model as Madrid. Specific format at Oviedo campus: PENDING_CONFIRMATION."
+
+pricing:
+  tuition_year1: "24,250.00"
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
+  price_per_ects: NULL
+  non_tuition_fees:
+    - concept: "Reserva de plaza"
+      amount: "3,000.00"
+      frequency: once
+    - concept: "Apertura de expediente"
+      amount: "1,350.00"
+      frequency: once
+    - concept: "Tasa de examen de admisión"
+      amount: "125.00"
+      frequency: once
+
+scholarships:
+  - name: "Beca MEC (Ministerio de Educación)"
+    amount_or_pct: NULL
+    criteria: "National need/merit scholarship; requires passing ≥50% of enrolled credits in Year 1 and ≥65% in subsequent years"
+    deadline: NULL
+    stackable: NULL
+  - name: "Beca de Excelencia de la Comunidad de Madrid"
+    amount_or_pct: NULL
+    criteria: "Outstanding academic record; application submitted to Consejería de Educación of the Comunidad de Madrid"
+    deadline: NULL
+    stackable: NULL
+  - name: "OEI tuition discount"
+    amount_or_pct: "50% on docencia"
+    criteria: "Iberoamerican nationals or legal residents in OEI member countries; applicable to Medicine"
+    deadline: NULL
+    stackable: false
+  - name: "Ayuda deportistas de élite"
+    amount_or_pct: "20–50% on docencia"
+    criteria: "Elite athlete classification required from UAX; applicable to Medicine"
+    deadline: NULL
+    stackable: NULL
+  - name: "Continuidad de estudios UAX"
+    amount_or_pct: "up to 25% on docencia"
+    criteria: "Students with a prior UAX qualification enrolling in a new UAX program"
+    deadline: NULL
+    stackable: NULL
+  # NOTE: Becas de Excelencia UAX explicitly exclude the Grado en Medicina — do not plan financial aid around this scholarship
+
+sources:
+  tuition: "https://www.uax.com/titulaciones/grado-en-medicina"  # Pricing shown on degree page; no standalone fees URL found
+  seats: NULL
+  calendar: "https://www.uax.com/proceso-de-admision"
+  scholarships: "https://www.uax.com/becas-ayudas-y-financiacion"
+
+residence:
+  own_residence: NULL
+  location: NULL
+  price_min: NULL
+  price_max: NULL
+  first_year_place: NULL
 ---
 
 # Universidad Alfonso X el Sabio (UAX)

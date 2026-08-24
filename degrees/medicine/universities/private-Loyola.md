@@ -5,11 +5,14 @@ subtype: private
 
 name: "Grado en Medicina — Universidad Loyola (Compañía de Jesús)"
 short_name: Loyola
+official_website: "https://www.uloyola.es/grados/grado-medicina"
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: "2026-05-27"
-valid_for_intake: "2026-2027"
+last_updated: "2026-08-24"
+entry_year: "2027"
 
 institution_type: universidad_privada
 religious_affiliation: "Catholic — Jesuit (Compañía de Jesús)"
@@ -23,6 +26,13 @@ location:
   region: "Sevilla, Andalucía"
   country: Spain
 
+campus:
+  address: "Avda. de las Universidades, 2 — 41704 Dos Hermanas, Sevilla"
+  lat: NULL
+  lng: NULL
+  district: NULL
+  commute_from_centre: NULL
+
 strategic_tags:
   - core_option
   - medium_high_competitiveness
@@ -32,6 +42,39 @@ strategic_tags:
   - english_advantage
   - high_cost
   - strong_clinical_exposure
+
+admission_type: mixed
+# exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
+
+accepts_vocational: PENDING_CONFIRMATION
+accepts_graduates: PENDING_CONFIRMATION
+accepts_over_25: NULL
+accepts_international_curricula: PENDING_CONFIRMATION
+spanish_level: PENDING_CONFIRMATION
+english_level: NULL
+
+selection_factors:
+  - factor: academic_record
+    weight_pct: 65
+    eliminatory: false
+  - factor: aptitude_exam
+    weight_pct: 20
+    eliminatory: false
+  - factor: english_test
+    weight_pct: 15
+    eliminatory: false
+
+seats: 60
+minimum_grade: NULL
+admitted_grade_range: NULL
+teaching_hospital: "Hospital San Agustín (Dos Hermanas, Sevilla); Hospitales de San Juan de Dios (Andalucía network)"
+clinical_practice_start: 6
+group_size: NULL
+teaching_language: "Spanish"
+double_degrees: []
+distinctive_trait: NULL
+applicants_per_seat: NULL
+rankings: []
 
 admission:
   intake_month: September
@@ -61,6 +104,39 @@ admission:
 
   exam_required: true
   interview_required: false
+
+sittings:
+  - date: "2026-01-31"
+    registration_deadline: NULL
+    results_date: "2026-02-09"
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Dos Hermanas (Sevilla) / Córdoba"
+  - date: "2026-02-14"
+    registration_deadline: NULL
+    results_date: "2026-02-23"
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Dos Hermanas (Sevilla) / Córdoba"
+
+exam_format:
+  question_count: NULL
+  subjects:
+    - name: "Psychotechnic aptitude (mathematics, statistics, probability, logical reasoning, spelling/language)"
+      weight_pct: NULL
+    - name: "Personality assessment (Likert scale)"
+      weight_pct: NULL
+    - name: "English (multiple-choice grammar + listening comprehension)"
+      weight_pct: NULL
+  penalty: NULL
+  duration_min: 150
+  language: "Spanish / English"
+
+deposit:
+  amount: 2300
+  deadline_days: NULL
+  refundable: NULL
+  conditions: "Applied toward total annual fee; ANNUAL_UPDATE_REQUIRED for refund conditions"
 
 academic_record:
   minimum_requirement:
@@ -122,18 +198,45 @@ clinical_training:
     - "Urgencias y Emergencias"
     - "Pediatría"
 
+residence:
+  own_residence: false
+  location: "Dos Hermanas / Sevilla"
+  price_min: 700
+  price_max: 1200
+  first_year_place: false
+
 accreditation:
   aneca_verified: true # BOE published February 2024; Consejo de Ministros approval December 2023
   wfme_accredited: PENDING_CONFIRMATION
 
 pricing:
-  application_fee: 50 # EUR — non-refundable; ANNUAL_UPDATE_REQUIRED
-  reservation_fee: 2300 # EUR — applied toward total; ANNUAL_UPDATE_REQUIRED
-  enrollment_fee: 700 # EUR — annual matriculation; ANNUAL_UPDATE_REQUIRED
-  price_per_ects: 244 # EUR; ANNUAL_UPDATE_REQUIRED (2026-27)
-  annual_ects_y1: 60
-  annual_teaching_fees_y1: 15340 # EUR total first year (matrícula included); ANNUAL_UPDATE_REQUIRED
-  total_degree: ANNUAL_UPDATE_REQUIRED # ~92,000 EUR estimated across 6 years
+  tuition_year1: 14640
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
+  price_per_ects: 244
+  non_tuition_fees:
+    - concept: "Application fee"
+      amount: 50
+      frequency: "per application"
+    - concept: "Annual enrollment fee (matrícula)"
+      amount: 700
+      frequency: "annual"
+  payment_options:
+    structure: "Monthly instalments (mensualidades) across each semester"
+    note: "Bank financing agreements available through Loyola financial partner institutions"
+
+scholarships:
+  - name: "Premios a la Excelencia Académica"
+    amount_or_pct: PENDING_CONFIRMATION
+    criteria: "Nota de acceso ≥ 9.0 in June call; specific amounts applicable to Medicine PENDING_CONFIRMATION"
+    deadline: NULL
+    stackable: NULL
+
+sources:
+  tuition: "https://www.uloyola.es/grados/grado-medicina"
+  seats: NULL
+  calendar: NULL
+  scholarships: NULL
 
 mir_outcomes:
   pass_rate: PENDING_CONFIRMATION # First cohort graduates in ~2029; no MIR data yet

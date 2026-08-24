@@ -6,17 +6,27 @@ subtype: private
 
 name: Facultat de Ciències de la Salut Blanquerna-URL
 short_name: Blanquerna
+official_website: NULL
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: 2026-05-27
+last_updated: "2026-08-24"
 
-valid_for_intake: 2026-2027
+entry_year: "2027"
 
 location:
   city: Barcelona
   region: Cataluña
   country: Spain
+
+campus:
+  address: "c/ Padilla 326 i Travessera de Gràcia 401, 08025 Barcelona"
+  lat: NULL
+  lng: NULL
+  district: "Eixample / Gràcia"
+  commute_from_centre: NULL
 
 strategic_tags:
   - core_option
@@ -28,6 +38,39 @@ strategic_tags:
   - academic_exam_required
   - onsite_exam_required
   - strong_clinical_exposure
+
+admission_type: mixed
+# exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed; exam_required: true only → exam
+
+accepts_vocational: true
+accepts_graduates: true
+accepts_over_25: NULL
+accepts_international_curricula: true
+spanish_level: B2
+english_level: NULL
+
+selection_factors:
+  - factor: academic_record
+    weight_pct: 30
+    eliminatory: false
+  - factor: knowledge_exam
+    weight_pct: 35
+    eliminatory: false
+  - factor: psychometric_test
+    weight_pct: 35
+    eliminatory: false
+
+seats: NULL
+minimum_grade: NULL
+admitted_grade_range: NULL
+teaching_hospital: "Quirónsalud Barcelona, Hospital El Pilar, Hospital Quirónsalud Badalona; Fundació Hospitalàries (Barcelona General, Barcelona Nord, Martorell, Sant Boi); Parc Sanitari Sant Joan de Déu; CAP Vallcarca, CAP Sant Gervasi, CAP Roger de Flor"
+clinical_practice_start: 3
+group_size: NULL
+teaching_language: "Catalan (primary), Spanish (parallel)"
+double_degrees: []
+distinctive_trait: NULL
+applicants_per_seat: NULL
+rankings: []
 
 admission:
   intake_month: September
@@ -63,6 +106,51 @@ admission:
 
   exam_required: true
   interview_required: false
+
+sittings:
+  - date: "2025-12-13"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Barcelona"
+  - date: "2026-02-21"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Barcelona"
+  - date: "2026-07-02"
+    registration_deadline: "2026-06-30"
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Barcelona"
+
+exam_format:
+  question_count: NULL
+  subjects:
+    - name: "Biology"
+      weight_pct: NULL
+    - name: "Chemistry"
+      weight_pct: NULL
+    - name: "Mathematics"
+      weight_pct: NULL
+    - name: "English"
+      weight_pct: NULL
+    - name: "General culture / current affairs"
+      weight_pct: NULL
+    - name: "Aptitude / vocational test (psychometric)"
+      weight_pct: NULL
+  penalty: NULL
+  duration_min: 150
+  language: "Catalan / Spanish"
+
+deposit:
+  amount: NULL
+  deadline_days: 2
+  refundable: true
+  conditions: "20% of Year 1 tuition at enrollment (within 2 business days); refundable minus 50 EUR application fee if final access credential not obtained by September"
 
 academic_record:
   minimum_requirement:
@@ -264,6 +352,80 @@ programs:
               maximum_bonus: NULL
               categories: []
               notes: NULL
+
+pricing:
+  tuition_year1: 18900
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
+  price_per_ects: 315
+  non_tuition_fees:
+    - concept: "Application fee (sol·licitud de plaça)"
+      amount: 50
+      frequency: "per application"
+  payment_options:
+    from_website: "20% at enrollment (within 2 business days) + 10% by 2026-05-30 + 70% in 9 monthly installments (October 2026 to June 2027)"
+    from_brochure: "20% at enrollment + 10% in May 2026 + 70% in 10 monthly installments (September 2026 to June 2027)"
+    lump_sum: true
+    family_discounts:
+      - type: "Large/single-parent family"
+        pct: 5
+        note: "Non-cumulative; document at Secretaria Acadèmica by 2026-09-30"
+      - type: "Disability >33%"
+        pct: 5
+        note: "Non-cumulative"
+      - type: "Família Blanquerna alumni"
+        pct: 5
+        note: "Non-cumulative"
+
+scholarships:
+  - name: "Premi a l'excel·lència — 1r classificat"
+    amount_or_pct: "95% Year 1 tuition; 75% subsequent years"
+    criteria: "Highest admission composite score in the intake"
+    deadline: NULL
+    stackable: NULL
+  - name: "Premi a l'excel·lència — 2n a 5è classificat"
+    amount_or_pct: "50%"
+    criteria: "2nd to 5th highest admission composite score; renewable if academic conditions met"
+    deadline: NULL
+    stackable: NULL
+  - name: "Premi excel·lència acadèmica"
+    amount_or_pct: "50%"
+    criteria: "Secondary school / PAU academic record excellence; renewable through graduation"
+    deadline: NULL
+    stackable: NULL
+  - name: "Premi esportiu"
+    amount_or_pct: "50%"
+    criteria: "Federated athlete with podium results and good BAT/CFGS grades"
+    deadline: NULL
+    stackable: NULL
+  - name: "Ajuts Blanquerna (need-based)"
+    amount_or_pct: "20%–80%"
+    criteria: "Combination of admission score and family income; 11 awards; renewable annually"
+    deadline: NULL
+    stackable: NULL
+  - name: "Ajuts puntuals"
+    amount_or_pct: NULL
+    criteria: "Emergency financial aid for enrolled students facing sudden economic hardship"
+    deadline: NULL
+    stackable: NULL
+  - name: "Ajuts per a persones refugiades o desplaçades"
+    amount_or_pct: "Up to 50%"
+    criteria: "Up to 6 students affected by international conflict; renewable subject to personal situation review"
+    deadline: NULL
+    stackable: NULL
+
+sources:
+  tuition: NULL
+  seats: NULL
+  calendar: NULL
+  scholarships: NULL
+
+residence:
+  own_residence: false
+  location: "Barcelona"
+  price_min: 600
+  price_max: 1400
+  first_year_place: false
 ---
 
 # Blanquerna-URL — Facultat de Ciències de la Salut

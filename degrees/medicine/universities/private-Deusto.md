@@ -6,17 +6,27 @@ subtype: private
 
 name: Universidad de Deusto
 short_name: Deusto
+official_website: NULL
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: 2026-05-27
+last_updated: "2026-08-24"
 
-valid_for_intake: 2026-2027
+entry_year: "2027"
 
 location:
   city: Bilbao
   region: País Vasco
   country: Spain
+
+campus:
+  address: NULL
+  lat: NULL
+  lng: NULL
+  district: NULL
+  commute_from_centre: NULL
 
 strategic_tags:
   - core_option
@@ -29,6 +39,34 @@ strategic_tags:
   - bilingual_program
   - research_oriented
   - onsite_exam_required
+
+admission_type: academic_record
+# exam_required: false → academic_record; exam_required: true + academic_record weighted → mixed
+
+accepts_vocational: NULL
+accepts_graduates: NULL
+accepts_over_25: NULL
+accepts_international_curricula: NULL
+spanish_level: NULL
+english_level: NULL
+
+selection_factors:
+  - factor: NULL
+    weight_pct: NULL
+    eliminatory: NULL
+
+seats: 80 # ANNUAL_UPDATE_REQUIRED
+minimum_grade: NULL
+admitted_grade_range: NULL
+
+teaching_hospital: NULL
+clinical_practice_start: NULL
+group_size: NULL
+teaching_language: NULL
+double_degrees: []
+distinctive_trait: NULL
+applicants_per_seat: NULL
+rankings: []
 
 admission:
   intake_month: September # ANNUAL_UPDATE_REQUIRED
@@ -52,6 +90,29 @@ admission:
 
   exam_required: false # No independent academic exam; admission based on academic record + potential interview
   interview_required: true # Selective — reserved by admissions committee at their discretion
+
+sittings:
+  - date: ANNUAL_UPDATE_REQUIRED
+    registration_deadline: ANNUAL_UPDATE_REQUIRED
+    results_date: ANNUAL_UPDATE_REQUIRED
+    deposit_deadline: ANNUAL_UPDATE_REQUIRED
+    mode: NULL
+    location: NULL
+
+exam_format:
+  question_count: NULL
+  subjects:
+    - name: NULL
+      weight_pct: NULL
+  penalty: NULL
+  duration_min: NULL
+  language: NULL
+
+deposit:
+  amount: NULL
+  deadline_days: NULL
+  refundable: NULL
+  conditions: NULL
 
 academic_record:
   minimum_requirement:
@@ -205,6 +266,38 @@ programs:
               interview_format: PENDING_CONFIRMATION
               delivery_mode: PENDING_CONFIRMATION
               notes: The admissions commission reserves the right to call any candidate for a personal interview or to request additional documentation. Interview is selective, not universal. Eliminatory if called is PENDING_CONFIRMATION.
+
+pricing:
+  tuition_year1: "17,850.00"
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
+  price_per_ects: NULL
+  non_tuition_fees:
+    - concept: "Seguro escolar"
+      amount: "1.12"
+      frequency: annual
+  payment_options:
+    - description: "3,570.00 EUR enrolment fee upon matriculation + 8 monthly instalments of 1,785.00 EUR (October–May)"
+
+scholarships:
+  - name: NULL
+    amount_or_pct: NULL
+    criteria: NULL
+    deadline: NULL
+    stackable: NULL
+
+sources:
+  tuition: NULL
+  seats: NULL
+  calendar: NULL
+  scholarships: NULL
+
+residence:
+  own_residence: NULL
+  location: NULL
+  price_min: NULL
+  price_max: NULL
+  first_year_place: NULL
 ---
 # Universidad de Deusto — Medicine
 

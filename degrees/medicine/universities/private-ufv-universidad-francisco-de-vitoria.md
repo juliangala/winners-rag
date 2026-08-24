@@ -6,17 +6,27 @@ subtype: private
 
 name: Universidad Francisco de Vitoria
 short_name: UFV
+official_website: https://www.ufv.es/
 
 degree: Medicine
+country: spain
+currency: EUR
 
-last_update: 2026-05-27
+last_updated: "2026-08-24"
 
-valid_for_intake: 2026-2027
+entry_year: "2027"
 
 location:
   city: Pozuelo de Alarcón (Madrid)
   region: Comunidad de Madrid
   country: Spain
+
+campus:
+  address: "Ctra. Pozuelo-Majadahonda, KM 1.800, 28223 Pozuelo de Alarcón, Madrid"
+  lat: 40.4496
+  lng: -3.8120
+  district: "Pozuelo de Alarcón, Madrid"
+  commute_from_centre: "~20 min from Moncloa (Cercanías C-7 or metro line 10)"
 
 strategic_tags:
   - core_option
@@ -30,6 +40,80 @@ strategic_tags:
   - high_cost
   - international_friendly
   - onsite_exam_required
+
+admission_type: mixed
+# Inference:
+# - exam_required: false → academic_record
+# - exam_required: true AND academic_record is weighted → mixed
+# - exam_required: true AND academic_record NOT weighted → exam
+
+accepts_vocational: true
+accepts_graduates: true
+accepts_over_25: NULL
+accepts_international_curricula: true
+spanish_level: NULL
+english_level: NULL
+
+selection_factors:
+  - factor: academic_record
+    weight_pct: 70
+    eliminatory: false
+  - factor: psychometric
+    weight_pct: 25
+    eliminatory: false
+  - factor: language_test
+    weight_pct: 5
+    eliminatory: false
+  - factor: interview
+    weight_pct: 0
+    eliminatory: true
+# Derive from programs[].evaluation_model if weights are clear.
+# factor values: exam | academic_record | interview | psychometric | competency_test | language_test
+# weight_pct: 0-100; 0 = present but non-scoring
+# eliminatory: true if the factor can block regardless of total score
+
+seats: 161
+minimum_grade: NULL
+admitted_grade_range: NULL
+
+teaching_hospital: "Hospital Universitario del Henares; Hospital Universitario Infanta Elena; Hospital Universitario de Móstoles; Hospital Universitario El Escorial; Hospital Universitario de Torrejón; MD Anderson Cancer Center Madrid; Hospital San Rafael; Hospital San Camilo; Sanitas; Hermanas Hospitalarias; Fundación Instituto San José"
+clinical_practice_start: 1 # From Year 1; hospital shadowing embedded from first semester
+group_size: NULL
+teaching_language: es
+double_degrees: []
+distinctive_trait: "UFV's Medicine degree integrates Positive Leadership formation with clinical immersion from Year 1, one of Spain's first systematically embedded simulation curricula (on-campus operating theatres, ICU, emergency and ambulance scenarios), and a four-year Medical Humanities thread. Admission relies on a proprietary psychometric aptitude test — not a science knowledge exam — within a two-round structure that allows high-performing Bachillerato students to secure a place before the PAU."
+applicants_per_seat: NULL
+rankings:
+  - body: "Fundación CYD"
+    category: "Enseñanza y Aprendizaje (Teaching & Learning) — Spain"
+    position: "Top 3 (national)"
+    year: 2026
+    source_url: https://www.ufv.es/estudiar-grado-medicina-madrid/
+  - body: "SCImago Institutions Rankings"
+    category: "Cardiology — Spain"
+    position: 1
+    year: 2026
+    source_url: https://www.ufv.es/estudiar-grado-medicina-madrid/
+  - body: "MIR (Ministerio de Sanidad)"
+    category: "Overall MIR results — Comunidad de Madrid"
+    position: 1
+    year: 2025
+    source_url: https://www.ufv.es/estudiar-grado-medicina-madrid/
+  - body: "MIR (Ministerio de Sanidad)"
+    category: "Specialist placement rate — private universities in Madrid"
+    position: 1
+    year: 2025
+    source_url: https://www.ufv.es/estudiar-grado-medicina-madrid/
+  - body: "AulaMagna.News"
+    category: "Best private university for Ciencias Experimentales y Biomédicas — Spain"
+    position: 1
+    year: 2026
+    source_url: https://www.ufv.es/estudiar-grado-medicina-madrid/
+  - body: "AulaMagna.News"
+    category: "Mejor Campus de España — among 25 public and private universities"
+    position: 1
+    year: 2026
+    source_url: https://www.ufv.es/
 
 admission:
   intake_month: September # ANNUAL_UPDATE_REQUIRED
@@ -60,6 +144,39 @@ admission:
   exam_required: true
   interview_required: true # Selective — called by committee only; eliminatory if called
 
+sittings:
+  - date: ANNUAL_UPDATE_REQUIRED
+    registration_deadline: 2026-02-03
+    results_date: 2026-02-18
+    deposit_deadline: ANNUAL_UPDATE_REQUIRED
+    mode: NULL
+    location: NULL
+  - date: ANNUAL_UPDATE_REQUIRED
+    registration_deadline: 2026-06-25
+    results_date: 2026-07-01
+    deposit_deadline: ANNUAL_UPDATE_REQUIRED
+    mode: NULL
+    location: NULL
+
+exam_format:
+  question_count: NULL # Not publicly disclosed by UFV
+  # IMPORTANT: There is NO science knowledge exam. The session contains only an aptitude/psychometric
+  # test and an English proficiency test. Weight within the exam session is not publicly disclosed.
+  subjects:
+    - name: "Prueba psicotécnica de aptitudes (psychometric aptitude test — no knowledge-based science content)"
+      weight_pct: PENDING_CONFIRMATION # Overall admission weight: 30% Round 1 / 25% Round 2
+    - name: "Prueba de nivel de inglés (English proficiency test — determines CEFR level)"
+      weight_pct: PENDING_CONFIRMATION # Overall admission weight: 5% all rounds; internal exam split not published
+  penalty: NULL # No penalty information published
+  duration_min: 120 # Approximately 2-hour total session (UFV official description); split between tests not published
+  language: es
+
+deposit:
+  amount: "4,250.00"
+  deadline_days: NULL
+  refundable: false
+  conditions: "Non-refundable in all circumstances, including voluntary withdrawal (Art. 103 TRLGDCU explicitly excluded)."
+
 academic_record:
   minimum_requirement:
     enabled: false
@@ -79,7 +196,7 @@ competitiveness:
 
 admissions_statistics:
   annual_applications: PENDING_CONFIRMATION
-  seats: 160 # ANNUAL_UPDATE_REQUIRED (155 via routes A/B/C + max 5 via route D; E/F from vacancies)
+  seats: 161 # RUCT-verified (plazas verificadas); 155 via routes A/B/C + max 5 via route D; E/F from vacancies
   applicants_per_seat: PENDING_CONFIRMATION
 
   last_admitted_scores:
@@ -128,11 +245,11 @@ programs:
       english_required: false # English test is part of the admission scoring, not a prerequisite
       minimum_english_level: NULL
 
-    seats: 160 # ANNUAL_UPDATE_REQUIRED
+    seats: 161 # RUCT-verified (plazas verificadas)
 
     program_statistics:
       annual_applications: PENDING_CONFIRMATION
-      seats: 160
+      seats: 161
       applicants_per_seat: PENDING_CONFIRMATION
 
       last_admitted_scores:
@@ -312,6 +429,49 @@ programs:
                 C1: NULL
                 C2: NULL
               notes: NULL
+
+pricing:
+  tuition_year1: "21,830.00" # Confirmed 2026-27 on official degree page
+  tuition_year1_non_eu: NULL
+  annual_increase_pct: NULL
+  price_per_ects: NULL
+  non_tuition_fees:
+    - concept: "Preinscripción"
+      amount: "170.00"
+      frequency: once
+    - concept: "Reserva de plaza (1st payment)"
+      amount: "3,250.00"
+      frequency: once
+    - concept: "Reserva de plaza (2nd payment)"
+      amount: "1,000.00"
+      frequency: once
+  payment_schedule:
+    - concept: "Pago inicial"
+      amount: "2,500.00"
+    - concept: "2º pago inicial"
+      amount: "1,000.00"
+    - concept: "Mensualidades (×10)"
+      amount: "1,833.00"
+
+scholarships:
+  - name: "Becas y Ayudas al Estudio UFV (Servicio de Ayudas al Estudio)"
+    amount_or_pct: NULL # Specific amounts for Medicine not publicly disclosed
+    criteria: "Academic excellence, personal talent, and/or socioeconomic circumstances. UFV states >30% of students receive financial aid."
+    deadline: NULL # Contact Servicio de Ayudas al Estudio before committing deposit
+    stackable: NULL
+
+sources:
+  tuition: https://www.ufv.es/grado-medicina/precios-y-becas/
+  seats: https://www.ufv.es/estudiar-grado-medicina-madrid/
+  calendar: https://www.ufv.es/grado-medicina/admision/
+  scholarships: https://www.ufv.es/becas-y-ayudas-grados/
+
+residence:
+  own_residence: NULL
+  location: NULL
+  price_min: NULL
+  price_max: NULL
+  first_year_place: NULL
 ---
 # Universidad Francisco de Vitoria — Medicine
 
@@ -319,7 +479,7 @@ programs:
 
 The Grado en Medicina at Universidad Francisco de Vitoria (UFV) is a six-year, 360 ECTS programme offered on a single campus in Pozuelo de Alarcón, on the outskirts of Madrid. UFV is a Catholic, Regnum Christi-affiliated institution whose Medicine degree is framed around a distinctive "Medical Humanities" philosophy — integrating physical, psychological, spiritual, and social dimensions of healthcare alongside the standard biomedical curriculum.
 
-The programme stands out for early clinical exposure from Year 1, a well-articulated network of hospital agreements (eight university hospitals, sixteen health centres), strong MIR pass rates, and a top national ranking in teaching quality (CYD Ranking, 2020). The admission model is multi-component — combining academic record, a proprietary psychometric aptitude test, and an English proficiency test — with two structured admission rounds spread across the academic year, making early-year application strategically advantageous.
+The programme stands out for early clinical exposure from Year 1, a well-articulated network of hospital agreements (eight university hospitals, sixteen health centres), strong MIR outcomes (#1 in Comunidad de Madrid in MIR 2025), and a top national ranking in teaching quality (CYD Ranking 2026, Top 3 in Spain). The admission model is multi-component — combining academic record, a proprietary psychometric aptitude test, and an English proficiency test — with two structured admission rounds spread across the academic year, making early-year application strategically advantageous.
 
 UFV has established a large intake of 160 places per cohort, which is above average for private Medicine programmes in Spain, reflecting its capacity to absorb a meaningful volume of domestic and international candidates. The campus is self-contained and purpose-built, with clinical simulation infrastructure that includes operating theatres, ICUs, emergency suites, and ambulance facilities integrated into the curriculum.
 
@@ -331,7 +491,7 @@ For international students, UFV accepts Credencial UE, non-EU homologation, and 
 - **Admission model:** Weighted composite — 65–70% academic record + 25–30% psychometric aptitude test + 5% English test
 - **Rounds:** 2 — Round 1 (February results) for current Bachillerato students; Round 2 (July results) open to all
 - **Selective interview:** Not universal — called by committee; eliminatory if summoned
-- **Annual tuition:** €20,400 (Year 1) — ANNUAL_UPDATE_REQUIRED
+- **Annual tuition:** €21,830 (Year 1, 2026–27, confirmed)
 - **Registration fee:** €170 (non-refundable); place deposit €4,250 (non-refundable)
 - **Clinical network:** 8 university hospitals + 16 specialised centres across Madrid
 - **MIR outcomes:** Stated strong results; specific pass rates PENDING_CONFIRMATION
@@ -344,8 +504,8 @@ For international students, UFV accepts Credencial UE, non-EU homologation, and 
 |---|---|
 | Degree | Grado en Medicina (360 ECTS, 6 years) |
 | Campus | Pozuelo de Alarcón, Madrid |
-| Seats (2026–27) | 160 — ANNUAL_UPDATE_REQUIRED |
-| Annual tuition (Year 1) | €20,400 — ANNUAL_UPDATE_REQUIRED |
+| Seats (2026–27) | 161 (RUCT-verified plazas verificadas) |
+| Annual tuition (Year 1) | €21,830 (2026–27, confirmed) |
 | Registration fee | €170 (non-refundable) |
 | Place deposit | €4,250 (non-refundable, deducted from tuition) |
 | Admission rounds | 2 (February + July) |
@@ -391,12 +551,20 @@ UFV's pedagogical model is built around three pillars: early clinical immersion,
 
 Clinical training is embedded from Year 1 and intensifies progressively through the programme. UFV's clinical network comprises eight public and private university hospitals and sixteen specialised units and health centres covering psychiatry, oncology, traumatology, palliative care, and geriatrics.
 
-**Confirmed affiliate hospitals include:**
-- Hospital Universitario Severo Ochoa (Leganés, Madrid)
-- Hospital San Francisco de Asís (Madrid)
-- Clínica CEMTRO (Madrid)
+**Confirmed affiliate hospitals and centres (from official degree page, 2026–27):**
+- Hospital Universitario del Henares
+- Hospital Universitario Infanta Elena
+- Hospital Universitario de Móstoles
+- Hospital Universitario El Escorial
+- Hospital Universitario de Torrejón
+- MD Anderson Cancer Center Madrid
+- Hospital San Rafael
+- Hospital San Camilo
+- Sanitas
+- Hermanas Hospitalarias
+- Fundación Instituto San José
 
-Additional affiliate centres: ANNUAL_UPDATE_REQUIRED — the full list of 24 partner institutions is subject to annual revision.
+Additional affiliate centres may apply: the full list of 24 partner institutions is subject to annual revision. Verify the current network directly with UFV before committing.
 
 **International clinical rotations:** UFV's Faculty of Medicine operates an international rotation programme with 4-week placements at all UFV-affiliated hospitals, available to visiting students from partner universities. Applications open annually October–November. Duration may vary by bilateral agreement.
 
@@ -480,15 +648,15 @@ The complementary points (vínculos UFV) are unlikely to change outcomes for can
 | Registration fee | €170 | Non-refundable; waived for RC school students, current UFV students, UFV employee children |
 | Place deposit (1st payment) | €3,250 | Non-refundable; paid upon pre-admission notification |
 | Place deposit (2nd payment) | €1,000 | Non-refundable; paid within UFV-specified deadline |
-| Annual tuition (Year 1) | €20,400 | ANNUAL_UPDATE_REQUIRED |
+| Annual tuition (Year 1) | €21,830 | 2026–27, confirmed on official degree page |
 | Initial payment at enrolment | €2,500 | Deducted from annual total |
 | Second initial payment | €1,000 | Part of annual total |
-| Monthly instalments | €1,690 × 10 | Completing the €20,400 annual total |
+| Monthly instalments | €1,833 × 10 | Completing the €21,830 annual total |
 | Annual tuition (Years 2–6) | ANNUAL_UPDATE_REQUIRED | Typically similar to Year 1; confirm annually |
 
 The €4,250 deposit is deducted from the first-year tuition upon formal enrolment, but it is not refundable under any circumstances — including withdrawal after enrolment or during the degree. This is explicitly stated in the UFV admissions documentation and overrides any right-of-withdrawal protections under consumer law (Art. 103 TRLGDCU).
 
-Over six years at the Year 1 tuition rate, the gross tuition cost is approximately €122,400, excluding registration fees, living costs, and annual adjustments.
+Over six years at the 2026–27 Year 1 tuition rate, the gross tuition cost is approximately €130,980, excluding registration fees, living costs, and annual adjustments.
 
 ## Scholarships and Financial Aid
 
@@ -605,13 +773,13 @@ No. The deposit is non-refundable in all circumstances, including voluntary with
 Biology, Chemistry, Physics, and Mathematics II. UFV counts the two highest-approved phase-specific subject scores. These scores are valid for only 2 years after the PAU is taken.
 
 **What is the annual tuition fee?**
-€20,400 for Year 1 (2026–27). Subject to annual revision. Payment is structured as an initial payment (€2,500), a second initial payment (€1,000), and ten monthly instalments of €1,690. The €4,250 deposit is deducted from the annual tuition.
+€21,830 for Year 1 (2026–27, confirmed on official degree page). Subject to annual revision. Payment is structured as an initial payment (€2,500), a second initial payment (€1,000), and ten monthly instalments of €1,833. The €4,250 deposit is deducted from the annual tuition.
 
 **Does UFV Medicine have good MIR results?**
 UFV claims strong MIR pass rates and top specialist placement allocations across multiple examination cycles. Specific published data for comparison is not available; prospective students are advised to request current MIR statistics directly from the Faculty of Medicine.
 
 **What hospitals will I train in?**
-UFV's clinical network includes eight public and private university hospitals and sixteen specialised centres. Confirmed affiliates include Hospital Universitario Severo Ochoa and Hospital San Francisco de Asís. The full updated list should be confirmed with UFV each year as network agreements are revised.
+UFV's clinical network includes eight public and private university hospitals and sixteen specialised centres. Confirmed affiliates (2026–27, from the official degree page) include: Hospital Universitario del Henares, Hospital Universitario Infanta Elena, Hospital Universitario de Móstoles, Hospital Universitario El Escorial, Hospital Universitario de Torrejón, MD Anderson Cancer Center Madrid, Hospital San Rafael, Hospital San Camilo, Sanitas, Hermanas Hospitalarias, and Fundación Instituto San José. The full updated list should be confirmed with UFV each year as network agreements are revised.
 
 **Can I study Medicine at UFV entirely in English?**
 No. The degree is taught entirely in Spanish. An English proficiency test is part of the admission scoring, and one subject (Applied Scientific English Applied to Medicine) is offered in Year 2, but the programme is not bilingual or English-medium.
