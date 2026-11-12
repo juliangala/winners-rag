@@ -130,6 +130,8 @@ admission:
     enabled: true
     estimated_end_date: July 16, 2026 # ANNUAL_UPDATE_REQUIRED
 
+  # ATENCIÓN: fechas de admission_rounds del ciclo 2025-26. Las convocatorias del ciclo 2026-27 están en `sittings`
+  # (calendario Winners de exámenes 2026-27, actualizado el 12.10.2026). Etiquetado el 12.11.2026.
   admission_rounds:
     enabled: true
     count: 3
