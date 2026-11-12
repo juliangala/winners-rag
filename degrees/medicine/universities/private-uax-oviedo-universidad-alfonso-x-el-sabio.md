@@ -58,7 +58,8 @@ strategic_tags:
 
 # ── SECTION 1b: Admission type ──────────────────────────────────────────
 admission_type: exam
-# UAX Oviedo uses the same exam-based rolling admission model as the Madrid campus.
+# UAX Oviedo uses the same exam-based admission model as the Madrid campus. For the 2026-27 cycle its
+# convocatoria date is not published yet (Winners calendar of 12.10.2026), unlike the Madrid rolling sessions.
 # Admission requires passing a 50-question MCQ test (Biology + Chemistry) and a personal interview.
 # Academic record is NOT a weighted component; admission is exam-driven.
 
@@ -103,7 +104,7 @@ admission:
   applications_open_date: ANNUAL_UPDATE_REQUIRED  # Rolling process; no fixed opening date
 
   rolling_admissions:
-    enabled: true
+    enabled: PENDING_CONFIRMATION  # Calendario Winners 2026-27 (12.10.2026): Oviedo figura en "Sin fecha publicada, fecha de convocatoria por publicar", no en "Convocatoria continua" como Madrid
     estimated_end_date: ANNUAL_UPDATE_REQUIRED  # Seats are limited; process runs until filled
 
   admission_rounds:
