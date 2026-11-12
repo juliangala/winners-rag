@@ -114,12 +114,15 @@ admission:
   interview_required: true
 
 sittings:
-  - date: 2026-05-09
-    registration_deadline: PENDING_CONFIRMATION
-    results_date: PENDING_CONFIRMATION # ~15 business days after exam
-    deposit_deadline: PENDING_CONFIRMATION # 15 natural days from admission letter
-    mode: hybrid # Onsite (Catalonia residents) or online (outside Catalonia), same date
-    location: "Campus Sant Cugat del Vallès (onsite) / online (non-Catalonia residents)"
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2027-02-13"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: hybrid
+    location: "Barcelona"
+    notes: "Convocatoria única. Presencial para todos los alumnos. Online solo para alumnos residentes fuera de Cataluña."
 
 exam_format:
   question_count: NULL # Not published; multiple-choice (tipo test) confirmed
@@ -413,7 +416,7 @@ With approximately 550 candidates competing for 100 seats, the programme sits at
 
 - 100 seats; approximately 550 applicants per cycle; ~5.5:1 ratio
 - WFME-accredited — currently the only private Medicine degree in Spain with this distinction
-- Single annual exam date (9 May 2026 for 2026-2027 intake); online option for students outside Catalonia
+- Single annual exam date (13 February 2027 in the 2026-27 cycle, the previous exam, for the 2026-2027 intake, was on 9 May 2026). Onsite for all candidates, online option for students residing outside Catalonia
 - Exam covers biology, chemistry, and mathematics at Year 1 bachillerato level — accessible to thorough students
 - No English certificate required for admission; some subjects delivered in English
 - IB, CFGS, and university transfer pathways accepted
@@ -533,7 +536,7 @@ The UIC Medicine admission ranking is constructed from three scored components a
 
 **Written structured interview — Entrevista escrita estructurada (qualitative modifier):** All candidates complete this on exam day. It carries no fixed percentage but can shift the final ranking score up, down, or not at all by decimal points. It functions as a tiebreaker-style modifier rather than a scored admission gate.
 
-The exam session runs approximately 09:00–13:00 (4–5 hours total) and includes all three components in sequence.
+The exam session runs approximately 09:00–13:00 (2025-26 cycle timing, 4–5 hours total) and includes all three components in sequence.
 
 The overall model type is weighted for the first three components, with the interview as a qualitative overlay. Students who underperform on the knowledge or aptitude tests cannot fully compensate through the interview; the academic record and exam components together determine 100% of the quantifiable ranking.
 
@@ -546,7 +549,7 @@ Admission pathways: Bachillerato nacional, Bachillerato internacional (IB), CFGS
 3. Upload required documentation through the portal.
 4. Await validation of documents by the admissions team.
 5. Receive payment instructions for the exam fee (€115); complete payment.
-6. Sit the admission exam on the fixed date (9 May 2026 for 2026-2027 intake) — onsite at Campus Sant Cugat del Vallès for Catalonia residents; online for students residing outside Catalonia.
+6. Sit the admission exam on the fixed date (Saturday, 13 February 2027 in the 2026-27 cycle) — onsite at Campus Sant Cugat del Vallès, open to all candidates; online only for students residing outside Catalonia.
 7. Receive result (Admès, En espera, or No admès) approximately 15 business days after the exam, via the admissions portal.
 8. If admitted: download admission letter from the portal, pay the reservation fee (€3,720 — 20% of Year 1 tuition) within 15 natural days, and complete enrolment.
 9. The waiting list closes definitively approximately two weeks after the start of classes (late September–early October). — ANNUAL_UPDATE_REQUIRED
@@ -555,9 +558,18 @@ Contact: Servei d'Informació i Admissions — 935 042 000 — Anaïs Rey (arey@
 
 ## Admission Timeline
 
-All dates are ANNUAL_UPDATE_REQUIRED.
+Exam for the 2026-27 cycle (single sitting, convocatoria única):
 
-| Event | Date (2026-2027 intake) |
+| Date | Location | Mode | Who can sit it |
+|---|---|---|---|
+| Saturday, 13 February 2027 | Barcelona | Onsite | All candidates |
+| Saturday, 13 February 2027 | Online | Online | Only students residing outside Catalonia |
+
+Other dates for the 2026-27 cycle (applications, results, reservation, waiting list) are not yet published.
+
+The table below is the previous cycle. All dates in it are ANNUAL_UPDATE_REQUIRED.
+
+| Event | Date (2025-26 cycle, 2026-2027 intake) |
 |---|---|
 | Applications open | PENDING_CONFIRMATION |
 | Application and document submission deadline | PENDING_CONFIRMATION |
@@ -691,7 +703,7 @@ Students on a very tight budget who cannot access either the Beca Nemesio or ban
 
 ## Important Notes
 
-- The 2026-2027 admission exam date is 9 May 2026. — ANNUAL_UPDATE_REQUIRED
+- The 2026-27 cycle admission exam is on 13 February 2027 (single sitting). The previous exam, for the 2026-2027 intake, was on 9 May 2026.
 - Students residing in Catalonia sit the exam onsite at Campus Sant Cugat del Vallès; students outside Catalonia may sit online.
 - 15 of the 100 seats are reserved for the Via universitaria pathway (students who have started or completed another university degree).
 - No minimum academic grade is required to access the exam — all applicants who complete documentation and pay the exam fee (€115) are admitted to the test.
@@ -743,7 +755,7 @@ Yes. UIC Barcelona's Medicine degree is the first private Medicine degree in Spa
 UIC reports a 99% MIR pass rate for its Medicine graduates (average 98.4% surpassing the MIR cut-off over the last five years). UIC claims first position among all Spanish universities by this metric.
 
 **When does the written structured interview take place?**
-It is completed by all candidates on the same day as the admission exam (9 May 2026 for the 2026-2027 intake), as part of the same exam session. It is a written format, not an oral interview.
+It is completed by all candidates on the same day as the admission exam (13 February 2027 in the 2026-27 cycle), as part of the same exam session. It is a written format, not an oral interview.
 
 **What score do I need to be admitted?**
 UIC does not publish cut-off scores. Based on the structure of the ranking (50% academic record, 25% knowledge test, 25% emotional aptitude test, qualitative interview modifier) and the ~5.5:1 applicant ratio, a combined score above 7.0–7.5 is likely needed to enter the top 100 — but this is an inference, not a published threshold.

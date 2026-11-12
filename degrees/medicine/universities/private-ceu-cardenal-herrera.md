@@ -103,18 +103,22 @@ admission:
   interview_required: false
 
 sittings:
-  - date: 2026-01-31
-    registration_deadline: 2026-01-26
-    results_date: 2026-02-11
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: onsite
-    location: NULL
-  - date: 2026-04-25
-    registration_deadline: 2026-04-20
-    results_date: 2026-05-07
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: onsite
-    location: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2027-01-30"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: hybrid
+    location: "Valencia"
+    notes: "Presencial para todos los alumnos. Online solo para alumnos de fuera de la Comunidad Valenciana."
+  - date: "2027-04-24"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: hybrid
+    location: "Valencia"
+    notes: "Presencial para todos los alumnos. Online solo para alumnos de fuera de la Comunidad Valenciana."
 
 exam_format:
   question_count: 75
@@ -746,7 +750,7 @@ Annual tuition at the Castellón campus is confirmed at €18,850 (2026-27) with
 - **Admission formula (Valencia):** 60% 1st-year bach + 35% EPAM + 5% English level + up to 2 bonus pts
 - **PAU:** Must be passed separately; grade not counted
 - **Exam (EPAM):** Biology (35Q) + Chemistry (15Q) + Physics/Math (15Q) + Reading comprehension (10Q) — 75 questions, 120 min, in-person, no negative marking
-- **Two exam sessions:** January 31 and April 25; best score used
+- **Two exam sessions (2026-27 cycle):** January 30, 2027 and April 24, 2027 (in person for all candidates, online only for candidates from outside the Comunidad Valenciana); best score used
 - **No interview** for Medicine
 - **WFME** accredited — both campuses
 - **Annual tuition (Castellón 2026-27):** €18,850 total / €230 per credit
@@ -894,7 +898,7 @@ In both cases, the PAU/Selectividad is a mandatory external prerequisite — mus
 - Available in English for non-native Spanish speakers
 - In-person at the campus of the chosen program preference (Castellón or Alfara del Patriarca)
 
-**EPOAM:** International candidates who studied outside Spain and outside the Spanish system take the same exam online. EPOAM → EPAM switching is not permitted.
+**EPOAM:** International candidates who studied outside Spain and outside the Spanish system take the same exam online. EPOAM → EPAM switching is not permitted. For the 2026-27 cycle, the exam calendar lists the online option for candidates from outside the Comunidad Valenciana.
 
 **No interview** is required for Medicine (unlike most other degrees at CEU UCH).
 
@@ -908,11 +912,11 @@ The bonus points system (up to 2 additional points) favors students from the CEU
 
 3. **Pay the €75 exam fee** via credit card through the intranet.
 
-4. **Upload documentation** within the session deadline (January 26 for Session 1; April 20 for Session 2).
+4. **Upload documentation** within the session deadline (2025-26 cycle: January 26 for Session 1; April 20 for Session 2. The 2026-27 cycle deadlines are not yet published).
 
-5. **Sit the EPAM** in-person at the campus corresponding to first preference. Exam: 13:00, 120 minutes.
+5. **Sit the EPAM** in-person at the campus corresponding to first preference (2026-27 cycle: January 30, 2027 or April 24, 2027). Exam: 13:00 (2025-26 cycle), 120 minutes.
 
-6. **Receive admission resolution** (February 11 for Session 1; May 7 for Session 2). If waitlisted: 48-hour response window when a place becomes available.
+6. **Receive admission resolution** (2025-26 cycle: February 11 for Session 1; May 7 for Session 2). If waitlisted: 48-hour response window when a place becomes available.
 
 7. **If admitted:** 7 natural days to make the first payment (plaza reservation). University contacts for enrollment within 15 natural days of that payment.
 
@@ -920,13 +924,22 @@ The bonus points system (up to 2 additional points) favors students from the CEU
 
 9. **Finalize enrollment** through the intranet.
 
-For **Medicine transfer students** (traslado de expediente from another Medicine program): separate timeline — documentation deadline July 2, resolution from July 16. Minimum 30 ECTS completed.
+For **Medicine transfer students** (traslado de expediente from another Medicine program): separate timeline — documentation deadline July 2, resolution from July 16 (2025-26 cycle). Minimum 30 ECTS completed.
 
-Withdrawal from the reservation must be communicated in writing. Refund of reservation fee is possible if requested before June 16, 2026, or via 14-day legal right of withdrawal after payment (for reservations made after June 16).
+Withdrawal from the reservation must be communicated in writing. Refund of reservation fee is possible if requested before June 16, 2026 (2025-26 cycle), or via 14-day legal right of withdrawal after payment (for reservations made after June 16).
 
 ## Admission Timeline
 
-All dates are from the 2025-26 cycle and are subject to **ANNUAL_UPDATE_REQUIRED**.
+Exam sessions for the 2026-27 cycle:
+
+| Session | Date | Location | Mode | Who can sit it |
+|---|---|---|---|---|
+| Session 1 | Saturday, January 30, 2027 | Valencia | In person / online | In person: all candidates. Online: only candidates from outside the Comunidad Valenciana |
+| Session 2 | Saturday, April 24, 2027 | Valencia | In person / online | In person: all candidates. Online: only candidates from outside the Comunidad Valenciana |
+
+Other dates for the 2026-27 cycle (documentation deadlines, results, transfers, waitlist) are not yet published.
+
+The table below is the previous cycle. All dates in it are from the 2025-26 cycle and are subject to **ANNUAL_UPDATE_REQUIRED**.
 
 | Event | Session 1 | Session 2 |
 |---|---|---|
@@ -940,7 +953,7 @@ All dates are from the 2025-26 cycle and are subject to **ANNUAL_UPDATE_REQUIRED
 
 With only two sessions (versus three at some competitors), the strategic risk of applying in Session 2 only is significant: no further attempts remain in that cycle. Applying in Session 1 is optimal as it allows a second attempt with the highest score used.
 
-CEU UCH offers English/Spanish level tests through its language service at six dates (November 19, December 17, January 14, February 11, March 4, April 15) — useful for candidates who need to certify their English level for the bilingual track or Spanish level for complementary points.
+CEU UCH offers English/Spanish level tests through its language service at six dates (2025-26 cycle: November 19, December 17, January 14, February 11, March 4, April 15) — useful for candidates who need to certify their English level for the bilingual track or Spanish level for complementary points.
 
 ## Admission Score Distribution
 
@@ -1078,7 +1091,7 @@ PENDING_CONFIRMATION: MIR pass rate (%), mean MIR score, top-specialty placement
 
 **2. Only two exam sessions.** CEU UCH offers fewer retake opportunities than some competitors (2 vs 3 at CEU San Pablo). Session 2 is the final opportunity within a cycle; there is no third rescue call.
 
-**3. In-person-only EPAM.** Unlike CEU San Pablo, which offers hybrid delivery, the EPAM for candidates with Spanish system studies is always in-person. This is a logistical constraint for international students or students based far from Castellón or Alfara del Patriarca (though EPOAM resolves this for true international candidates).
+**3. In-person-only EPAM.** Unlike CEU San Pablo, which offers hybrid delivery, the EPAM for candidates with Spanish system studies is always in-person. This is a logistical constraint for international students or students based far from Castellón or Alfara del Patriarca (though EPOAM resolves this for true international candidates). For the 2026-27 cycle, the exam calendar lists an online option for candidates from outside the Comunidad Valenciana.
 
 **4. PAU as independent constraint.** The same structural risk as CEU San Pablo — the PAU must be passed independently. Failure means loss of admission regardless of EPAM performance or rank position.
 
@@ -1137,7 +1150,7 @@ B1 certified English is the minimum requirement to sit the entrance exam for the
 Yes, significantly. With 70 seats in Castellón and the maximum bonus being 2 points (on a 10-point scale), the bonus can shift a candidate from waitlisted to admitted in close competition. CEU school alumni who can claim the full loyalty bonus (1.5 pts) plus empadronamiento (0.5 pts) reach the 2-point cap automatically. Candidates with no CEU background and not registered in Castellón province receive 0 bonus points.
 
 **Is there a reservation fee? Can I get it back?**
-The reservation fee (€2,000 for Castellón) is paid to secure the place after admission. It can be refunded if withdrawal is requested before June 16, 2026. After that date, the legal right of withdrawal (14 days from payment) applies for reservations made after June 16. Beyond these windows, the fee is generally not refundable.
+The reservation fee (€2,000 for Castellón) is paid to secure the place after admission. It can be refunded if withdrawal is requested before June 16, 2026 (2025-26 cycle). After that date, the legal right of withdrawal (14 days from payment) applies for reservations made after June 16. Beyond these windows, the fee is generally not refundable.
 
 **What happens if I fail the PAU after being admitted?**
 You lose your admission place and waitlist position. The PAU is a mandatory prerequisite — it must be passed in the ordinary June call (or the equivalent foreign bachillerato credential). Failure to pass or to submit results by the university's deadline results in automatic loss of all rights derived from admission.

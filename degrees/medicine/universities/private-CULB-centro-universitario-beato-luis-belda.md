@@ -80,31 +80,35 @@ applicants_per_seat: NULL
 rankings: []
 
 admission:
-  status_2026_27: CLOSED
+  status_2026_27: CLOSED        # ingreso de septiembre de 2026 (ciclo 2025-26)
   status_note: "Both convocatorias (February and April 2026) have concluded. Enrollment from June 2026; waitlist management July 2026."
   rolling_admissions:
     enabled: true
     rounds: 2
-    round_1_date: "February 2026"
-    round_2_date: "2026-04-18"
+    round_1_date: "2026-12-12"   # calendario Winners 2026-27 (12.10.2026)
+    round_2_date: "2027-03-13"   # calendario Winners 2026-27 (12.10.2026)
     estimated_end_date: ANNUAL_UPDATE_REQUIRED
   exam_required: true
   exam_modality: "presencial_or_online"
   interview_required: false
 
 sittings:
-  - date: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-12-12"
     registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
-    mode: presencial_or_online
-    location: NULL
-  - date: "2026-04-18"
+    mode: hybrid
+    location: "Palma de Mallorca"
+    notes: "Presencial u online. Todos los alumnos."
+  - date: "2027-03-13"
     registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
-    mode: presencial_or_online
-    location: NULL
+    mode: hybrid
+    location: "Palma de Mallorca"
+    notes: "Presencial u online. Todos los alumnos."
 
 exam_format:
   question_count: NULL
@@ -364,7 +368,8 @@ The admissions model is distinctive in the Spanish private Medicine landscape: s
 - **Teaching language:** Spanish
 - **Seats per year:** 55
 - **Inaugural cohort:** September 2026
-- **Admission 2026-27 status:** CLOSED (both convocatorias concluded April 2026)
+- **Admission status, 2026-27 intake (2025-26 cycle):** CLOSED (both convocatorias concluded April 2026)
+- **Exam dates, 2026-27 cycle:** December 12, 2026 and March 13, 2027 (Palma de Mallorca, in-person or online, open to all candidates)
 - **Clinical partner:** Juaneda Hospitales (Mallorca)
 - **Religious affiliation:** Catholic (Fundación CEU Luis Belda)
 - **Contact:** +34 871 080 280 | [admision.beatoluisbelda.es](https://admision.beatoluisbelda.es/)
@@ -499,11 +504,11 @@ The CULB Medicine admission model is among the most transparent in Spain for pri
    - The exam can be taken online or in-person.
    - The individual weight split between the specific exam and the English test within the 40% component is not publicly disclosed.
 
-4. **Two convocatorias per academic year:** Candidates can sit the exam in one or both rounds (February and April). If admitted in a lower-preference track and then pass the second sitting, amounts paid can be transferred.
+4. **Two convocatorias per academic year:** Candidates can sit the exam in one or both rounds. In the 2026-27 cycle the two sittings are on Saturday, December 12, 2026 and Saturday, March 13, 2027, in Palma de Mallorca, in-person or online, open to all candidates (in the 2025-26 cycle the rounds were in February and April 2026). If admitted in a lower-preference track and then pass the second sitting, amounts paid can be transferred.
 
 5. **Exam exemptions:** A specific set of candidates is exempt from the internal exam entirely. Exempt profiles include graduates in a range of bioscience degrees (Biology, Biomedicine, Biochemistry, Nursing, Physiotherapy, etc.) and Medicine students transferring from another Spanish university. Exempt candidates are evaluated solely on their submitted academic documentation.
 
-6. **Waitlist:** Enrollment begins June 2026; waitlist management occurs in July 2026.
+6. **Waitlist (2025-26 cycle):** Enrollment begins June 2026; waitlist management occurs in July 2026.
 
 ---
 
@@ -519,7 +524,7 @@ The admission process is managed through CULB's admissions portal ([admision.bea
 
 **Step 4 — Reservation:** Candidates offered a place have five days to pay the reservation deposit of 2,900 EUR (by card or bank transfer via the portal). The deposit is non-refundable under all circumstances.
 
-**Step 5 — Enrollment:** Enrollment is formalized from June 2026 onward, after the candidate presents proof of having passed the EBAU fase general (convocatoria ordinaria, June) and received final administrative admission. Candidates who fail to submit EBAU results by the specified deadline (approximately July 6, 2026) are considered to have voluntarily relinquished their place with no refund.
+**Step 5 — Enrollment:** Enrollment is formalized from June 2026 onward (2025-26 cycle), after the candidate presents proof of having passed the EBAU fase general (convocatoria ordinaria, June) and received final administrative admission. Candidates who fail to submit EBAU results by the specified deadline (approximately July 6, 2026, 2025-26 cycle) are considered to have voluntarily relinquished their place with no refund.
 
 **Vías de acceso:**
 - Bachillerato + PAU/EBAU (standard route — exam required)
@@ -532,7 +537,16 @@ The admission process is managed through CULB's admissions portal ([admision.bea
 
 ## Admission Timeline
 
-Dates below reflect the 2026-27 intake. Both rounds are closed as of the publication of this file. Dates for the 2027-28 intake are not yet published.
+Exam dates for the 2026-27 cycle:
+
+| Sitting | Date | Location | Mode | Who can sit it |
+|---|---|---|---|---|
+| Round 1 exam | Saturday, December 12, 2026 | Palma de Mallorca | In-person or online | All candidates |
+| Round 2 exam | Saturday, March 13, 2027 | Palma de Mallorca | In-person or online | All candidates |
+
+Other dates for the 2026-27 cycle (application portal opening, results, enrollment, waitlist) are not yet published.
+
+The table below reflects the 2025-26 cycle (2026-27 intake). Both of its rounds are closed.
 
 | Milestone | Date |
 |---|---|
@@ -545,7 +559,7 @@ Dates below reflect the 2026-27 intake. Both rounds are closed as of the publica
 | Waitlist management | July 2026 |
 | Academic year begins | September 2026 |
 
-**Status note:** The 2026-27 admission process is fully closed. No new applications for Medicine at CULB are possible for 2026-27. Students interested in 2027-28 should contact the admissions office directly to receive notification when the next cycle opens.
+**Status note:** The 2025-26 admission process (2026-27 intake) is fully closed. No new applications for Medicine at CULB are possible for the 2026-27 intake. Students interested in 2027-28 sit the 2026-27 cycle exams listed above (December 12, 2026 and March 13, 2027).
 
 ---
 
@@ -730,7 +744,7 @@ Transferring out of CULB Medicine to another Spanish private Medicine school wou
 
 ## Important Notes
 
-- **2026-27 admission is CLOSED.** The last exam convocatoria was April 18, 2026. No further intake is possible for the current academic year. Students must wait for the 2027-28 cycle.
+- **Admission for the 2026-27 intake (2025-26 cycle) is CLOSED.** The last exam convocatoria of that cycle was April 18, 2026. No further intake is possible for the current academic year. The 2026-27 cycle exams are on December 12, 2026 and March 13, 2027.
 - **Reservation deposit (2,900 EUR) is non-refundable under all circumstances**, including failure to pass EBAU. This differs from some other Spanish private Medicine schools that offer conditional refunds.
 - **The 60% weighting on Y1 Bachillerato uses only 1st year grades**, not a combined Bachillerato average or a EBAU-blended score. Students should confirm their Y1 transcript is in order before applying.
 - **Exam exemptions are broad.** Students with any of the listed bioscience degrees do not need to sit the internal exam — a non-obvious pathway that reduces the barrier to entry significantly for career changers.
@@ -771,7 +785,7 @@ Only 1st year (1º Bachillerato) grades are used in the selection formula. 2nd y
 Yes. The internal exam (Biology/Chemistry + English test) can be taken either in-person (presencial) or online. Both modalities are officially offered.
 
 **What happens if I am admitted but then fail the EBAU?**
-You must present a passed EBAU *fase general* (at minimum) to finalize enrollment. If you do not present your EBAU result by the stated deadline (~July 6, 2026), your place is forfeited and your reservation deposit is not refunded.
+You must present a passed EBAU *fase general* (at minimum) to finalize enrollment. If you do not present your EBAU result by the stated deadline (~July 6, 2026 in the 2025-26 cycle), your place is forfeited and your reservation deposit is not refunded.
 
 **Is the Medicine degree only in Spanish?**
 Yes. The program is entirely in Spanish. There is no bilingual or English-track option for the Medicine degree at CULB.

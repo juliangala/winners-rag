@@ -108,24 +108,29 @@ admission:
   interview_required: false
 
 sittings:
-  - date: "2025-12-13"
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-12-12"
     registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
     mode: onsite
     location: "Barcelona"
-  - date: "2026-02-21"
+    notes: "Presencial. Todos los alumnos."
+  - date: NULL
     registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
     mode: onsite
     location: "Barcelona"
-  - date: "2026-07-02"
-    registration_deadline: "2026-06-30"
+    notes: "Fecha por fijar, estimada en febrero de 2027. Presencial. Todos los alumnos."
+  - date: NULL
+    registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
     mode: onsite
     location: "Barcelona"
+    notes: "Fecha por fijar, estimada en julio de 2027. Presencial. Todos los alumnos."
 
 exam_format:
   question_count: NULL
@@ -446,7 +451,7 @@ Because no graduates have existed yet, MIR outcomes, dropout rates, and actual c
 - **Admission formula**: 30% academic record + 35% knowledge exam + 35% aptitude/vocational test
 - **Exam scope**: Y1 bachillerato level (Bio, Chem, Math, English, general culture) — multiple choice
 - **Onsite exams only**: All exam dates require physical presence in Barcelona
-- **Rolling admissions with 3 rounds**: December 2025 (closed), February 2026 (closed), July 2026 (open)
+- **Rolling admissions with 3 rounds**: 2026-27 cycle: December 12, 2026 (confirmed), February 2027 and July 2027 (estimated months, dates to be confirmed), all onsite in Barcelona and open to all candidates
 - **Published minimum threshold**: Admission score ≥ 8.0/10 required to be admitted
 - **Tuition**: 315 EUR/ECTS × 60 ECTS = 18,900 EUR/year (2026-27) — subject to annual revision
 - **Strong scholarship program**: Top scorer eligible for 95% Year 1 tuition coverage
@@ -472,7 +477,8 @@ Because no graduates have existed yet, MIR outcomes, dropout rates, and actual c
 | Admission formula | 30% academic + 70% tests (split 50/50 between knowledge and aptitude) |
 | Minimum admission score | ≥ 8.0/10 |
 | Exam format | Multiple choice, onsite, ≈ 2h30 |
-| Exam dates 2025-26 | Dec 13 2025 (closed), Feb 21 2026 (closed), Jul 2 2026 (open) |
+| Exam dates 2026-27 | Dec 12 2026 (confirmed), Feb 2027 (estimated, date TBC), Jul 2027 (estimated, date TBC) |
+| Exam dates 2025-26 | Dec 13 2025, Feb 21 2026, Jul 2 2026 (previous cycle) |
 | Accreditation | AQU Catalunya verification (national) |
 | MIR outcomes | Not available — inaugural degree |
 | Seats | Not published |
@@ -558,7 +564,7 @@ The two test components are administered in the same sitting, with a combined es
 
 A minimum composite admission score of **8.0/10** is required for admission. If a round closes with fewer than 40% of seats filled, the university will lower the cut-off until 40% of capacity is reached. Students who sit the exam and are not admitted in that round retain their score and are automatically eligible for subsequent rounds.
 
-The admission process operates under rolling admissions: applications opened October 31, 2025 and remain open until June 30, 2026, or until all seats are filled. Three exam rounds were scheduled for 2025-26 (December 2025, February 2026, July 2026).
+The admission process operates under rolling admissions. In the 2025-26 cycle, applications opened October 31, 2025 and remained open until June 30, 2026, or until all seats were filled, and three exam rounds were scheduled (December 2025, February 2026, July 2026). For the 2026-27 cycle, three onsite rounds are scheduled: December 12, 2026 (confirmed), February 2027 and July 2027 (estimated months, dates to be confirmed).
 
 There is no interview component. There is no bonus for English certificates, extracurricular activities, or complementary points of any kind.
 
@@ -583,20 +589,30 @@ For any enrollment question: suportmatricula@blanquerna.url.edu
 
 ## Admission Timeline
 
-All dates below are ANNUAL_UPDATE_REQUIRED.
+Exam rounds for the 2026-27 cycle:
+
+| Round | Date | Location | Mode | Who can sit it |
+|---|---|---|---|---|
+| Exam Round 1 | Saturday, December 12, 2026 (confirmed) | Barcelona | Onsite | All candidates |
+| Exam Round 2 | February 2027 (estimated, date to be confirmed) | Barcelona | Onsite | All candidates |
+| Exam Round 3 | July 2027 (estimated, date to be confirmed) | Barcelona | Onsite | All candidates |
+
+Application opening and deadline dates for the 2026-27 cycle are not yet published.
+
+The table below is the previous cycle. All dates below are ANNUAL_UPDATE_REQUIRED.
 
 | Event | Date (2025-26 cycle) |
 |---|---|
 | Applications open | 2025-10-31 |
 | Exam Round 1 | 2025-12-13 (CLOSED) |
 | Exam Round 2 | 2026-02-21 (CLOSED) |
-| Exam Round 3 | 2026-07-02 |
+| Exam Round 3 | 2026-07-02 (CLOSED) |
 | Application deadline | 2026-06-30 (or earlier if seats fill) |
 | Program start | September 2026 |
 
-The first two rounds are now closed for the 2025-26 admissions cycle. Students applying in 2026 for the September 2026 cohort must sit the July 2 exam. Future intake cycles will likely offer three rounds again from October/November.
+The 2025-26 admissions cycle is closed. The 2026-27 cycle offers three rounds again: December 12, 2026 (confirmed), February 2027 and July 2027 (estimated months, dates to be confirmed).
 
-Rolling admissions reward early applicants: students who sit Round 1 (December) and are admitted lock in their place months before students who wait for later rounds. However, since Round 3 is still available at July 2, students who have not yet applied still have a pathway for the inaugural cohort.
+Rolling admissions reward early applicants: students who sit Round 1 (December) and are admitted lock in their place months before students who wait for later rounds. In the 2026-27 cycle, Round 1 is on December 12, 2026, and the July 2027 round (estimated, date to be confirmed) is the late-cycle option.
 
 ## Admission Score Distribution
 
@@ -710,7 +726,7 @@ International professional practice in EU countries follows standard EU mutual r
 - Students in or near **Barcelona** who want a values-based, humanist medical education within a well-resourced private university ecosystem (URL: IQS, La Salle, Esade, Institut Borja de Bioètica)
 - Students with **average-to-good academic records** but strong exam performance — the 30/70 weighting heavily rewards test-day performance over grades
 - Students who **function well in Catalan or Spanish** (B2 minimum required) and prefer a bilingual learning environment
-- Students targeting the **July 2026 round** (only remaining round for the inaugural cohort) who need a late-cycle option
+- Students targeting the **July round** (estimated July 2027 in the 2026-27 cycle, date to be confirmed) who need a late-cycle option
 - Students who want **early certainty**: conditional enrollment allows securing a place before PAU results, useful for late-June PAU takers
 - Students motivated by **social mission, ethics, and humanistic medicine** — the URL/Blanquerna educational identity is deeply values-driven and structurally reinforced throughout the curriculum
 - Students with strong **aptitude/personality test** profiles who would be disadvantaged by pure-knowledge exams — the 35% vocational component levels the playing field
@@ -745,7 +761,7 @@ International professional practice in EU countries follows standard EU mutual r
 ## Important Notes
 
 - The application fee of 50 EUR is non-refundable even if the student does not ultimately enroll.
-- The Round 3 exam date (July 2, 2026) is currently the only remaining opportunity for the inaugural September 2026 cohort. No additional rounds have been announced.
+- 2026-27 cycle exam rounds: December 12, 2026 (confirmed), February 2027 and July 2027 (estimated months, dates to be confirmed), all onsite in Barcelona and open to all candidates. In the 2025-26 cycle, the last round for the inaugural September 2026 cohort was July 2, 2026.
 - Students admitted conditionally (matrícula condicionada) who fail to obtain their PAU/CFGS by June will be placed on a waiting list until September; if access credentials are not obtained by September, the tuition payment is refunded but the 50 EUR application fee is not.
 - The 8.0/10 minimum admission score threshold is composite (academic + exam), not exam-only.
 - Discounts for large families, disability, and Família Blanquerna are mutually exclusive (non-cumulative) and must be documented at Secretaria Acadèmica by September 30, 2026.
@@ -761,7 +777,7 @@ For the inaugural cohort, the most significant strategic variable is not the pro
 
 Blanquerna's Medicine degree is a credible new entrant with real structural strengths: a well-resourced university ecosystem (URL), a strong clinical partner network (Quirónsalud, Hospitalàries, Sant Joan de Déu), a differentiated admission model that rewards exam performance over grades, and a scholarship structure that can make the top score genuinely transformative financially. The humanistic-technological curriculum framework is coherent and forward-looking.
 
-The program's defining weakness is chronological: it is new. No MIR outcomes, no cut-off history, no graduate cohort, no peer-reviewed evidence of educational efficacy. For students who need certainty, established programs remain the safer bet. For students who want to be part of a founding cohort within a serious institution, or whose profile fits the 30/70 exam-heavy model, Blanquerna for September 2026 is a legitimate and strategically interesting option — particularly if the July 2 exam represents a last opportunity in their cycle.
+The program's defining weakness is chronological: it is new. No MIR outcomes, no cut-off history, no graduate cohort, no peer-reviewed evidence of educational efficacy. For students who need certainty, established programs remain the safer bet. For students who want to be part of a founding cohort within a serious institution, or whose profile fits the 30/70 exam-heavy model, Blanquerna for September 2026 is a legitimate and strategically interesting option — particularly if the July round (estimated July 2027, date to be confirmed) represents a last opportunity in their cycle.
 
 ## Frequently Asked Questions
 

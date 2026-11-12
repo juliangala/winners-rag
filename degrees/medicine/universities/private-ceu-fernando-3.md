@@ -14,7 +14,7 @@ currency: EUR
 
 last_updated: "2026-08-24"
 
-entry_year: "2028" # ANNUAL_UPDATE_REQUIRED — admission for 2026-2027 is already closed
+entry_year: "2027" # ciclo 2026-27, exámenes del 6 de febrero y 3 de abril de 2027 (calendario Winners, 12.10.2026)
 
 location:
   city: Bormujos (Sevilla)
@@ -93,12 +93,22 @@ admission:
   interview_required: true
 
 sittings:
-  - date: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2027-02-06"
     registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
-    mode: NULL
-    location: NULL
+    mode: onsite
+    location: "Sevilla"
+    notes: "Presencial. Todos los alumnos."
+  - date: "2027-04-03"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Sevilla"
+    notes: "Presencial. Todos los alumnos."
 
 exam_format:
   question_count: NULL
@@ -384,7 +394,7 @@ residence:
 
 ## Overview
 
-Universidad CEU Fernando III (UF3) is the private medical school of the CEU group in Andalusia, located in Bormujos (greater Sevilla). The Grado en Medicina was launched in the 2025-26 academic year — the most recently established Medicine program among all private Spanish universities in this analysis — and offers 60 seats per cohort. Admission for the 2026/2027 cycle is already closed at capacity, making UF3 one of the most operationally relevant options specifically for the 2027/2028 intake.
+Universidad CEU Fernando III (UF3) is the private medical school of the CEU group in Andalusia, located in Bormujos (greater Sevilla). The Grado en Medicina was launched in the 2025-26 academic year — the most recently established Medicine program among all private Spanish universities in this analysis — and offers 60 seats per cohort. Admission for the 2026/2027 intake (2025-26 cycle) is already closed at capacity, making UF3 one of the most operationally relevant options specifically for the 2027/2028 intake.
 
 The program is delivered in Spanish in afternoon-shift format at the dedicated Campus Universitario CEU Andalucía in Bormujos. The admission process is holistic: candidates attend an interview with a professor who evaluates academic record, language level, and motivation, and there is a published internal entrance exam covering Biology (40%), Chemistry (30%), English B1 (25%), and scientific reasoning (5%). This English component — built directly into the exam — is structurally unique among Spanish private medical school entrance tests.
 
@@ -397,8 +407,9 @@ As the only private Medicine school in Andalusia, UF3 occupies a geographically 
 - **Seats:** 60
 - **Location:** Bormujos (Sevilla), Campus CEU Andalucía — only private Medicine school in Andalusia
 - **Program start:** 2025-26 (first cohort — brand new program)
-- **2026/2027 status: CLOSED** — admission at full capacity for this cycle
+- **2026/2027 intake status: CLOSED** — admission at full capacity (2025-26 cycle)
 - **Relevant intake:** 2027/2028 onwards
+- **Exam sessions, 2026-27 cycle (2027/2028 intake):** February 6, 2027 and April 3, 2027 (in person, Sevilla, open to all candidates)
 - **Admission model:** Holistic — interview + internal exam; no published numerical formula
 - **Exam:** Biology (40%) + Chemistry (30%) + English B1 (25%) + Scientific reasoning (5%)
 - **English in exam:** 25% of exam is English B1 — unique among Spanish private medical school exams
@@ -553,17 +564,17 @@ For **graduates**: conditional enrollment possible while homologación from the 
 
 ## Admission Timeline
 
-All dates are subject to **ANNUAL_UPDATE_REQUIRED**. The process is rolling (first-come, first-served within the 60-seat limit). Specific dates for the entrance exam sessions in 2026-27 were not published on public pages.
+All dates are subject to **ANNUAL_UPDATE_REQUIRED**. The process is rolling (first-come, first-served within the 60-seat limit). Specific dates for the entrance exam sessions of the 2025-26 cycle (2026-27 intake) were not published on public pages. For the 2026-27 cycle (2027-28 intake), the exam sessions are on Saturday, February 6, 2027 and Saturday, April 3, 2027, in person in Sevilla, open to all candidates.
 
 | Event | Status |
 |---|---|
 | 2025-26 intake | Completed (first cohort) |
 | 2026-27 intake | **Closed — at full capacity** |
 | 2027-28 applications open | PENDING_CONFIRMATION — likely autumn 2026 |
-| Admission process | Rolling (no formal rounds) |
-| Exam session dates (2027-28) | PENDING_CONFIRMATION — ANNUAL_UPDATE_REQUIRED |
+| Admission process | Rolling, with two exam sessions in the 2026-27 cycle |
+| Exam session dates (2027-28 intake, 2026-27 cycle) | Saturday, February 6, 2027 and Saturday, April 3, 2027 (in person, Sevilla, all candidates) |
 
-The fact that the 2026-27 cycle closed before late May 2026 confirms demand exceeds supply. For the 2027-28 cycle, applying as early as possible once applications open is strongly recommended — this is definitively an early_application_advantage situation.
+The fact that the 2026-27 intake (2025-26 cycle) closed before late May 2026 confirms demand exceeds supply. For the 2027-28 intake, applying as early as possible once applications open is strongly recommended — this is definitively an early_application_advantage situation.
 
 ## Admission Score Distribution
 
@@ -694,7 +705,7 @@ PENDING_CONFIRMATION: MIR preparation partnerships, external coaching agreements
 
 ## Important Notes
 
-- The 2026/2027 Medicine cohort at UF3 is **already closed at full capacity**. The next available intake is 2027/2028.
+- The 2026/2027 Medicine cohort at UF3 is **already closed at full capacity**. The next available intake is 2027/2028, with exam sessions on February 6, 2027 and April 3, 2027 (in person, Sevilla, open to all candidates).
 - The English component (25% of the exam) is tested directly within the internal entrance exam — not as a separate certificate. Students do not need to submit an English qualification independently.
 - Biology and Chemistry in the exam are explicitly **2nd-year baccalaureate LOMLOE** — not full bachillerato or university-specific syllabus. Preparation should focus on 2nd-year content only.
 - Physics and Mathematics are **not** part of the UF3 exam — unlike CEU Cardenal Herrera.
@@ -720,7 +731,7 @@ The program's value proposition is real and regionally distinctive, but families
 ## Frequently Asked Questions
 
 **Is the UF3 Medicine degree accepting applications for 2026/2027?**
-No. The degree page explicitly states "Admisión cerrada para el curso 2026/2027." All 60 places have been filled. The next available intake is 2027/2028 — applications for that cycle are expected to open in autumn 2026 (ANNUAL_UPDATE_REQUIRED).
+No. The degree page explicitly states "Admisión cerrada para el curso 2026/2027." All 60 places have been filled. The next available intake is 2027/2028 — applications for that cycle are expected to open in autumn 2026 (ANNUAL_UPDATE_REQUIRED). Its exam sessions are on Saturday, February 6, 2027 and Saturday, April 3, 2027, in person in Sevilla, open to all candidates.
 
 **Why is there an English component in the entrance exam?**
 The UF3 entrance exam explicitly includes 25% English content at B1 CEFR level as an integral component of the multiple-choice exam. This is unique among major Spanish private medical school entrance tests. The university does not publicly explain the rationale, but it likely reflects the CEU group's emphasis on international preparation and the growing use of English in scientific literature and clinical communication.

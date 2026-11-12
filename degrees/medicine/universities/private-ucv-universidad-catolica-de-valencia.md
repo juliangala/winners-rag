@@ -100,12 +100,15 @@ admission:
   interview_required: true
 
 sittings:
-  - date: "2026-06-13"
-    registration_deadline: "2026-05-15"
-    results_date: PENDING_CONFIRMATION
-    deposit_deadline: PENDING_CONFIRMATION
-    mode: NULL
-    location: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2027-06-12"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Valencia"
+    notes: "Presencial. Todos los alumnos."
 
 exam_format:
   question_count: 100
@@ -536,29 +539,41 @@ For health sciences graduates with ≥8.0 degree average. No academic subject ex
 
 ## Admission Process
 
-1. **Register online** (2 March – 15 May): Submit DNI, personal data, and 1º Bachillerato average via the UCV platform. Receive username and password for the process. — ANNUAL_UPDATE_REQUIRED
+The dates in the steps below are those of the 2025-26 cycle, except the exam date, which is given for the 2026-27 cycle. Other 2026-27 dates are not yet published.
 
-2. **Submit 2º Bachillerato grades** (19 May – 3 June): Input final 2ºBach grades via the portal. Mandatory for exam eligibility assessment. — ANNUAL_UPDATE_REQUIRED
+1. **Register online** (2 March – 15 May, 2025-26 cycle): Submit DNI, personal data, and 1º Bachillerato average via the UCV platform. Receive username and password for the process. — ANNUAL_UPDATE_REQUIRED
 
-3. **Check exam eligibility** (5 June): UCV publishes the list of the top 500 candidates, accessible via individual login on the admissions platform. — ANNUAL_UPDATE_REQUIRED
+2. **Submit 2º Bachillerato grades** (19 May – 3 June, 2025-26 cycle): Input final 2ºBach grades via the portal. Mandatory for exam eligibility assessment. — ANNUAL_UPDATE_REQUIRED
 
-4. **Pay confirmation fee** (by 8 June): 50€ payment via secure payment platform. Non-payment = automatic elimination. University graduates track candidates are exempt. — ANNUAL_UPDATE_REQUIRED
+3. **Check exam eligibility** (5 June, 2025-26 cycle): UCV publishes the list of the top 500 candidates, accessible via individual login on the admissions platform. — ANNUAL_UPDATE_REQUIRED
 
-5. **On-site accreditation** (12 June, 9–14h and 16–22h): Candidates present in person at Facultad de Medicina (C/ Quevedo, 2, Valencia) with DNI and official grade certificate. No accreditation = ineligible to sit the exam. — ANNUAL_UPDATE_REQUIRED
+4. **Pay confirmation fee** (by 8 June, 2025-26 cycle): 50€ payment via secure payment platform. Non-payment = automatic elimination. University graduates track candidates are exempt. — ANNUAL_UPDATE_REQUIRED
 
-6. **Exam day** (Saturday 13 June, 9:00h, onsite): 100 MCQ academic test + aptitude questionnaire. — ANNUAL_UPDATE_REQUIRED
+5. **On-site accreditation** (12 June 2026, 9–14h and 16–22h, 2025-26 cycle): Candidates present in person at Facultad de Medicina (C/ Quevedo, 2, Valencia) with DNI and official grade certificate. No accreditation = ineligible to sit the exam. — ANNUAL_UPDATE_REQUIRED
 
-7. **Interview notification** (13 June, afternoon): Candidates who progress receive their interview date/time via email and website login.
+6. **Exam day** (2026-27 cycle: Saturday 12 June 2027, onsite in Valencia. In the 2025-26 cycle it was Saturday 13 June 2026 at 9:00h): 100 MCQ academic test + aptitude questionnaire. — ANNUAL_UPDATE_REQUIRED
 
-8. **Personal interview** (15–18 June, onsite): Assigned time slot is automatic and non-transferable. — ANNUAL_UPDATE_REQUIRED
+7. **Interview notification** (afternoon of the exam day, 13 June in the 2025-26 cycle): Candidates who progress receive their interview date/time via email and website login.
 
-9. **Results** (after 18 June): Published via individual login on the platform. Admitted students receive instructions for reservation and enrollment.
+8. **Personal interview** (15–18 June, onsite, 2025-26 cycle): Assigned time slot is automatic and non-transferable. — ANNUAL_UPDATE_REQUIRED
+
+9. **Results** (after 18 June, 2025-26 cycle): Published via individual login on the platform. Admitted students receive instructions for reservation and enrollment.
 
 10. **Waiting list:** Candidates who sat the interview and scored ≥5 are placed on a waiting list for remaining seats.
 
 International students should contact admissions@ucv.es or nuevosalumnos@ucv.es (Tel: +34 96 192 75 90) to clarify credential recognition requirements before registering.
 
 ## Admission Timeline
+
+Exam for the 2026-27 cycle:
+
+| Stage | Date | Location | Mode |
+|---|---|---|---|
+| Academic exam + aptitude test | Saturday, 12 June 2027 | Valencia | Onsite (presencial) |
+
+Other dates for the 2026-27 cycle (registration, grade submission, eligibility list, accreditation, interviews, results) are not yet published.
+
+The table below is the 2025-26 cycle.
 
 | Stage | Date | Notes |
 |---|---|---|
@@ -708,7 +723,7 @@ The 82% first-year employment rate is the only publicly available outcome metric
 
 ## Risks and Considerations
 
-**Multi-point elimination risk.** Four sequentially eliminatory phases mean that a strong candidate can be eliminated by a scheduling failure (missing the June 12 accreditation deadline), a payment lapse (missing the 50€ confirmation), or a poor interview — regardless of academic qualifications. The process requires disciplined operational management across multiple fixed dates in June.
+**Multi-point elimination risk.** Four sequentially eliminatory phases mean that a strong candidate can be eliminated by a scheduling failure (missing the on-site accreditation deadline, 12 June in the 2025-26 cycle), a payment lapse (missing the 50€ confirmation), or a poor interview — regardless of academic qualifications. The process requires disciplined operational management across multiple fixed dates in June.
 
 **The interview is under-prepared by most applicants.** Despite carrying 25% of the final score and being fully eliminatory, the personal interview receives less preparation attention than the academic exam among most applicants. No public rubric or preparation guide has been identified. This asymmetry between importance and preparation is a strategic opportunity for candidates who invest in interview readiness.
 
@@ -725,7 +740,7 @@ The 82% first-year employment rate is the only publicly available outcome metric
 ## Important Notes
 
 - The 50€ confirmation payment (phase 4) must be made by the stated deadline — non-payment automatically eliminates the candidate with no recourse
-- Physical presence in Valencia is required on at least three separate dates: June 12 (accreditation), June 13 (exam), and one assigned date June 15–18 (interview)
+- Physical presence in Valencia is required on at least three separate dates: accreditation, exam and one assigned interview date (2025-26 cycle: June 12, June 13 and one date June 15–18). In the 2026-27 cycle the exam is on 12 June 2027, and the other dates are not yet published
 - The interview time slot is assigned automatically and cannot be transferred or rescheduled
 - Students with more than 30 ECTS already recognized from a Medicine degree at another university are explicitly excluded from this admission process and must apply via a separate academic transfer route through Sede Electrónica UCV
 - The official Tasas Académicas PDF (published annually at ucv.es) provides the complete fee breakdown — review before committing as some fee components may not be visible in the web page tuition figure
@@ -748,13 +763,13 @@ The main unresolved unknowns — WFME accreditation, MIR outcomes, and exact top
 For current 2º Bachillerato students (health sciences branch), the minimum is 7.0 in 1º Bachillerato. For applicants who already took PAU, the minimum is a combined score of 12.2 from the first convocatoria of 2023, 2024, or 2025. These are entry conditions, not admission guarantees — you still need to clear the top-500 grade filter, pass the exam, and pass the interview.
 
 **How does the top-500 filter work?**
-After grade submission (May 19–June 3), UCV ranks all registered candidates by Bachillerato grade and invites only the top 500 to take the exam. The exact cutoff grade varies each year based on total applicant volume and is not published in advance. If your grade is borderline in the 7.5–8.5 range, your eligibility for the exam cannot be guaranteed.
+After grade submission (May 19–June 3 in the 2025-26 cycle), UCV ranks all registered candidates by Bachillerato grade and invites only the top 500 to take the exam. The exact cutoff grade varies each year based on total applicant volume and is not published in advance. If your grade is borderline in the 7.5–8.5 range, your eligibility for the exam cannot be guaranteed.
 
 **What does the UCV Medicine admission exam consist of?**
 100 multiple-choice questions: 60% biology, 30% chemistry, 10% physics. All content is based on the official Spanish bachillerato curriculum. UCV publishes the full exam syllabus and downloadable example questions on its website. Physics content is adapted for health sciences students, including those who did not study physics in bachillerato.
 
 **Is the interview eliminatory?**
-Yes. The interview is both eliminatory (failure = eliminated regardless of exam score) and weighted (25% of final score). It takes place in person at the Faculty of Medicine, Valencia, June 15–18. The assigned time slot cannot be changed. Interview preparation is as strategically important as exam preparation.
+Yes. The interview is both eliminatory (failure = eliminated regardless of exam score) and weighted (25% of final score). It takes place in person at the Faculty of Medicine, Valencia (June 15–18 in the 2025-26 cycle). The assigned time slot cannot be changed. Interview preparation is as strategically important as exam preparation.
 
 **Can international students apply to UCV Medicine?**
 International students can apply, but the standard admission process is built around PAU first convocatoria results. International students without Spanish secondary education credentials should contact UCV admissions before registering to confirm whether their qualifications are accepted: admissions@ucv.es / Tel: +34 96 192 75 90.

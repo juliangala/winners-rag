@@ -101,12 +101,22 @@ admission:
   interview_required: false
 
 sittings:
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-10-24"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Presencial. Todos los alumnos."
+  - date: "2026-11-28"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Presencial. Todos los alumnos."
 
 exam_format:
   question_count: NULL
@@ -759,11 +769,11 @@ The non-EBAU structure is a deliberate design choice: it opens access to student
 
 ## Admission Process
 
-1. **Register and pay the process fee (150 EUR, non-refundable).** This must be completed before November 7 of the year prior to the target intake (i.e., before November 7, 2025 for September 2026 intake). Payment secures the candidate's slot in the admissions exam. ANNUAL_UPDATE_REQUIRED.
+1. **Register and pay the process fee (150 EUR, non-refundable).** In the 2025-26 cycle, this had to be completed before November 7, 2025 (for the September 2026 intake). The deadline for the 2026-27 cycle is not published. Payment secures the candidate's slot in the admissions exam. ANNUAL_UPDATE_REQUIRED.
 
 2. **Submit academic documentation.** Upload academic transcript (Y1 Bachillerato) and required supporting documents through the UCJC academic portal. Status can be tracked online.
 
-3. **Attend the admissions exam in person.** Upon confirmed registration, the university sends an exam appointment by email. The exam is held at Campus Villafranca del Castillo and covers the Biology/Chemistry MCQ plus the competency evaluation in the same session (~2 hours total).
+3. **Attend the admissions exam in person.** Upon confirmed registration, the university sends an exam appointment by email. In the 2026-27 cycle, the exam sittings are on Saturday, October 24, 2026 and Saturday, November 28, 2026, in person in Madrid, open to all candidates. The exam is held at Campus Villafranca del Castillo and covers the Biology/Chemistry MCQ plus the competency evaluation in the same session (~2 hours total).
 
 4. **Await results and confirm enrollment.** Upon admission, pay the apertura de expediente (300 EUR, new students only), followed by the formal matriculation fee (3,000 EUR) and begin monthly fee payments.
 
@@ -771,19 +781,19 @@ Contact: admisionmedicina@ucjc.edu / infomedicina@ucjc.edu / +34 672 114 011
 
 ## Admission Timeline
 
-All dates are ANNUAL_UPDATE_REQUIRED.
+Exam dates below are those of the 2026-27 cycle. All other dates are ANNUAL_UPDATE_REQUIRED.
 
 | Event | Indicative Timing |
 |---|---|
 | Registration opens | ANNUAL_UPDATE_REQUIRED |
-| Process fee deadline (150 EUR) | Before November 7 of prior year (ANNUAL_UPDATE_REQUIRED) |
+| Process fee deadline (150 EUR) | Before November 7, 2025 in the 2025-26 cycle. 2026-27 deadline not published (ANNUAL_UPDATE_REQUIRED) |
 | Document submission period | ANNUAL_UPDATE_REQUIRED |
-| Admissions exam date | ANNUAL_UPDATE_REQUIRED |
+| Admissions exam dates (2026-27 cycle) | Saturday, October 24, 2026 and Saturday, November 28, 2026 (in person, Madrid, all candidates) |
 | Results communicated | ANNUAL_UPDATE_REQUIRED |
 | Enrollment confirmation deadline | ANNUAL_UPDATE_REQUIRED |
 | Academic year start | September |
 
-The early process fee deadline (November 7) is operationally critical: missing it disqualifies the candidate from that round. Students targeting 2026-27 must have initiated contact and paid the fee by November 7, 2025.
+The early process fee deadline is operationally critical: missing it disqualifies the candidate from that round. In the 2025-26 cycle it was November 7, 2025, for students targeting the 2026-27 intake.
 
 ## Admission Score Distribution
 
@@ -893,7 +903,7 @@ The program has established a formal tutoring agreement with CTO (one of Spain's
 
 ## Important Notes
 
-- The 150 EUR process fee must be paid **before November 7** of the year prior to the intake year. Missing this deadline effectively closes the standard admissions round. ANNUAL_UPDATE_REQUIRED.
+- The 150 EUR process fee must be paid before the process fee deadline (**November 7, 2025** in the 2025-26 cycle, the 2026-27 deadline is not published). Missing this deadline effectively closes the standard admissions round. ANNUAL_UPDATE_REQUIRED.
 - Non-Spanish-speaking applicants may be required to demonstrate B2 Spanish proficiency; requirements are PENDING_CONFIRMATION for specific international student profiles.
 - Enrollment in Y1 requires full-year matriculation; partial enrollment is not permitted.
 - The early payment discount (2%) applies only to the docencia component and requires the full amount to be paid in advance.
@@ -921,7 +931,7 @@ No. The EBAU score plays no role in the admission formula. Selection is based en
 **What subjects are tested in the admissions exam?**
 Biology and Chemistry, in a multiple-choice format. Duration is approximately 2 hours. The exact syllabus scope is PENDING_CONFIRMATION; no model exam is published.
 
-**What is the 150 EUR fee paid before November 7?**
+**What is the 150 EUR process fee?**
 It is a non-refundable process fee that grants access to the admissions exam. It does not guarantee admission; it registers the candidate to sit the exam. The 150 EUR is not applied toward tuition if admitted.
 
 **Is CUHMED WFME accredited?**

@@ -157,24 +157,29 @@ admission:
   interview_required: true
 
 sittings:
-  - date: "2025-11-15"    # use exam_date from round if exists; else results_date minus ~2 weeks estimate
-    registration_deadline: "2025-11-06"  # use application_deadline from round
-    results_date: "2025-12-04"    # use results_date from round
-    deposit_deadline: NULL  # use deposit_deadline from round
-    mode: hybrid            # in_person | online | hybrid
-    location: "Montepríncipe Campus, Boadilla del Monte, Madrid"
-  - date: "2026-02-14"
-    registration_deadline: "2026-02-05"
-    results_date: "2026-03-04"
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-10-16"
+    registration_deadline: "2026-10-08"
+    results_date: "2026-10-28"
     deposit_deadline: NULL
     mode: hybrid
-    location: "Montepríncipe Campus, Boadilla del Monte, Madrid"
-  - date: "2026-04-18"
-    registration_deadline: "2026-03-25"
-    results_date: "2026-05-06"
+    location: "Madrid"
+    notes: "Presencial u online, 18:00 h. Todos los alumnos."
+  - date: "2027-01-16"
+    registration_deadline: "2027-01-08"
+    results_date: "2027-01-28"
     deposit_deadline: NULL
     mode: hybrid
-    location: "Montepríncipe Campus, Boadilla del Monte, Madrid"
+    location: "Madrid"
+    notes: "Presencial u online, 10:00 h. Todos los alumnos."
+  - date: "2027-04-10"
+    registration_deadline: "2027-04-01"
+    results_date: "2027-04-22"
+    deposit_deadline: NULL
+    mode: hybrid
+    location: "Madrid"
+    notes: "Presencial u online, 10:00 h. Todos los alumnos."
 
 exam_format:
   question_count: NULL
@@ -556,7 +561,7 @@ programs:
 
 Universidad CEU San Pablo is one of Spain's most established private medical schools, with over 50 years of continuous medical education in Madrid. The Facultad de Medicina operates from the Montepríncipe Campus in Boadilla del Monte, a purpose-built university environment approximately 15 km from central Madrid.
 
-For the 2026-2027 intake, the program offers 200 seats across Spanish and bilingual teaching tracks, with an English-only cohort introduced for the first time. Admission is structured around three exam sessions (November, February, April), using an internal exam that covers Biology, Chemistry, and English. Critically, the weighted formula uses only 1st-year bachillerato grades — not EvAU — to represent 60% of the admission score, which is a structurally distinctive feature.
+For the 2026-2027 intake, the program offers 200 seats across Spanish and bilingual teaching tracks, with an English-only cohort introduced for the first time. Admission is structured around three exam sessions (2026-27 cycle: October 16, 2026, January 16, 2027 and April 10, 2027), using an internal exam that covers Biology, Chemistry, and English. Critically, the weighted formula uses only 1st-year bachillerato grades — not EvAU — to represent 60% of the admission score, which is a structurally distinctive feature.
 
 The university holds both WFME accreditation and WASC/WSCUC accreditation (2025-2031), making it the first institution in the European Union without American university status to receive the latter. It ranked in the Top 10 nationally for MIR results in 2024. These accreditations provide direct access to residency and licensing exams in the United States, Canada, Australia, and New Zealand.
 
@@ -567,7 +572,7 @@ The admission cost structure involves a €150 exam fee per session, a non-refun
 - **Seats:** 200 (Spanish, bilingual, and new English-only tracks combined)
 - **Admission model:** 60% first-year bachillerato grades + 40% internal CEU exam (Biology, Chemistry, English)
 - **PAU:** Mandatory prerequisite (must be passed) but not counted in the admission score
-- **Exam sessions:** 3 (November, February, April) — online or in-person; best score counts
+- **Exam sessions:** 3 in the 2026-27 cycle (October 16, 2026 (18:00), January 16, 2027 (10:00) and April 10, 2027 (10:00)) — online or in-person, open to all candidates; best score counts
 - **No negative marking** on the entrance exam — all questions should be answered
 - **Interview:** Mandatory, qualitative gate — not scored in the final formula
 - **WFME** accredited — global medical license eligibility
@@ -576,7 +581,7 @@ The admission cost structure involves a €150 exam fee per session, a non-refun
 - **Annual tuition (2026-27):** €19,500 + €3,300 one-time reservation fee
 - **Bilingual track:** Spanish/English; minimum English score of 7 + B2 Spanish required
 - **English-only track:** New from 2026-27 — no prior competitiveness data available
-- **Applications open:** October 15 each year
+- **Applications open:** October 15 (2025-26 cycle)
 
 ## Key Facts
 
@@ -697,19 +702,19 @@ An interview is mandatory for all pathways but functions as a qualitative assess
 
 ## Admission Process
 
-1. **Register online** at admision.uspceu.es from October 15. Provide personal data, academic record, and identification document.
+1. **Register online** at admision.uspceu.es (from October 15 in the 2025-26 cycle). Provide personal data, academic record, and identification document.
 
 2. **Receive PSP access** (Future Students Portal). Use the portal to track application status, schedule the exam, upload documents, and complete enrollment.
 
 3. **Submit academic documentation and select interview date.** Interview date can be modified up to 24 hours in advance. Upload documents by the deadline for the chosen session.
 
-4. **Sit the entrance exam** (online or in-person, Montepríncipe Campus). Pay the €150 admission fee per attempt.
+4. **Sit the entrance exam** (online or in-person, Montepríncipe Campus). In the 2026-27 cycle the sessions are on October 16, 2026 (18:00), January 16, 2027 (10:00) and April 10, 2027 (10:00). Pay the €150 admission fee per attempt.
 
 5. **Await interview evaluation.** Once both the exam result and interview report are evaluated, an admission decision is issued.
 
 6. **If admitted:** Pay the €3,300 reservation fee within the 5-day window specified in the admission notice. Failure to pay forfeits the pre-admission. This fee is non-refundable.
 
-7. **Submit PAU results** by the university's deadline (approximately July 6 — ANNUAL_UPDATE_REQUIRED). Failure to submit implies voluntary withdrawal with no refund of advanced fees.
+7. **Submit PAU results** by the university's deadline (approximately July 6 in the 2025-26 cycle — ANNUAL_UPDATE_REQUIRED). Failure to submit implies voluntary withdrawal with no refund of advanced fees.
 
 8. **Finalize enrollment** via the PSP: pay the enrollment fee, complete the registration form, submit bank details and sign the SEPA direct debit mandate.
 
@@ -717,7 +722,15 @@ Withdrawal from pre-enrollment or enrollment is only valid when communicated in 
 
 ## Admission Timeline
 
-All dates are from the 2025-26 cycle and are subject to **ANNUAL_UPDATE_REQUIRED**.
+Exam sessions for the 2026-27 cycle:
+
+| Session | Exam Date | Time | Location | Mode | Who can sit it |
+|---|---|---|---|---|---|
+| Session 1 | Friday, October 16, 2026 | 18:00 | Madrid | Online or in-person | All candidates |
+| Session 2 | Saturday, January 16, 2027 | 10:00 | Madrid | Online or in-person | All candidates |
+| Session 3 | Saturday, April 10, 2027 | 10:00 | Madrid | Online or in-person | All candidates |
+
+The table below is the previous cycle. All dates in it are from the 2025-26 cycle and are subject to **ANNUAL_UPDATE_REQUIRED**.
 
 | Session | Application Deadline | Exam Date | Results Published | In-person deadline |
 |---|---|---|---|---|
@@ -726,7 +739,7 @@ All dates are from the 2025-26 cycle and are subject to **ANNUAL_UPDATE_REQUIRED
 | Session 3 | March 25, 2026 | April 18, 2026 | May 6, 2026 | March 20, 2026 |
 | Group 3/4 (final) | July 3, 2026 | — | July 16, 2026 | — |
 
-Applications for Group 1/2 open October 15. Session 1 is the earliest and typically sees the most competitive applications from the strongest academic profiles. Applying in Session 1 maximizes options: candidates who are not admitted can retake in Session 2 or 3 without losing the full cycle. Applying in Session 3 only is strategically high-risk as no further attempts remain in that cycle.
+In the 2025-26 cycle, applications for Group 1/2 opened October 15. Session 1 is the earliest and typically sees the most competitive applications from the strongest academic profiles. Applying in Session 1 maximizes options: candidates who are not admitted can retake in Session 2 or 3 without losing the full cycle. Applying in Session 3 only is strategically high-risk as no further attempts remain in that cycle.
 
 The in-person exam application deadline is earlier than the online deadline for each session — a point that catches some applicants off-guard.
 
@@ -893,9 +906,9 @@ PENDING_CONFIRMATION: MIR pass rate (%), top-specialty placement rates, and mean
 ## Important Notes
 
 - Applications for the **in-person exam option** have an earlier deadline than the online option in each session — this is separate from the general application deadline.
-- The admission process **opens on October 15** each year; applying in Session 1 (November) offers the maximum number of retake opportunities within a single cycle.
+- The admission process **opened on October 15** in the 2025-26 cycle; applying in Session 1 (October 16, 2026 in the 2026-27 cycle) offers the maximum number of retake opportunities within a single cycle.
 - Missing a scheduled exam session without cancellation forfeits that session's fee and right; the student must pay again to sit the next session.
-- The PAU grade submission deadline (approximately July 6 — ANNUAL_UPDATE_REQUIRED) is hard; failure to submit implies automatic withdrawal with no refund.
+- The PAU grade submission deadline (approximately July 6 in the 2025-26 cycle — ANNUAL_UPDATE_REQUIRED) is hard; failure to submit implies automatic withdrawal with no refund.
 - The bilingual track diploma is an additional certificate — it does not produce a separate degree title.
 - All three tracks (Spanish, bilingual, English) lead to the same official Grado en Medicina recognized by ANECA.
 - Withdrawal from pre-enrollment or enrollment must be communicated in writing to info.usp@ceu.es to be legally effective.
@@ -922,7 +935,7 @@ Students with a strong 1st-year bachillerato record, solid Biology/Chemistry pre
 No. The admission score uses 1st-year bachillerato grades (60%) and the CEU internal exam (40%) only. The PAU must be passed as a separate prerequisite, but the PAU grade does not influence the admission ranking or score.
 
 **Can I take the entrance exam more than once?**
-Yes. Three sessions are available (November, February, April). You may sit all three, and only the highest score is used. Each session requires a separate €150 payment. You must register for each session individually.
+Yes. Three sessions are available (2026-27 cycle: October 16, 2026, January 16, 2027 and April 10, 2027). You may sit all three, and only the highest score is used. Each session requires a separate €150 payment. You must register for each session individually.
 
 **Is the bilingual track an additional cost?**
 No. Both Spanish and bilingual tracks are priced identically at €19,500/year for 60 ECTS (€325/credit). The bilingual track requires a minimum English component score of 7 and proof of B2 Spanish level for non-native speakers.
@@ -937,7 +950,7 @@ No. The €3,300 reservation fee is explicitly non-refundable except in circumst
 No. CEU San Pablo's clinical network is composed of private and semi-public hospitals (Vithas, VIAMED, Infanta Cristina, etc.), primary care centres, and emergency services (SAMUR). Standard rotations in SERMAS public network hospitals are not part of the published program.
 
 **What happens if I fail the PAU after being pre-admitted?**
-The university states that candidates who have made pre-registration and fail the PAU ordinary call retain priority for enrollment upon passing the extraordinary call, as long as seats remain available. Failing the PAU entirely and not submitting results by the deadline (approximately July 6) is treated as voluntary withdrawal with no refund of advanced amounts.
+The university states that candidates who have made pre-registration and fail the PAU ordinary call retain priority for enrollment upon passing the extraordinary call, as long as seats remain available. Failing the PAU entirely and not submitting results by the deadline (approximately July 6 in the 2025-26 cycle) is treated as voluntary withdrawal with no refund of advanced amounts.
 
 **Can I validate prior university credits when enrolling at CEU San Pablo?**
 Validated credit processing costs €40 per credit. Recognition between CEU group universities is free. However, the specific credit recognition policy for Medicine should be confirmed with the admissions office, as Medicine programs typically have limited recognition of prior credits.
@@ -946,4 +959,4 @@ Validated credit processing costs €40 per credit. Recognition between CEU grou
 WFME accreditation enables access to the USMLE licensing pathway and residency application processes in the US, Canada, Australia, and New Zealand. It does not automatically confer a license; it ensures the degree meets the standards required to begin those processes. WASC/WSCUC accreditation additionally facilitates formal degree recognition at US accredited institutions.
 
 **When should I apply to maximize my chances?**
-Applying in Session 1 (November) is strategically optimal because it allows two additional retake opportunities (Sessions 2 and 3) within the same cycle if needed. It also provides the earliest admission decision, which is valuable if managing multiple university applications simultaneously.
+Applying in Session 1 (October 16, 2026 in the 2026-27 cycle) is strategically optimal because it allows two additional retake opportunities (Sessions 2 and 3) within the same cycle if needed. It also provides the earliest admission decision, which is valuable if managing multiple university applications simultaneously.

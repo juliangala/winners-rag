@@ -112,24 +112,64 @@ admission:
   interview_required: false
 
 sittings:
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-10-19"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2026-11-19"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-01-13"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-03-02"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-04-08"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-05-03"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-06-08"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-07-05"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
 
 exam_format:
   question_count: NULL
@@ -494,7 +534,7 @@ This creates a clear, measurable selection model that strongly rewards sustained
 
 The degree is delivered entirely on the Villaviciosa de Odón campus (30 km southwest of Madrid) within the Facultad de Medicina, Salud y Deportes. UEM holds WFME accreditation, enabling graduates to access specialisation training in the United States, Canada, and Australia. The Society for Simulation in Healthcare (SSH) has recognised UEM's Simulated Hospital as one of the best in Europe. With 200 seats, it is among the larger private Medicine cohorts in Spain.
 
-Admission operates on a rolling basis throughout the academic year, with exam dates offered continuously from late autumn through July. Seats are distributed roughly 40%/40%/20% across three allocation rounds, creating a strong early-application advantage. Candidates who perform well in Round 1 have an materially better probability of entry than those who delay.
+Admission operates on a rolling basis throughout the academic year, with exam dates offered from autumn through July (2026-27 cycle: eight online sittings, from 19 October 2026 to 5 July 2027). Seats are distributed roughly 40%/40%/20% across three allocation rounds, creating a strong early-application advantage. Candidates who perform well in Round 1 have an materially better probability of entry than those who delay.
 
 ## Quick Evaluation
 
@@ -502,7 +542,7 @@ Admission operates on a rolling basis throughout the academic year, with exam da
 - **Competencies test**: Mandatory but non-weighted. Must be completed before booking the content exams.
 - **Seat count**: 200 — one of the larger private Medicine cohorts in Spain.
 - **Competitiveness**: High. Forum data from 2022–23 shows Round 1 cut-off between 8.56 (not admitted) and 8.95 (admitted). Current thresholds likely higher.
-- **Rolling admissions**: Yes — multiple exam dates from approximately December through July. Round 1 allocates roughly 40% of seats.
+- **Rolling admissions**: Yes — eight online exam dates in the 2026-27 cycle, from 19 October 2026 to 5 July 2027, open to all candidates. Round 1 allocates roughly 40% of seats.
 - **WFME accreditation**: Confirmed. Enables specialisation access in USA, Canada, Australia.
 - **Simulated Hospital**: SSH-certified as one of the best in Europe.
 - **Clinical network**: SERMAS (Madrid public hospitals) + Quirónsalud + HLA Moncloa + Vithas Arturo Soria.
@@ -635,7 +675,22 @@ Health Sciences branch of the bachillerato is mandatory. Applications from other
 
 ## Admission Timeline
 
-All dates are ANNUAL_UPDATE_REQUIRED. The following are indicative patterns based on observed 2025–26 cycle information.
+Exam dates for the 2026-27 cycle (all online, open to all candidates, shared with Universidad Europea de Canarias):
+
+| Sitting | Date | Mode | Who can sit it |
+|---|---|---|---|
+| 1 | Monday, 19 October 2026 | Online | All candidates |
+| 2 | Thursday, 19 November 2026 | Online | All candidates |
+| 3 | Wednesday, 13 January 2027 | Online | All candidates |
+| 4 | Tuesday, 2 March 2027 | Online | All candidates |
+| 5 | Thursday, 8 April 2027 | Online | All candidates |
+| 6 | Monday, 3 May 2027 | Online | All candidates |
+| 7 | Tuesday, 8 June 2027 | Online | All candidates |
+| 8 | Monday, 5 July 2027 | Online | All candidates |
+
+Other dates for the 2026-27 cycle (results, campus visits, allocation rounds) are not yet published.
+
+The table below is the previous cycle. All dates in it are ANNUAL_UPDATE_REQUIRED. They are indicative patterns based on observed 2025–26 cycle information.
 
 | Event | Indicative timing |
 |---|---|

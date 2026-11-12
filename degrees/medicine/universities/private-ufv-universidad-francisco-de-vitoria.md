@@ -145,18 +145,78 @@ admission:
   interview_required: true # Selective — called by committee only; eliminatory if called
 
 sittings:
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: 2026-02-03
-    results_date: 2026-02-18
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
-  - date: ANNUAL_UPDATE_REQUIRED
-    registration_deadline: 2026-06-25
-    results_date: 2026-07-01
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
-    mode: NULL
-    location: NULL
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-10-24"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Presencial, 11:30 h. Solo candidatos de fuera de Madrid. Inscripción previa en el Portal del candidato."
+  - date: "2026-10-27"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid"
+    notes: "Online, 16:00 h. Solo residentes fuera de la península y fuera de España."
+  - date: "2026-11-21"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Presencial, 11:30 h. Solo candidatos de fuera de Madrid. Inscripción previa en el Portal del candidato."
+  - date: "2026-11-24"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid"
+    notes: "Online, 16:00 h. Solo residentes fuera de la península y fuera de España."
+  - date: "2026-12-12"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Presencial, 11:30 h. Solo candidatos de fuera de Madrid. Inscripción previa en el Portal del candidato."
+  - date: "2026-12-15"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid"
+    notes: "Online, 16:00 h. Solo residentes fuera de la península y fuera de España."
+  - date: "2027-01-23"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Presencial, 11:30 h. Solo candidatos de fuera de Madrid. Inscripción previa en el Portal del candidato."
+  - date: "2027-01-26"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid"
+    notes: "Online, 16:00 h. Solo residentes fuera de la península y fuera de España."
+  - date: "2027-02-09"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid"
+    notes: "Online, 16:00 h. Solo residentes fuera de la península y fuera de España."
+  - date: NULL
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: onsite
+    location: "Madrid"
+    notes: "Convocatoria continua: todos los jueves, 16:30 h, presencial. Candidatos de Madrid y de fuera de Madrid. Inscripción previa en el Portal del candidato."
 
 exam_format:
   question_count: NULL # Not publicly disclosed by UFV
@@ -490,6 +550,7 @@ For international students, UFV accepts Credencial UE, non-EU homologation, and 
 - **Seats:** 160 (155 via Routes A/B/C + max 5 via Route D; Routes E/F from vacancies)
 - **Admission model:** Weighted composite — 65–70% academic record + 25–30% psychometric aptitude test + 5% English test
 - **Rounds:** 2 — Round 1 (February results) for current Bachillerato students; Round 2 (July results) open to all
+- **Exam sessions (2026-27 cycle):** onsite every Thursday at 16:30 for all candidates. Onsite Saturday sessions at 11:30 for candidates from outside Madrid only (24 October, 21 November, 12 December 2026, 23 January 2027). Online sessions at 16:00 for residents outside mainland Spain and outside Spain only (27 October, 24 November, 15 December 2026, 26 January, 9 February 2027)
 - **Selective interview:** Not universal — called by committee; eliminatory if summoned
 - **Annual tuition:** €21,830 (Year 1, 2026–27, confirmed)
 - **Registration fee:** €170 (non-refundable); place deposit €4,250 (non-refundable)
@@ -600,17 +661,36 @@ The **selective interview** introduces an eliminatory risk element: UFV's admiss
 2. Receive portal access credentials by email (check spam); access the Candidate Portal.
 3. Upload required identity document (DNI or passport) and complete the personal data form.
 4. Pay the non-refundable registration fee of €170 (no PayPal recommended). Exempt: Regnum Christi school students, current UFV students, UFV employee children.
-5. Once documentation is accepted, select an exam date from the available onsite sessions. Places per session are limited — early booking advised.
+5. Once documentation is accepted, select an exam date from the available onsite sessions. Places per session are limited — early booking advised. In the 2026-27 cycle, onsite sessions run every Thursday at 16:30, with additional Saturday sessions for candidates from outside Madrid and online sessions for residents outside mainland Spain and outside Spain (dates in the Admission Timeline).
 6. Submit access route-specific documentation by the published deadline:
-   - Route A: 1st Bachillerato grades by 3 February; PAU by 25 June — ANNUAL_UPDATE_REQUIRED
-   - Routes B (Credencial UE / homologación + PCE) and C: by 24 August or 25 June depending on sub-route — ANNUAL_UPDATE_REQUIRED
-   - Routes D, E, F: academic transcripts by 25 June — ANNUAL_UPDATE_REQUIRED
-7. Await publication of admission list (Round 1: 18 February; Round 2: 1 July) — ANNUAL_UPDATE_REQUIRED
+   - Route A: 1st Bachillerato grades by 3 February; PAU by 25 June (2025-26 cycle) — ANNUAL_UPDATE_REQUIRED
+   - Routes B (Credencial UE / homologación + PCE) and C: by 24 August or 25 June depending on sub-route (2025-26 cycle) — ANNUAL_UPDATE_REQUIRED
+   - Routes D, E, F: academic transcripts by 25 June (2025-26 cycle) — ANNUAL_UPDATE_REQUIRED
+7. Await publication of admission list (2025-26 cycle: Round 1 on 18 February, Round 2 on 1 July) — ANNUAL_UPDATE_REQUIRED
 8. If admitted, pay the place deposit of €4,250 within the specified deadline (€3,250 first payment + €1,000 second payment). Deposit is non-refundable under all circumstances, including subsequent withdrawal.
 
 ## Admission Timeline
 
-| Event | Date (2026–27) | Note |
+Exam sessions for the 2026-27 cycle (prior registration in the Portal del candidato for onsite sessions):
+
+| Session | Date | Time | Mode | Who can sit it |
+|---|---|---|---|---|
+| Continuous | Every Thursday | 16:30 | Onsite (Madrid) | Candidates from Madrid and from outside Madrid |
+| Saturday session | 24 October 2026 | 11:30 | Onsite (Madrid) | Only candidates from outside Madrid |
+| Online session | 27 October 2026 (Tuesday) | 16:00 | Online | Only residents outside mainland Spain and outside Spain |
+| Saturday session | 21 November 2026 | 11:30 | Onsite (Madrid) | Only candidates from outside Madrid |
+| Online session | 24 November 2026 (Tuesday) | 16:00 | Online | Only residents outside mainland Spain and outside Spain |
+| Saturday session | 12 December 2026 | 11:30 | Onsite (Madrid) | Only candidates from outside Madrid |
+| Online session | 15 December 2026 (Tuesday) | 16:00 | Online | Only residents outside mainland Spain and outside Spain |
+| Saturday session | 23 January 2027 | 11:30 | Onsite (Madrid) | Only candidates from outside Madrid |
+| Online session | 26 January 2027 (Tuesday) | 16:00 | Online | Only residents outside mainland Spain and outside Spain |
+| Online session | 9 February 2027 (Tuesday) | 16:00 | Online | Only residents outside mainland Spain and outside Spain |
+
+Other dates for the 2026-27 cycle (grade and documentation deadlines, results) are not yet published.
+
+The table below is the previous cycle (2025-26 cycle, 2026-27 intake).
+
+| Event | Date (2025-26 cycle, 2026-27 intake) | Note |
 |---|---|---|
 | Applications open | ANNUAL_UPDATE_REQUIRED | Process typically opens in autumn of prior year |
 | Registration fee | €170 | Non-refundable |
@@ -625,7 +705,7 @@ The **selective interview** introduces an eliminatory risk element: UFV's admiss
 | Place deposit (Round 1) | Within deadline post-notification | ANNUAL_UPDATE_REQUIRED |
 | Place deposit (Round 2) | Within deadline post-notification | ANNUAL_UPDATE_REQUIRED |
 
-Candidates who were tested in previous cycles (within 5 years) need only register by 15 June to be considered in Round 2, without re-sitting the aptitude test.
+Candidates who were tested in previous cycles (within 5 years) need only register by 15 June (2025-26 cycle) to be considered in Round 2, without re-sitting the aptitude test.
 
 ## Admission Score Distribution
 
@@ -758,10 +838,10 @@ The principal risks are financial (the aggressive non-refundable deposit structu
 160 places for 2026–27 (155 via Routes A/B/C + maximum 5 via Route D). Routes E and F (Medicine transfers) depend on available vacancies in each year of the programme. This figure is subject to annual revision.
 
 **Can international students with a foreign Bachillerato apply?**
-Yes. UFV accepts Credencial UE (for EU or equivalent education systems), and homologación + PCE/UNED scores (for non-EU systems). International candidates follow Route B and must submit their credentials by the deadline (typically 24 August for the second list). An online exam option is available for candidates residing outside mainland Spain.
+Yes. UFV accepts Credencial UE (for EU or equivalent education systems), and homologación + PCE/UNED scores (for non-EU systems). International candidates follow Route B and must submit their credentials by the deadline (24 August for the second list in the 2025-26 cycle). An online exam option is available for candidates residing outside mainland Spain.
 
 **What is the UFV aptitude test?**
-A proprietary multiple-choice psychometric aptitude test administered onsite at UFV's Pozuelo de Alarcón campus (approximately 2 hours total session). It is not based on a published syllabus. Candidates who have sat the UFV test within the previous 5 years are exempt from re-sitting and only need to register by 15 June to participate in Round 2. Results are valid as long as the 5-year window applies.
+A proprietary multiple-choice psychometric aptitude test administered onsite at UFV's Pozuelo de Alarcón campus (approximately 2 hours total session). It is not based on a published syllabus. Candidates who have sat the UFV test within the previous 5 years are exempt from re-sitting and only need to register by 15 June (2025-26 cycle) to participate in Round 2. Results are valid as long as the 5-year window applies.
 
 **Is the personal interview compulsory?**
 The interview is selective — UFV's admissions committee decides which candidates to call. However, if you are called, attendance is mandatory. Failure to attend results in automatic withdrawal from the admission process, regardless of your composite test score.

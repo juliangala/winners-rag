@@ -126,36 +126,64 @@ admission:
   interview_required: false
 
 sittings:
-  - date: "2025-11-22"          # Round 1 campus_visit_date
-    registration_deadline: "2025-12-03"  # Round 1 exam_deadline
-    results_date: "2025-12-15"
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2026-10-19"
+    registration_deadline: NULL
+    results_date: NULL
     deposit_deadline: NULL
-    mode: hybrid                 # campus visit + online exam
-    location: "Santa Cruz de Tenerife"
-  - date: "2026-01-17"          # Round 2 campus_visit_date
-    registration_deadline: "2026-02-13"
-    results_date: "2026-02-19"
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2026-11-19"
+    registration_deadline: NULL
+    results_date: NULL
     deposit_deadline: NULL
-    mode: hybrid
-    location: "Santa Cruz de Tenerife"
-  - date: "2026-04-18"          # Round 3 campus_visit_date
-    registration_deadline: "2026-04-15"
-    results_date: "2026-04-22"
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-01-13"
+    registration_deadline: NULL
+    results_date: NULL
     deposit_deadline: NULL
-    mode: hybrid
-    location: "Santa Cruz de Tenerife"
-  - date: NULL                  # Round 4 — no campus_visit_date listed
-    registration_deadline: "2026-05-14"
-    results_date: "2026-05-21"
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-03-02"
+    registration_deadline: NULL
+    results_date: NULL
     deposit_deadline: NULL
-    mode: NULL
-    location: NULL
-  - date: "2026-07-04"          # Round 5 campus_visit_date
-    registration_deadline: "2026-07-02"
-    results_date: "2026-07-08"
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-04-08"
+    registration_deadline: NULL
+    results_date: NULL
     deposit_deadline: NULL
-    mode: hybrid
-    location: "Santa Cruz de Tenerife"
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-05-03"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-06-08"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
+  - date: "2027-07-05"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
+    mode: online
+    location: "Madrid y Canarias"
+    notes: "Online. Todos los alumnos."
 
 exam_format:
   question_count: NULL          # online English exam component — details PENDING_CONFIRMATION
@@ -756,7 +784,7 @@ The annual teaching fee is 18,900 EUR, fractioned over 10 or 12 monthly instalme
 ## Quick Evaluation
 
 - **Admission model:** 90% Bachillerato Y1 average (Ciencias de la Salud only) + 10% English test. No science exam. No interview. No EBAU/PAU required.
-- **Seats:** 50 (inaugural cohort, 2026-27). Ordinary process closed August 2026; extraordinary process now open.
+- **Seats:** 50 (inaugural cohort, 2026-27). Ordinary process for the 2026-27 intake (2025-26 cycle) closed August 2026, with an extraordinary process open at that date. 2026-27 cycle: eight online exam dates, from 19 October 2026 to 5 July 2027.
 - **Competitiveness:** Low. No published cutoffs; broad accessibility; first cohort.
 - **Cost:** 18,900 EUR/year docencia (10 or 12 monthly instalments). Total Y1 approximately 22,560 EUR including all fees.
 - **Clinical integration:** From Year 3 (primary care + university hospital contacts); full rotations Year 6 in Grupo Hospiten network.
@@ -921,7 +949,22 @@ Complete digital enrolment via the pre-student portal. Students must enrol for t
 
 ## Admission Timeline
 
-**Complete 2026-27 ordinary rounds (ANNUAL_UPDATE_REQUIRED for subsequent years):**
+**Exam dates for the 2026-27 cycle** (all online, open to all candidates, shared with Universidad Europea de Madrid):
+
+| Sitting | Date | Mode | Who can sit it |
+|---|---|---|---|
+| 1 | Monday, 19 October 2026 | Online | All candidates |
+| 2 | Thursday, 19 November 2026 | Online | All candidates |
+| 3 | Wednesday, 13 January 2027 | Online | All candidates |
+| 4 | Tuesday, 2 March 2027 | Online | All candidates |
+| 5 | Thursday, 8 April 2027 | Online | All candidates |
+| 6 | Monday, 3 May 2027 | Online | All candidates |
+| 7 | Tuesday, 8 June 2027 | Online | All candidates |
+| 8 | Monday, 5 July 2027 | Online | All candidates |
+
+Other dates for the 2026-27 cycle (campus visits, admission decisions) are not yet published.
+
+**Complete ordinary rounds of the 2025-26 cycle, for the 2026-27 intake (ANNUAL_UPDATE_REQUIRED for subsequent years):**
 
 | Round | Latest exam date | Campus visit | Admission decision | Reservation deadline |
 |---|---|---|---|---|
@@ -932,9 +975,9 @@ Complete digital enrolment via the pre-student portal. Students must enrol for t
 | 5 | 2 July 2026 | 4 July 2026 | 8 July 2026 (from 12:00h) | 5 business days |
 | Extraordinary | PENDING_CONFIRMATION | PENDING_CONFIRMATION | PENDING_CONFIRMATION | 5 business days |
 
-**Status as of August 2026:** The ordinary 2026-27 admissions process has closed. An extraordinary process is open. See: https://universidadeuropea.com/resources/media/documents/Proceso_extraordinario_de_admisión_al_Grado_en_Medicina_-_UEC.pdf
+**Status as of August 2026 (2025-26 cycle):** The ordinary admissions process for the 2026-27 intake has closed. An extraordinary process was open at that date. See: https://universidadeuropea.com/resources/media/documents/Proceso_extraordinario_de_admisión_al_Grado_en_Medicina_-_UEC.pdf
 
-**Strategic note:** UEC has earlier rounds (starting November) than most private Medicine programs, which typically open applications in January–February. Students who apply in Round 1 or 2 (November–February) receive a decision before other programs even open, providing either an early confirmation or time to pivot to a backup.
+**Strategic note:** UEC has earlier exam dates (starting 19 October 2026 in the 2026-27 cycle) than most private Medicine programs, which typically open applications in January–February. Students who sit the earliest exam dates (19 October 2026, 19 November 2026, 13 January 2027) receive a decision before other programs even open, providing either an early confirmation or time to pivot to a backup.
 
 ## Admission Score Distribution
 
@@ -1051,7 +1094,7 @@ Professional exit routes include: MIR access (Médico Interno Residente), clinic
 - Contact for admissions: +34 922 046 901 or nuevosalumnosmedicina@universidadeuropea.es
 - Personal enrollment advisor (Canarias): Julia Estévez — julia.estevez@universidadeuropea.es — WhatsApp: +34 678 511 890
 - Pre-student portal: https://universidadeuropea.force.com/s/login/
-- As of August 2026, the ordinary process is closed and an extraordinary admissions process is open for 2026-27.
+- As of August 2026 (2025-26 cycle), the ordinary process for the 2026-27 intake was closed and an extraordinary admissions process was open. For the 2026-27 cycle, the exam dates are the eight online sittings from 19 October 2026 to 5 July 2027 listed in the Admission Timeline.
 
 ## Key Insight
 

@@ -115,12 +115,15 @@ admission:
 
 # ── SECTION 4: Sittings ────────────────────────────────────────────────
 sittings:
-  - date: NULL                  # Rolling; no fixed exam dates published
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: NULL
     registration_deadline: NULL
     results_date: NULL
     deposit_deadline: NULL
-    mode: NULL                  # Presencial or online — PENDING_CONFIRMATION for Oviedo campus
-    location: NULL              # PENDING_CONFIRMATION — logistics for Oviedo campus not published
+    mode: NULL
+    location: "Oviedo"
+    notes: "Fecha de convocatoria por publicar."
 
 # ── SECTION 4: Exam format ───────────────────────────────────────────────
 exam_format:
@@ -436,7 +439,7 @@ Oviedo offers a distinctive quality-of-life profile for Medicine students: a man
 
 ## Admission Process
 
-UAX Oviedo uses the same rolling admission model as the Madrid campus. There is no fixed annual exam date; instead, the Medicine-specific admission test is available on a rolling basis throughout the year until places are filled. For a new campus receiving its first cohort in 2026-27, this means that earlier applications carry a meaningful strategic advantage — seat numbers are limited and undisclosed.
+For the 2026-27 cycle, the date of the admission exam convocatoria at UAX Oviedo has not been published yet. The Madrid campus holds its Medicine-specific admission test on a continuous basis, but the 2026-27 exam calendar does not list continuous sittings for Oviedo. For a new campus receiving its first cohort in 2026-27, earlier applications carry a meaningful strategic advantage — seat numbers are limited and undisclosed.
 
 Admission to the Grado en Medicina at UAX Oviedo proceeds through the following stages:
 
@@ -513,7 +516,7 @@ UAX Oviedo is the first private university to offer a Medicine degree in Asturia
 Yes. The 2026-27 intake at UAX Oviedo is the first cohort ever admitted. This means there is no historical track record of MIR pass rates, graduation rates, or clinical rotation outcomes specific to this campus. The curriculum plan is formally described as "in process of modification" for delivery at the Oviedo affiliated centre. Prospective students should treat this as a new programme launch and verify the finalized plan de estudios, clinical centre agreements, and facility readiness directly with UAX before committing.
 
 **Is the admission process the same as for the Madrid campus?**
-Yes. The Oviedo campus uses the same rolling admission model: no fixed exam dates, a 50-question MCQ test in Biology (30 questions) and Chemistry (20 questions), plus a personal interview. The exam fee is 125.00 EUR. Applications can be made year-round, but seat availability is limited and not disclosed — early application is advisable.
+Partly. The test is the same: a 50-question MCQ test in Biology (30 questions) and Chemistry (20 questions), plus a personal interview. The exam fee is 125.00 EUR. The calendar differs: the Madrid campus holds the test on a continuous basis, while the date of the 2026-27 convocatoria for Oviedo has not been published yet. Seat availability is limited and not disclosed — early application is advisable.
 
 **What hospitals will I train in?**
 UAX lists the following Asturian clinical partners: Hospital Vital Álvarez Buylla (Mieres), Clínica Asturias, Hospital Begoña, Hospital Gijón, and Hospital Covadonga (part of the HUCA complex), along with additional centres. No single primary teaching hospital is officially designated. The finalised hospital agreement list and confirmed rotation capacity should be verified directly with UAX before enrolment, as the campus is new for 2026-27.

@@ -100,18 +100,22 @@ admission:
   interview_required: false
 
 sittings:
-  - date: 2026-02-28
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
+  # Fuente: calendario Winners de exámenes de admisión 2026-27, actualizado el 12.10.2026
+  # (Calendario_examenes_Medicina_2026-27.pdf). Fechas del ciclo 2026-27. Actualizado el 12.11.2026.
+  - date: "2027-01-23"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
     mode: onsite
-    location: Esplugues de Llobregat
-  - date: 2026-04-18
-    registration_deadline: ANNUAL_UPDATE_REQUIRED
-    results_date: ANNUAL_UPDATE_REQUIRED
-    deposit_deadline: ANNUAL_UPDATE_REQUIRED
+    location: "Barcelona"
+    notes: "Presencial. Todos los alumnos."
+  - date: "2027-04-10"
+    registration_deadline: NULL
+    results_date: NULL
+    deposit_deadline: NULL
     mode: onsite
-    location: Esplugues de Llobregat
+    location: "Barcelona"
+    notes: "Presencial. Todos los alumnos."
 
 exam_format:
   question_count: PENDING_CONFIRMATION
@@ -416,9 +420,9 @@ Because 2026-2027 is the inaugural cohort, there is no admissions history, no pu
 
 - **Intake**: 50 seats, one program, Spanish-taught, Esplugues de Llobregat (Barcelona metropolitan area)
 - **First cohort**: September 2026 — no historical admissions data or MIR results available
-- **Exam**: Required, presencial (in-person), two sessions per cycle (February and April)
+- **Exam**: Required, presencial (in-person), two sessions per cycle (2026-27 cycle: January 23, 2027 and April 10, 2027, open to all candidates)
 - **Evaluation model**: PENDING_CONFIRMATION — detailed weighting matrix in official admission PDF, not published on accessible pages
-- **Reservation fee**: €2,500 (deducted from Year 1 tuition; refundable until June 21)
+- **Reservation fee**: €2,500 (deducted from Year 1 tuition; refundable until June 21 in the 2025-26 cycle)
 - **Year 1 tuition**: €17,715 (2026-2027)
 - **Key strength**: Active pedagogy, small groups, CEU network clinical infrastructure, Barcelona metropolitan location in biotech cluster
 - **Key risk**: Inaugural program with no track record; WFME accreditation status unconfirmed; admission model details not published on accessible pages
@@ -442,7 +446,7 @@ Because 2026-2027 is the inaugural cohort, there is no admissions history, no pu
 | WFME | PENDING_CONFIRMATION |
 | Year 1 tuition | €17,715 (2026-2027) — ANNUAL_UPDATE_REQUIRED |
 | Reservation fee | €2,500 (deducted from tuition) |
-| Exam required | Yes — presencial, two sessions (February, April) |
+| Exam required | Yes — presencial, two sessions (2026-27 cycle: 23 January 2027, 10 April 2027) |
 | Interview | No |
 | Competitiveness | Medium (inaugural cohort) |
 
@@ -508,7 +512,7 @@ International exchange and Erasmus opportunities for Medicine specifically are P
 
 UAO CEU runs a proprietary admission process that is complementary to the PAU (EvAU) or any other official Spanish access credential. For all degree programs except Medicine, this process is conducted 100% online and includes a general culture and aptitude questionnaire. Medicine is explicitly excluded from the online process and requires an in-person exam.
 
-The admission exam for Medicine (Prueba de Admisión Presencial) is offered on two dates per cycle — one in February and one in April — at the Esplugues de Llobregat campus. Candidates are notified of the result within one week of the exam date.
+The admission exam for Medicine (Prueba de Admisión Presencial) is offered on two dates per cycle at the Esplugues de Llobregat campus. In the 2026-27 cycle the dates are Saturday, 23 January 2027 and Saturday, 10 April 2027 (in person, Barcelona, open to all candidates). Candidates are notified of the result within one week of the exam date.
 
 The complete scoring model — including the weighting between academic record and exam score, the exam content, and any minimum thresholds — is published in the official admission document (Rev_admision-medicina-CEU-ABAT-OLIBA-modificado.pdf), which was not extractable through publicly accessible web pages at the time of this file's last update. All evaluation weights and exam specifications are therefore marked as PENDING_CONFIRMATION.
 
@@ -520,10 +524,10 @@ There is no interview component and no separate English test for the standard Sp
 
 1. **Application**: Submit via the Portal del Futuro Alumno (admision.uaoceu.es). Provide personal and academic data, including bachillerato Year 1 grades and partial Year 2 grades (or CFGS equivalent).
 2. **Documentation upload**: DNI/NIE/passport and academic certificate(s).
-3. **Exam**: Attend the presencial exam on either February 28 or April 18 at the Esplugues campus (ANNUAL_UPDATE_REQUIRED). The exam is reported as free of charge.
+3. **Exam**: Attend the presencial exam on either January 23, 2027 or April 10, 2027 at the Esplugues campus (2026-27 cycle). The exam is reported as free of charge.
 4. **Admission decision**: Notified within one week of the exam.
 5. **Reservation**: If admission is favorable, secure the place via a €2,500 deposit through the portal. This amount is deducted from Year 1 tuition.
-6. **Withdrawal window**: The deposit is refundable if the candidate formally withdraws before June 21 (ANNUAL_UPDATE_REQUIRED). This allows candidates to reserve a place before completing the EvAU (selectividad) in June.
+6. **Withdrawal window**: The deposit is refundable if the candidate formally withdraws before June 21 (2025-26 cycle, ANNUAL_UPDATE_REQUIRED). This allows candidates to reserve a place before completing the EvAU (selectividad) in June.
 7. **EvAU confirmation**: After completing official access exams (June), provide proof to the university.
 8. **Enrollment**: Complete formal enrollment once all access requirements are met.
 
@@ -531,7 +535,16 @@ For candidates from outside Spain: international entry pathway documentation is 
 
 ## Admission Timeline
 
-All dates below are from the 2026-2027 inaugural intake cycle and are ANNUAL_UPDATE_REQUIRED for subsequent years.
+Exam sessions for the 2026-27 cycle:
+
+| Session | Date | Location | Mode | Who can sit it |
+|---|---|---|---|---|
+| Exam Session 1 | Saturday, 23 January 2027 | Barcelona | Presencial | All candidates |
+| Exam Session 2 | Saturday, 10 April 2027 | Barcelona | Presencial | All candidates |
+
+Other dates for the 2026-27 cycle (applications, results, withdrawal deadline, enrollment) are not yet published.
+
+The table below is the 2025-26 cycle (2026-2027 inaugural intake). Its dates are ANNUAL_UPDATE_REQUIRED for subsequent years.
 
 | Event | Date |
 |---|---|
@@ -545,7 +558,7 @@ All dates below are from the 2026-2027 inaugural intake cycle and are ANNUAL_UPD
 | Enrollment deadline | ANNUAL_UPDATE_REQUIRED |
 | Program start | September 2026 |
 
-**Strategic note**: The withdrawal window closing on June 21 allows candidates to reserve a place in February or April and retain optionality through the EvAU without financial risk. This is a material advantage for candidates holding applications at multiple universities simultaneously.
+**Strategic note**: The withdrawal window (closing on June 21 in the 2025-26 cycle) allows candidates to reserve a place in either exam session and retain optionality through the EvAU without financial risk. This is a material advantage for candidates holding applications at multiple universities simultaneously.
 
 ## Admission Score Distribution
 
@@ -557,7 +570,7 @@ What can be observed structurally:
 
 The program is competitive by design — 50 seats, an in-person proprietary exam, and a rolling admission framework with two sessions. In the first cohort, the competitive bar is expected to be lower than for established Spanish private Medicine programs, simply because the program has no track record to attract the highest-scoring applicants exclusively. This dynamic is consistent with other inaugural cohorts observed across Spanish private Medicine schools.
 
-The rolling structure and the refundable reservation window create a first-mover incentive: candidates who apply in the February session and secure a place are protected by the June withdrawal window at no financial cost. Applying in April increases risk if top choices also have April deadlines.
+The rolling structure and the refundable reservation window create a first-mover incentive: candidates who apply in the first session (January 23, 2027 in the 2026-27 cycle) and secure a place are protected by the withdrawal window at no financial cost. Applying in April increases risk if top choices also have April deadlines.
 
 For subsequent intakes (2027-2028 onward), score distributions should be established once the first cohort admission outcomes are published.
 
@@ -566,7 +579,7 @@ For subsequent intakes (2027-2028 onward), score distributions should be establi
 | Item | Amount | Notes |
 |---|---|---|
 | Year 1 total | €17,715 | 2026-2027 — ANNUAL_UPDATE_REQUIRED |
-| Reservation fee | €2,500 | Deducted from Year 1 total; refundable before June 21 |
+| Reservation fee | €2,500 | Deducted from Year 1 total; refundable before June 21 (2025-26 cycle) |
 | Estimated price per ECTS credit | ~€295 | Derived from Year 1: €17,715 / 60 ECTS — ANNUAL_UPDATE_REQUIRED |
 | Estimated 6-year total | ~€106,290 | Assuming constant annual tuition — ANNUAL_UPDATE_REQUIRED |
 
@@ -642,12 +655,12 @@ The program states preparation for MIR as an explicit objective ("preparar para 
 
 **Barcelona cost of living**: Accommodation costs in the Barcelona metropolitan area are high relative to other Spanish cities hosting private Medicine programs. The total cost of attendance over six years (tuition + living) will be materially higher than programs located in smaller cities.
 
-**Rolling admissions with limited seats**: 50 seats, rolling process, two sessions. If the program fills substantially in the February session, April applicants face a smaller residual cohort. Earlier application reduces risk.
+**Rolling admissions with limited seats**: 50 seats, rolling process, two sessions. If the program fills substantially in the first session (January 2027 in the 2026-27 cycle), April applicants face a smaller residual cohort. Earlier application reduces risk.
 
 ## Important Notes
 
 - Exam sessions are presencial (in-person) at Esplugues de Llobregat campus. Online exam option does NOT apply to Medicine. — ANNUAL_UPDATE_REQUIRED
-- Reservation fee: €2,500, deducted from Year 1 tuition. Refundable if withdrawal before June 21. — ANNUAL_UPDATE_REQUIRED
+- Reservation fee: €2,500, deducted from Year 1 tuition. Refundable if withdrawal before June 21 (2025-26 cycle). — ANNUAL_UPDATE_REQUIRED
 - Both Year 1 and partial Year 2 bachillerato grades are required in the application. Early applicants should upload Year 2 interim grades as available.
 - CFGS (vocational training) and international equivalent credentials are accepted entry paths.
 - The university communicates admission decisions within one week of the exam date.
@@ -666,12 +679,12 @@ Universitat CEU Abat Oliba's Medicine degree offers a genuinely differentiated p
 
 For candidates who are strategically positioned — strong bachillerato record, prepared for a presencial internal exam, aligned with the program's Catholic-humanist values, and comfortable with the risks of an inaugural cohort — this is a legitimate option. For candidates with access to established programs with published outcomes, accepting UAO CEU as their primary choice requires accepting a material information asymmetry that established programs do not carry.
 
-The refundable reservation structure and the early February exam session make it feasible to include UAO CEU as a strategic hedge in a broader portfolio of applications, at manageable financial risk before the EvAU results in June.
+The refundable reservation structure and the early first exam session (January 23, 2027 in the 2026-27 cycle) make it feasible to include UAO CEU as a strategic hedge in a broader portfolio of applications, at manageable financial risk before the EvAU results in June.
 
 ## Frequently Asked Questions
 
-**Is the 2026-2027 intake still open?**
-The university operates a rolling admission process with two exam sessions (February and April). Availability depends on whether all 50 seats have been filled. Candidates should check the Portal de Admisión directly for current availability. — ANNUAL_UPDATE_REQUIRED
+**Is the intake still open?**
+The university operates a rolling admission process with two exam sessions per cycle. In the 2026-27 cycle they are on January 23, 2027 and April 10, 2027 (in person, Barcelona, open to all candidates). Availability depends on whether all 50 seats have been filled. Candidates should check the Portal de Admisión directly for current availability. — ANNUAL_UPDATE_REQUIRED
 
 **Is the admission exam free?**
 The general UAO CEU admission test is described as free. Whether this applies equally to the Medicine presencial exam is PENDING_CONFIRMATION. Contact the Servicio de Información (+34 93 253 72 00) to confirm.
@@ -680,7 +693,7 @@ The general UAO CEU admission test is described as free. Whether this applies eq
 The exam content is detailed in the official admission document (Rev_admision-medicina-CEU-ABAT-OLIBA-modificado.pdf), available via the university website's admission section. Exam subjects and weightings were not confirmed through accessible web pages during research.
 
 **Can I reserve a place before my EvAU (selectividad) results?**
-Yes. The reservation window remains open through June 21 (ANNUAL_UPDATE_REQUIRED). The €2,500 deposit is fully refundable if you withdraw before that date, so you can secure a place before the June EvAU without financial risk.
+Yes. In the 2025-26 cycle the reservation window remained open through June 21 (ANNUAL_UPDATE_REQUIRED). The €2,500 deposit is fully refundable if you withdraw before that date, so you can secure a place before the June EvAU without financial risk.
 
 **Does UAO CEU Medicine have WFME accreditation?**
 WFME accreditation status is PENDING_CONFIRMATION. The degree has AQU Catalunya quality accreditation, which is the prerequisite for program authorization in Cataluña. WFME is a separate international process and typically takes years after a program is established.
